@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Chaitanya Paikara/Documents/Xilinx_FPGA/Booth_Multiplication/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Chaitanya Paikara/Documents/Xilinx_FPGA/Booth_Multiplication/xst"
+elaborate
+-ifn Code.prj
+-ifmt mixed

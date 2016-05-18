@@ -1,0 +1,129 @@
+Release 14.2 Map P.28xd (nt64)
+Xilinx Map Application Log File for Design 'TX'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o TX_map.ncd TX.ngd TX.pcf 
+Target Device  : xc6slx4
+Target Package : tqg144
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Mon May 09 02:38:20 2016
+
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal D0 connected to top level port D0 has been removed.
+WARNING:MapLib:701 - Signal D1 connected to top level port D1 has been removed.
+WARNING:MapLib:701 - Signal D2 connected to top level port D2 has been removed.
+WARNING:MapLib:701 - Signal D3 connected to top level port D3 has been removed.
+WARNING:MapLib:701 - Signal D4 connected to top level port D4 has been removed.
+WARNING:MapLib:701 - Signal D5 connected to top level port D5 has been removed.
+WARNING:MapLib:701 - Signal D6 connected to top level port D6 has been removed.
+WARNING:MapLib:701 - Signal D7 connected to top level port D7 has been removed.
+WARNING:MapLib:701 - Signal Logic_0 connected to top level port Logic_0 has been
+   removed.
+WARNING:MapLib:701 - Signal Logic_1 connected to top level port Logic_1 has been
+   removed.
+WARNING:MapLib:701 - Signal TX connected to top level port TX has been removed.
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 16 secs 
+Total CPU  time at the beginning of Placer: 11 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:5) REAL time: 18 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:5) REAL time: 19 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:5) REAL time: 19 secs 
+
+Phase 4.2  Initial Placement for Architecture Specific Features
+
+Phase 4.2  Initial Placement for Architecture Specific Features (Checksum:5) REAL time: 19 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:5) REAL time: 19 secs 
+
+Phase 6.30  Global Clock Region Assignment
+Phase 6.30  Global Clock Region Assignment (Checksum:5) REAL time: 19 secs 
+
+Phase 7.3  Local Placement Optimization
+
+Phase 7.3  Local Placement Optimization (Checksum:5) REAL time: 19 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:5) REAL time: 19 secs 
+
+Phase 9.8  Global Placement
+Phase 9.8  Global Placement (Checksum:5) REAL time: 19 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:5) REAL time: 19 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:5) REAL time: 19 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:5) REAL time: 19 secs 
+
+Phase 13.34  Placement Validation
+Phase 13.34  Placement Validation (Checksum:5) REAL time: 19 secs 
+
+Total REAL time to Placer completion: 19 secs 
+Total CPU  time to Placer completion: 12 secs 
+Running post-placement packing...
+Writing output files...
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   11
+Slice Logic Utilization:
+  Number of Slice Registers:                     0 out of   4,800    0%
+  Number of Slice LUTs:                          0 out of   2,400    0%
+
+Slice Logic Distribution:
+  Number of occupied Slices:                     0 out of     600    0%
+  Nummber of MUXCYs used:                        0 out of   1,200    0%
+  Number of LUT Flip Flop pairs used:            0
+
+IO Utilization:
+  Number of bonded IOBs:                         1 out of     102    1%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of      12    0%
+  Number of RAMB8BWERs:                          0 out of      24    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       0 out of      16    0%
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     200    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     200    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     200    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of       8    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Peak Memory Usage:  360 MB
+Total REAL time to MAP completion:  21 secs 
+Total CPU time to MAP completion:   13 secs 
+
+Mapping completed.
+See MAP report file "TX_map.mrp" for details.

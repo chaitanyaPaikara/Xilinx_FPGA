@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drawing version="7">
+    <attr value="spartan3e" name="DeviceFamilyName">
+        <trait delete="all:0" />
+        <trait editname="all:0" />
+        <trait edittrait="all:0" />
+    </attr>
+    <netlist>
+        <signal name="XLXN_10" />
+        <signal name="XLXN_11" />
+        <blockdef name="and2">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-64" y2="-64" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="192" y1="-96" y2="-96" x1="256" />
+            <arc ex="144" ey="-144" sx="144" sy="-48" r="48" cx="144" cy="-96" />
+            <line x2="64" y1="-48" y2="-48" x1="144" />
+            <line x2="144" y1="-144" y2="-144" x1="64" />
+            <line x2="64" y1="-48" y2="-144" x1="64" />
+        </blockdef>
+        <blockdef name="or2">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-64" y2="-64" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="192" y1="-96" y2="-96" x1="256" />
+            <arc ex="192" ey="-96" sx="112" sy="-48" r="88" cx="116" cy="-136" />
+            <arc ex="48" ey="-144" sx="48" sy="-48" r="56" cx="16" cy="-96" />
+            <line x2="48" y1="-144" y2="-144" x1="112" />
+            <arc ex="112" ey="-144" sx="192" sy="-96" r="88" cx="116" cy="-56" />
+            <line x2="48" y1="-48" y2="-48" x1="112" />
+        </blockdef>
+        <block symbolname="and2" name="XLXI_7">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin signalname="XLXN_10" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_8">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin signalname="XLXN_11" name="O" />
+        </block>
+        <block symbolname="or2" name="XLXI_9">
+            <blockpin signalname="XLXN_10" name="I0" />
+            <blockpin signalname="XLXN_11" name="I1" />
+            <blockpin name="O" />
+        </block>
+    </netlist>
+    <sheet sheetnum="1" width="3520" height="2720">
+        <instance x="1072" y="640" name="XLXI_7" orien="R90" />
+        <instance x="1232" y="640" name="XLXI_8" orien="R90" />
+        <instance x="1152" y="944" name="XLXI_9" orien="R90" />
+        <branch name="XLXN_10">
+            <wire x2="1168" y1="896" y2="912" x1="1168" />
+            <wire x2="1216" y1="912" y2="912" x1="1168" />
+            <wire x2="1216" y1="912" y2="944" x1="1216" />
+        </branch>
+        <branch name="XLXN_11">
+            <wire x2="1328" y1="912" y2="912" x1="1280" />
+            <wire x2="1280" y1="912" y2="944" x1="1280" />
+            <wire x2="1328" y1="896" y2="912" x1="1328" />
+        </branch>
+    </sheet>
+</drawing>

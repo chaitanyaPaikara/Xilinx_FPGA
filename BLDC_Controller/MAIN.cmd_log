@@ -1,0 +1,4 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl MAIN_drc.vhf -w {C:/Users/Chaitanya Paikara/Downloads/Akash_Driver_v1/Akash_Driver_v1/MAIN.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym MAIN {C:/Users/Chaitanya Paikara/Downloads/Akash_Driver_v1/Akash_Driver_v1/MAIN.sch} {C:/Users/Chaitanya Paikara/Downloads/Akash_Driver_v1/Akash_Driver_v1/MAIN.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl MAIN_drc.vhf -w {C:/Users/Chaitanya Paikara/Downloads/Akash_Driver_v1/Akash_Driver_v1/MAIN.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym MAIN {C:/Users/Chaitanya Paikara/Downloads/Akash_Driver_v1/Akash_Driver_v1/MAIN.sch} {C:/Users/Chaitanya Paikara/Downloads/Akash_Driver_v1/Akash_Driver_v1/MAIN.sym} 

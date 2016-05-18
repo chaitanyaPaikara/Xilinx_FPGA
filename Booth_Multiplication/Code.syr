@@ -1,0 +1,370 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: Code.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Code.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Code"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : Code
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Code.v" in library work
+Module <Code> compiled
+No errors in compilation
+Analysis of file <"Code.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Code> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Code>.
+	Enabling task <Booth_Multiplication>.
+	Enabling task <Full_Adder>.
+	Enabling task <shift>.
+	Enabling task <shift>.
+	Enabling task <Full_Adder>.
+	Enabling task <shift>.
+	Enabling task <Full_Adder>.
+	Enabling task <shift>.
+	Enabling task <shift>.
+	Enabling task <Full_Adder>.
+	Enabling task <shift>.
+	Enabling task <Full_Adder>.
+	Enabling task <shift>.
+	Enabling task <shift>.
+	Enabling task <Full_Adder>.
+	Enabling task <shift>.
+	Enabling task <Full_Adder>.
+	Enabling task <shift>.
+	Enabling task <shift>.
+WARNING:Xst:2323 - "Code.v" line 74: Parameter 2 is not constant in call of system task $display.
+"Code.v" line 74: $display : Product is %d
+Module <Code> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Code>.
+    Related source file is "Code.v".
+WARNING:Xst:646 - Signal <Y> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <X> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <old_Product_51$xor0000> created at line 64.
+    Found 4-bit adder for signal <old_temp_12$addsub0000> created at line 51.
+    Found 4-bit adder for signal <old_temp_2$addsub0000> created at line 51.
+    Found 4-bit adder for signal <old_temp_26$addsub0000> created at line 51.
+    Found 4-bit adder for signal <old_temp_40$addsub0000> created at line 51.
+    Found 1-bit xor2 for signal <old_X_23$xor0000> created at line 64.
+    Found 1-bit xor2 for signal <old_X_37$xor0000> created at line 64.
+    Summary:
+	inferred  22 Adder/Subtractor(s).
+Unit <Code> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 22
+ 4-bit adder                                           : 11
+ 8-bit adder                                           : 11
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 22
+ 4-bit adder                                           : 11
+ 8-bit adder                                           : 11
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit Code : the following signal(s) form a combinatorial loop: Madd__old_temp_2_Madd_lut<3>, _old_temp_25<2>, Product<6>, _old_temp_39<2>, _old_temp_11<2>, _old_temp_2<3>.
+WARNING:Xst:2170 - Unit Code : the following signal(s) form a combinatorial loop: _old_temp_12<2>, Madd__old_temp_26_Madd_cy<1>, Madd__old_temp_40_Madd_cy<1>, Madd__old_temp_12_Madd_lut<1>, _old_temp_25<1>, _old_temp_39<1>, Madd__old_temp_2_Madd_lut<1>, Product<5>, _old_temp_40<2>, _old_temp_11<1>, Madd__old_temp_26_Madd_lut<1>, _old_temp_2<2>, _old_temp_26<2>, Madd__old_temp_40_Madd_lut<1>, Madd__old_temp_2_Madd_cy<1>, Madd__old_temp_12_Madd_cy<1>.
+WARNING:Xst:2170 - Unit Code : the following signal(s) form a combinatorial loop: Madd__old_temp_12_Madd_lut<0>, Madd__old_temp_2_Madd_cy<0>, Madd__old_temp_2_Madd_lut<0>, Madd__old_temp_26_Madd_lut<0>, _old_temp_12<1>, Madd__old_temp_26_Madd_cy<0>, Madd__old_temp_40_Madd_lut<0>, Madd__old_temp_12_Madd_cy<0>, _old_temp_25<0>, Madd__old_temp_40_Madd_cy<0>, _old_temp_39<0>, Product<4>, _old_temp_40<1>, _old_temp_11<0>, _old_temp_2<1>, _old_temp_26<1>.
+
+Optimizing unit <Code> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Code, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Code.ngr
+Top Level Output File Name         : Code
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 16
+
+Cell Usage :
+# BELS                             : 75
+#      LUT2                        : 27
+#      LUT3                        : 14
+#      LUT4                        : 27
+#      MUXF5                       : 7
+# IO Buffers                       : 16
+#      IBUF                        : 8
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                       38  out of    960     3%  
+ Number of 4 input LUTs:                 68  out of   1920     3%  
+ Number of IOs:                          16
+ Number of bonded IOBs:                  16  out of     83    19%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 42.593ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 186876 / 8
+-------------------------------------------------------------------------
+Delay:               42.593ns (Levels of Logic = 40)
+  Source:            Data_B<2> (PAD)
+  Destination:       Product<7> (PAD)
+
+  Data Path: Data_B<2> to Product<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   1.106   0.819  Data_B_2_IBUF (Data_B_2_IBUF)
+     LUT2:I1->O            3   0.612   0.520  Madd__old_temp_2_Madd_lut<2>1 (Madd__old_temp_2_Madd_lut<2>)
+     LUT4:I1->O            5   0.612   0.690  _old_temp_11<1>1 (_old_temp_11<1>)
+     LUT2:I0->O            2   0.612   0.449  Madd__old_temp_12_Madd_lut<1>1 (Madd__old_temp_12_Madd_lut<1>)
+     LUT4:I1->O            1   0.612   0.000  _old_temp_25<0>1 (_old_temp_25<0>1)
+     MUXF5:I1->O           3   0.278   0.603  _old_temp_25<0>_f5 (_old_temp_25<0>)
+     LUT2:I0->O            2   0.612   0.449  Madd__old_temp_30_cy<0>11 (Madd__old_temp_30_cy<0>)
+     LUT4:I1->O            1   0.612   0.000  _old_temp_39<0>2 (_old_temp_39<0>2)
+     MUXF5:I0->O           3   0.278   0.603  _old_temp_39<0>_f5 (_old_temp_39<0>)
+     LUT2:I0->O            2   0.612   0.449  Madd__old_temp_44_cy<0>11 (Madd__old_temp_44_cy<0>)
+     LUT4:I1->O            1   0.612   0.000  Product<4>2 (Product<4>2)
+     MUXF5:I0->O           3   0.278   0.520  Product<4>_f5 (Product_4_OBUF)
+     LUT2:I1->O            2   0.612   0.410  Madd__old_temp_2_Madd_cy<0>11 (Madd__old_temp_2_Madd_cy<0>)
+     LUT4:I2->O            3   0.612   0.603  _old_temp_11<0>1 (_old_temp_11<0>)
+     LUT2:I0->O            2   0.612   0.449  Madd__old_temp_16_cy<0>11 (Madd__old_temp_16_cy<0>)
+     LUT3:I1->O            2   0.612   0.449  Madd__old_temp_16_cy<1>11 (Madd__old_temp_16_cy<1>)
+     LUT4:I1->O            1   0.612   0.000  _old_temp_25<1>2 (_old_temp_25<1>2)
+     MUXF5:I0->O           5   0.278   0.690  _old_temp_25<1>_f5 (_old_temp_25<1>)
+     LUT2:I0->O            2   0.612   0.532  Madd__old_temp_30_lut<1>1 (Madd__old_temp_30_lut<1>)
+     LUT3:I0->O            2   0.612   0.449  Madd__old_temp_30_cy<1>11 (Madd__old_temp_30_cy<1>)
+     LUT4:I1->O            1   0.612   0.000  _old_temp_39<1>2 (_old_temp_39<1>2)
+     MUXF5:I0->O           5   0.278   0.690  _old_temp_39<1>_f5 (_old_temp_39<1>)
+     LUT2:I0->O            2   0.612   0.532  Madd__old_temp_44_lut<1>1 (Madd__old_temp_44_lut<1>)
+     LUT3:I0->O            2   0.612   0.449  Madd__old_temp_44_cy<1>11 (Madd__old_temp_44_cy<1>)
+     LUT4:I1->O            1   0.612   0.000  Product<5>2 (Product<5>2)
+     MUXF5:I0->O           4   0.278   0.651  Product<5>_f5 (Product_5_OBUF)
+     LUT2:I0->O            2   0.612   0.532  Madd__old_temp_2_Madd_lut<1>1 (Madd__old_temp_2_Madd_lut<1>)
+     LUT3:I0->O            3   0.612   0.481  Madd__old_temp_2_Madd_cy<1>11 (Madd__old_temp_2_Madd_cy<1>)
+     LUT4:I2->O            1   0.612   0.000  _old_temp_11<2>11 (_old_temp_11<2>1)
+     MUXF5:I1->O           6   0.278   0.721  _old_temp_11<2>1_f5 (_old_temp_11<2>)
+     LUT2:I0->O            2   0.612   0.532  Madd__old_temp_16_lut<2>1 (Madd__old_temp_16_lut<2>)
+     LUT3:I0->O            1   0.612   0.509  Madd__old_temp_16_cy<2>11 (Madd__old_temp_16_cy<2>)
+     LUT4:I0->O            6   0.612   0.599  _old_temp_25<2> (_old_temp_25<2>)
+     LUT3:I2->O            1   0.612   0.360  Madd__old_temp_26_Madd_cy<2>11 (Madd__old_temp_26_Madd_cy<2>)
+     LUT4:I3->O            1   0.612   0.360  _old_temp_39<2>_SW0 (N12)
+     LUT4:I3->O            6   0.612   0.721  _old_temp_39<2> (_old_temp_39<2>)
+     LUT2:I0->O            2   0.612   0.532  Madd__old_temp_44_lut<2>1 (Madd__old_temp_44_lut<2>)
+     LUT3:I0->O            1   0.612   0.509  Madd__old_temp_44_cy<2>11 (Madd__old_temp_44_cy<2>)
+     LUT4:I0->O            5   0.612   0.538  Product<6> (Product_6_OBUF)
+     OBUF:I->O                 3.169          Product_7_OBUF (Product<7>)
+    ----------------------------------------
+    Total                     42.593ns (25.193ns logic, 17.400ns route)
+                                       (59.1% logic, 40.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.01 secs
+ 
+--> 
+
+Total memory usage is 293760 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

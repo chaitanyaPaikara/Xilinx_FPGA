@@ -1,0 +1,5 @@
+verilog isim_temp "PISO.vf"
+verilog isim_temp "LOGIC_INPUT.vf"
+verilog isim_temp "tx.vf"
+verilog isim_temp "USART_TX.v"
+verilog isim_temp "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v"

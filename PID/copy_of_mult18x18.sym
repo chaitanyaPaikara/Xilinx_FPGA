@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="mult18x18">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2000-1-1T10:10:10</timestamp>
+    <attr value="MULT18X18" name="VeriModel" />
+    <attr value="Copy Of Symbol With Level: XILINX" name="Level" />
+    <attr value="MULT18X18" name="VhdlModel" />
+    <attr value="2.0.0" name="Libver" />
+    <pin polarity="Input" x="0" y="-160" name="A(17:0)" />
+    <pin polarity="Input" x="0" y="-96" name="B(17:0)" />
+    <pin polarity="Output" x="480" y="-128" name="P(35:0)" />
+    <graph>
+        <rect width="352" x="64" y="-224" height="192" />
+        <rect width="64" x="416" y="-140" height="24" />
+        <rect width="64" x="0" y="-172" height="24" />
+        <rect width="64" x="0" y="-108" height="24" />
+        <line x2="416" y1="-128" y2="-128" x1="480" />
+        <line x2="64" y1="-160" y2="-160" x1="0" />
+        <line x2="64" y1="-96" y2="-96" x1="0" />
+        <text x="80" y="-160">A[17:0]</text>
+        <text x="80" y="-96">B[17:0]</text>
+        <text style="alignment:CENTER;fontsize:40;fontname:Arial" x="248" y="-252">MULT18x18</text>
+        <text x="328" y="-128">P[35:0]</text>
+    </graph>
+</symbol>

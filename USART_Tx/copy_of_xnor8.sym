@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="xnor8">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2000-1-1T10:10:10</timestamp>
+    <attr value="XNOR8_HXILINX" name="VeriModel" />
+    <attr value="Copy Of Symbol With Level: HXILINX" name="Level" />
+    <attr value="XNOR8_HXILINX" name="VhdlModel" />
+    <attr value="2.0.0" name="Libver" />
+    <pin polarity="Input" x="0" y="-64" name="I0" />
+    <pin polarity="Input" x="0" y="-128" name="I1" />
+    <pin polarity="Input" x="0" y="-192" name="I2" />
+    <pin polarity="Input" x="0" y="-256" name="I3" />
+    <pin polarity="Input" x="0" y="-320" name="I4" />
+    <pin polarity="Input" x="0" y="-384" name="I5" />
+    <pin polarity="Input" x="0" y="-448" name="I6" />
+    <pin polarity="Input" x="0" y="-512" name="I7" />
+    <pin polarity="Output" x="256" y="-288" name="O" />
+    <graph>
+        <arc ex="48" ey="-336" sx="48" sy="-240" r="56" cx="16" cy="-288" />
+        <arc ex="64" ey="-336" sx="64" sy="-240" r="56" cx="32" cy="-288" />
+        <line x2="48" y1="-128" y2="-128" x1="0" />
+        <line x2="48" y1="-192" y2="-192" x1="0" />
+        <line x2="64" y1="-256" y2="-256" x1="0" />
+        <line x2="60" y1="-320" y2="-320" x1="0" />
+        <line x2="48" y1="-384" y2="-384" x1="0" />
+        <arc ex="208" ey="-288" sx="128" sy="-240" r="88" cx="132" cy="-328" />
+        <arc ex="128" ey="-336" sx="208" sy="-288" r="88" cx="132" cy="-248" />
+        <line x2="64" y1="-240" y2="-240" x1="128" />
+        <line x2="64" y1="-336" y2="-336" x1="128" />
+        <line x2="48" y1="-64" y2="-64" x1="0" />
+        <line x2="48" y1="-448" y2="-448" x1="0" />
+        <line x2="48" y1="-512" y2="-512" x1="0" />
+        <line x2="48" y1="-64" y2="-240" x1="48" />
+        <line x2="48" y1="-336" y2="-512" x1="48" />
+        <text style="fontsize:24;fontname:Arial" x="60" y="-36">XNOR8</text>
+        <circle r="8" cx="220" cy="-288" />
+        <line x2="256" y1="-288" y2="-288" x1="228" />
+    </graph>
+</symbol>

@@ -1,0 +1,334 @@
+Release 14.2 Map P.28xd (nt64)
+Xilinx Mapping Report File for Design 'TX'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o TX_map.ncd TX.ngd TX.pcf 
+Target Device  : xc6slx4
+Target Package : tqg144
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Mon May 09 02:38:20 2016
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   11
+Slice Logic Utilization:
+  Number of Slice Registers:                     0 out of   4,800    0%
+  Number of Slice LUTs:                          0 out of   2,400    0%
+
+Slice Logic Distribution:
+  Number of occupied Slices:                     0 out of     600    0%
+  Nummber of MUXCYs used:                        0 out of   1,200    0%
+  Number of LUT Flip Flop pairs used:            0
+
+IO Utilization:
+  Number of bonded IOBs:                         1 out of     102    1%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of      12    0%
+  Number of RAMB8BWERs:                          0 out of      24    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       0 out of      16    0%
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     200    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     200    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     200    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of       8    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Peak Memory Usage:  360 MB
+Total REAL time to MAP completion:  21 secs 
+Total CPU time to MAP completion:   13 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal D0 connected to top level port D0 has been removed.
+WARNING:MapLib:701 - Signal D1 connected to top level port D1 has been removed.
+WARNING:MapLib:701 - Signal D2 connected to top level port D2 has been removed.
+WARNING:MapLib:701 - Signal D3 connected to top level port D3 has been removed.
+WARNING:MapLib:701 - Signal D4 connected to top level port D4 has been removed.
+WARNING:MapLib:701 - Signal D5 connected to top level port D5 has been removed.
+WARNING:MapLib:701 - Signal D6 connected to top level port D6 has been removed.
+WARNING:MapLib:701 - Signal D7 connected to top level port D7 has been removed.
+WARNING:MapLib:701 - Signal Logic_0 connected to top level port Logic_0 has been
+   removed.
+WARNING:MapLib:701 - Signal Logic_1 connected to top level port Logic_1 has been
+   removed.
+WARNING:MapLib:701 - Signal TX connected to top level port TX has been removed.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network XLXN_134 has no load.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  69 block(s) removed
+   2 block(s) optimized away
+  70 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "XLXI_100/N01" is sourceless and has been removed.
+ Sourceless block "XLXI_100/Mxor_O_xo<0>" (ROM) removed.
+  The signal "XLXN_220" is sourceless and has been removed.
+   Sourceless block "XLXI_109" (AND) removed.
+    The signal "XLXN_225" is sourceless and has been removed.
+     Sourceless block "XLXI_117" (OR) removed.
+      The signal "XLXN_226" is sourceless and has been removed.
+       Sourceless block "XLXI_113" (FF) removed.
+        The signal "XLXN_198" is sourceless and has been removed.
+         Sourceless block "XLXI_114" (AND) removed.
+          The signal "XLXN_201" is sourceless and has been removed.
+           Sourceless block "XLXI_116" (OR) removed.
+            The signal "XLXN_148" is sourceless and has been removed.
+             Sourceless block "XLXI_1" (FF) removed.
+              The signal "XLXN_1" is sourceless and has been removed.
+               Sourceless block "XLXI_15" (AND) removed.
+                The signal "XLXN_3" is sourceless and has been removed.
+                 Sourceless block "XLXI_17" (OR) removed.
+                  The signal "XLXN_5" is sourceless and has been removed.
+                   Sourceless block "XLXI_2" (FF) removed.
+                    The signal "XLXN_8" is sourceless and has been removed.
+                     Sourceless block "XLXI_18" (AND) removed.
+                      The signal "XLXN_10" is sourceless and has been removed.
+                       Sourceless block "XLXI_20" (OR) removed.
+                        The signal "XLXN_11" is sourceless and has been removed.
+                         Sourceless block "XLXI_4" (FF) removed.
+                          The signal "XLXN_15" is sourceless and has been removed.
+                           Sourceless block "XLXI_21" (AND) removed.
+                            The signal "XLXN_17" is sourceless and has been removed.
+                             Sourceless block "XLXI_23" (OR) removed.
+                              The signal "XLXN_19" is sourceless and has been removed.
+                               Sourceless block "XLXI_6" (FF) removed.
+                                The signal "XLXN_25" is sourceless and has been removed.
+                                 Sourceless block "XLXI_26" (AND) removed.
+                                  The signal "XLXN_24" is sourceless and has been removed.
+                                   Sourceless block "XLXI_28" (OR) removed.
+                                    The signal "XLXN_26" is sourceless and has been removed.
+                                     Sourceless block "XLXI_14" (FF) removed.
+                                      The signal "XLXN_32" is sourceless and has been removed.
+                                       Sourceless block "XLXI_29" (AND) removed.
+                                        The signal "XLXN_106" is sourceless and has been removed.
+                                         Sourceless block "XLXI_89" (OR) removed.
+                                          The signal "XLXN_107" is sourceless and has been removed.
+                                           Sourceless block "XLXI_13" (FF) removed.
+                                            The signal "XLXN_37" is sourceless and has been removed.
+                                             Sourceless block "XLXI_32" (AND) removed.
+                                              The signal "XLXN_36" is sourceless and has been removed.
+                                               Sourceless block "XLXI_35" (OR) removed.
+                                                The signal "XLXN_40" is sourceless and has been removed.
+                                                 Sourceless block "XLXI_5" (FF) removed.
+*The signal "XLXN_112" is sourceless and has been removed.
+* Sourceless block "XLXI_90" (AND) removed.
+*  The signal "XLXN_115" is sourceless and has been removed.
+*   Sourceless block "XLXI_88" (OR) removed.
+*    The signal "XLXN_116" is sourceless and has been removed.
+*     Sourceless block "XLXI_3" (FF) removed.
+*      The signal "XLXN_238" is sourceless and has been removed.
+*       Sourceless block "XLXI_121" (AND) removed.
+*        The signal "XLXN_229" is sourceless and has been removed.
+*         Sourceless block "XLXI_119" (OR) removed.
+*          The signal "XLXN_228" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "D0_IBUF" is unused and has been removed.
+ Unused block "D0_IBUF" (BUF) removed.
+  The signal "D0" is unused and has been removed.
+   Unused block "D0" (PAD) removed.
+The signal "D1_IBUF" is unused and has been removed.
+ Unused block "D1_IBUF" (BUF) removed.
+  The signal "D1" is unused and has been removed.
+   Unused block "D1" (PAD) removed.
+The signal "D2_IBUF" is unused and has been removed.
+ Unused block "D2_IBUF" (BUF) removed.
+  The signal "D2" is unused and has been removed.
+   Unused block "D2" (PAD) removed.
+The signal "D3_IBUF" is unused and has been removed.
+ Unused block "D3_IBUF" (BUF) removed.
+  The signal "D3" is unused and has been removed.
+   Unused block "D3" (PAD) removed.
+The signal "D4_IBUF" is unused and has been removed.
+ Unused block "D4_IBUF" (BUF) removed.
+  The signal "D4" is unused and has been removed.
+   Unused block "D4" (PAD) removed.
+The signal "D5_IBUF" is unused and has been removed.
+ Unused block "D5_IBUF" (BUF) removed.
+  The signal "D5" is unused and has been removed.
+   Unused block "D5" (PAD) removed.
+The signal "D6_IBUF" is unused and has been removed.
+ Unused block "D6_IBUF" (BUF) removed.
+  The signal "D6" is unused and has been removed.
+   Unused block "D6" (PAD) removed.
+The signal "D7_IBUF" is unused and has been removed.
+ Unused block "D7_IBUF" (BUF) removed.
+  The signal "D7" is unused and has been removed.
+   Unused block "D7" (PAD) removed.
+The signal "Logic_0_IBUF" is unused and has been removed.
+ Unused block "Logic_0_IBUF" (BUF) removed.
+  The signal "Logic_0" is unused and has been removed.
+   Unused block "Logic_0" (PAD) removed.
+The signal "Logic_1_IBUF" is unused and has been removed.
+ Unused block "Logic_1_IBUF" (BUF) removed.
+  The signal "Logic_1" is unused and has been removed.
+   Unused block "Logic_1" (PAD) removed.
+The signal "TX_IBUF" is unused and has been removed.
+ Unused block "TX_IBUF" (BUF) removed.
+  The signal "TX" is unused and has been removed.
+   Unused block "TX" (PAD) removed.
+The signal "XLXN_114" is unused and has been removed.
+ Unused block "XLXI_87" (AND) removed.
+  The signal "XLXN_117" is unused and has been removed.
+   Unused block "XLXI_91" (BUF) removed.
+The signal "XLXN_35" is unused and has been removed.
+ Unused block "XLXI_33" (AND) removed.
+The signal "XLXN_105" is unused and has been removed.
+ Unused block "XLXI_30" (AND) removed.
+The signal "XLXN_23" is unused and has been removed.
+ Unused block "XLXI_27" (AND) removed.
+The signal "XLXN_16" is unused and has been removed.
+ Unused block "XLXI_22" (AND) removed.
+The signal "XLXN_9" is unused and has been removed.
+ Unused block "XLXI_19" (AND) removed.
+The signal "XLXN_2" is unused and has been removed.
+ Unused block "XLXI_16" (AND) removed.
+The signal "XLXN_200" is unused and has been removed.
+ Unused block "XLXI_115" (AND) removed.
+  The signal "XLXN_195" is unused and has been removed.
+   Unused block "XLXI_110" (BUF) removed.
+The signal "XLXN_230" is unused and has been removed.
+ Unused block "XLXI_120" (AND) removed.
+  The signal "XLXN_231" is unused and has been removed.
+   Unused block "XLXI_122" (BUF) removed.
+The signal "XLXN_224" is unused and has been removed.
+ Unused block "XLXI_111" (AND) removed.
+The signal "XLXN_127" is unused and has been removed.
+ Unused block "XLXI_93/XST_GND" (ZERO) removed.
+The signal "XLXN_134" is unused and has been removed.
+ Unused block "XLXI_96" (BUF) removed.
+The signal "XLXN_132" is unused and has been removed.
+ Unused block "XLXI_94" (AND) removed.
+The signal "XLXI_118_CLR_openSignal" is unused and has been removed.
+Unused block "XLXI_100/Mxor_O_xo<0>_SW0" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+FD 		XLXI_118
+   optimized to 0
+GND 		XST_GND
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Serial_OUT                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

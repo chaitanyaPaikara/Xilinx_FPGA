@@ -1,0 +1,40 @@
+Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/tx_tx_sch_tb_isim_beh.exe -prj C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/tx_tx_sch_tb_beh.prj work.tx_tx_sch_tb work.glbl 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.vf" into library work
+Analyzing Verilog file "C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/LOGIC_INPUT.vf" into library work
+Analyzing Verilog file "C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/tx.vf" into library work
+Analyzing Verilog file "C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/USART_TX.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module AND2
+Compiling module OR2
+Compiling module INV
+Compiling module FDCE
+Compiling module FMAP
+Compiling module XOR2
+Compiling module XOR4
+Compiling module XOR8_MXILINX_tx
+Compiling module AND2B1
+Compiling module M2_1_MXILINX_tx
+Compiling module PISO_MUSER_tx
+Compiling module NOR2
+Compiling module FTCE_MXILINX_tx
+Compiling module AND4
+Compiling module AND3
+Compiling module VCC
+Compiling module CB4CE_MXILINX_tx
+Compiling module PULLDOWN
+Compiling module LOGIC_INPUT_MUSER_tx
+Compiling module tx
+Compiling module tx_tx_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 22 Verilog Units
+Built simulation executable C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/tx_tx_sch_tb_isim_beh.exe
+Fuse Memory Usage: 28664 KB
+Fuse CPU Usage: 1827 ms

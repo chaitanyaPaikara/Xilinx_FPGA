@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl PWM_drc.vhf -w {C:/Users/Chaitanya Paikara/Downloads/Akash_Driver_v1/Akash_Driver_v1/PWM.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym PWM {C:/Users/Chaitanya Paikara/Downloads/Akash_Driver_v1/Akash_Driver_v1/PWM.sch} {C:/Users/Chaitanya Paikara/Downloads/Akash_Driver_v1/Akash_Driver_v1/PWM.sym} 

@@ -1,0 +1,25 @@
+sch2hdl -intstyle ise -family spartan3e -verilog PISO_drc.vf -w {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym PISO {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sym} 
+sch2hdl -intstyle ise -family spartan3e -verilog PISO_drc.vf -w {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym PISO {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sym} 
+sch2sym -intstyle ise -family spartan3e -w -refsym PISO {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sym} 
+sch2hdl -intstyle ise -family spartan3e -verilog PISO_drc.vf -w {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym PISO {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sym} 
+sch2hdl -intstyle ise -family spartan3e -verilog PISO_drc.vf -w {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym PISO {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sym} 
+sch2hdl -intstyle ise -family spartan3e -verilog PISO_drc.vf -w {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym PISO {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sym} 
+sch2hdl -intstyle ise -family spartan3e -verilog PISO_drc.vf -w {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym PISO {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sym} 
+sch2hdl -intstyle ise -family spartan3e -verilog PISO_drc.vf -w {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym PISO {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sym} 
+sch2hdl -intstyle ise -family spartan3e -verilog PISO_drc.vf -w {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym PISO {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sym} 
+sch2hdl -intstyle ise -family spartan3e -verilog PISO_drc.vf -w {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym PISO {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sym} 
+sch2hdl -intstyle ise -family spartan3e -verilog PISO_drc.vf -w {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym PISO {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sym} 
+sch2hdl -intstyle ise -family spartan3e -verilog PISO_drc.vf -w {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym PISO {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sym} 
+sch2hdl -intstyle ise -family spartan3e -verilog PISO_drc.vf -w {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym PISO {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sch} {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/PISO.sym} 

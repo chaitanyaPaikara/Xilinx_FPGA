@@ -1,0 +1,9 @@
+[Inputs]
+=Data_A[3:0]=
+=Data_B[3:0]=
+[Outputs]
+=Product[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Code
+
