@@ -1,0 +1,18 @@
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.v} -lang verilog -prj I2C -o Code_V2.spl -module Code_V2 -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Code_V2.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.sym} 
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.v} -lang verilog -prj I2C -o Code_V2.spl -module Code_V2 -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Code_V2.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.sym} 
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.v} -lang verilog -prj I2C -o Code_V2.spl -module Code_V2 -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Code_V2.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.sym} 
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.v} -lang verilog -prj I2C -o Code_V2.spl -module Code_V2 -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Code_V2.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.sym} 
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.v} -lang verilog -prj I2C -o Code_V2.spl -module Code_V2 -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Code_V2.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.sym} 
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.v} -lang verilog -prj I2C -o Code_V2.spl -module Code_V2 -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Code_V2.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.sym} 
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.v} -lang verilog -prj I2C -o Code_V2.spl -module Code_V2 -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Code_V2.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.sym} 
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.v} -lang verilog -prj I2C -o Code_V2.spl -module Code_V2 -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Code_V2.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.sym} 
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.v} -lang verilog -prj I2C -o Code_V2.spl -module Code_V2 -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Code_V2.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Code_V2.sym} 

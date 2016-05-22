@@ -1,0 +1,25 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2sym -intstyle ise -family spartan3e -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2sym -intstyle ise -family spartan3e -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 

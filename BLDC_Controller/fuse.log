@@ -1,13 +1,13 @@
-Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Chaitanya Paikara/Documents/Xilinx_FPGA/BLDC_Controller/MAIN_MAIN_sch_tb_isim_beh.exe -prj C:/Users/Chaitanya Paikara/Documents/Xilinx_FPGA/BLDC_Controller/MAIN_MAIN_sch_tb_beh.prj work.MAIN_MAIN_sch_tb work.glbl 
+Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_MAIN_sch_tb_isim_beh.exe -prj C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_MAIN_sch_tb_beh.prj work.MAIN_MAIN_sch_tb work.glbl 
 ISim P.28xd (signature 0xa0883be4)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/Chaitanya Paikara/Documents/Xilinx_FPGA/BLDC_Controller/Main.v" into library work
+Analyzing Verilog file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Main.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
-Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/Xilinx_FPGA/BLDC_Controller/PWM.vhf" into library work
-Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/Xilinx_FPGA/BLDC_Controller/Commutation.vhf" into library work
-Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" into library work
+Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" into library work
+Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Commutation.vhf" into library work
+Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling module MAIN_MAIN_sch_tb
@@ -40,9 +40,9 @@ Compiling architecture behavioral of entity OR6_MXILINX_MAIN [or6_mxilinx_main_d
 Compiling architecture behavioral of entity DEADTIME_MUSER_MAIN [deadtime_muser_main_default]
 Compiling architecture behavioral of entity MAIN [main_default]
 Time Resolution for simulation is 1ps.
-Waiting for 2 sub-compilation(s) to finish...
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 50 VHDL Units
 Compiled 2 Verilog Units
-Built simulation executable C:/Users/Chaitanya Paikara/Documents/Xilinx_FPGA/BLDC_Controller/MAIN_MAIN_sch_tb_isim_beh.exe
-Fuse Memory Usage: 48912 KB
-Fuse CPU Usage: 1421 ms
+Built simulation executable C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_MAIN_sch_tb_isim_beh.exe
+Fuse Memory Usage: 48512 KB
+Fuse CPU Usage: 952 ms

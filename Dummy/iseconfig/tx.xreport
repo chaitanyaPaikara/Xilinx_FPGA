@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-05-17T18:05:20</DateModified>
+  <DateModified>2016-05-22T01:15:24</DateModified>
   <ModuleName>tx</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Chaitanya Paikara/Documents/Xilinx_FPGA/Dummy/iseconfig/tx.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Chaitanya Paikara/Documents/Xilinx_FPGA/Dummy\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/iseconfig/tx.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy\</ImplementationReportsDirectory>
   <DateInitialized>2016-05-09T23:22:20</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

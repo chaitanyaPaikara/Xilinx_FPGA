@@ -1,0 +1,5 @@
+verilog work "Slave.v"
+verilog work "Code_V2.v"
+vhdl work "Main.vhf"
+verilog work "Main_TB.v"
+verilog work "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v"
