@@ -1,0 +1,10 @@
+[Inputs]
+CLK
+=Data[7:0]=
+=Address[7:0]=
+[Outputs]
+[BiDir]
+SDA
+[ATTRIBUTES]
+VeriModel Code_V2
+

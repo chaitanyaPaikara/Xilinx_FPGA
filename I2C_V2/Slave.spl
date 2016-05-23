@@ -1,0 +1,10 @@
+[Inputs]
+CLK
+=Data_IN[7:0]=
+[Outputs]
+=Data_OUT[7:0]=
+[BiDir]
+SDA
+[ATTRIBUTES]
+VeriModel Slave
+

@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/xst"
+elaborate
+-ifn test.prj
+-ifmt mixed
