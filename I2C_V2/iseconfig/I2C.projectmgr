@@ -9,13 +9,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Main (C:/Users/Chaitanya Paikara/Downloads/I2C/Main.sch)</SelectedItem>
+         <SelectedItem>Main (C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C_V2/Main.sch)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000f5000000020000000000000000000000000200000064ffffffff000000810000000300000002000000f50000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Main (C:/Users/Chaitanya Paikara/Downloads/I2C/Main.sch)</CurrentItem>
+      <CurrentItem>Main (C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C_V2/Main.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -38,7 +38,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000011f000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d00000001000000000000002100000001000000000000005d0000000100000000000000640000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002e3000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d00000001000000000000002100000001000000000000005d0000000100000000000002280000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Code.v</CurrentItem>
    </ItemView>
@@ -96,13 +96,13 @@
          <ClosedNode>/Slave_TB_2 C:|Users|Chaitanya Paikara|Downloads|I2C|Slave_TB_2.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Main_Main_sch_tb (C:/Users/Chaitanya Paikara/Downloads/I2C/Main_TB.v)</SelectedItem>
+         <SelectedItem>Main_Main_sch_tb (C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C_V2/Main_TB.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000109000000020000000000000000000000000200000064ffffffff000000810000000300000002000001090000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Main_Main_sch_tb (C:/Users/Chaitanya Paikara/Downloads/I2C/Main_TB.v)</CurrentItem>
+      <CurrentItem>Main_Main_sch_tb (C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C_V2/Main_TB.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -145,7 +145,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e70000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Create Schematic Symbol</CurrentItem>
    </ItemView>

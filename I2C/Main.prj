@@ -1,0 +1,3 @@
+verilog work "Slave.v"
+verilog work "Code_V2.v"
+vhdl work "Main.vhf"

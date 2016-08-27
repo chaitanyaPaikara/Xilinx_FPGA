@@ -27,3 +27,7 @@ sch2hdl -intstyle ise -family spartan3e -verilog tx_drc.vf -w {C:/Users/Chaitany
 sch2sym -intstyle ise -family spartan3e -w -refsym tx {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/tx.sch} {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/tx.sym} 
 sch2hdl -intstyle ise -family spartan3e -verilog tx_drc.vf -w {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/tx.sch} 
 sch2sym -intstyle ise -family spartan3e -w -refsym tx {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/tx.sch} {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/tx.sym} 
+sch2hdl -intstyle ise -family spartan3e -verilog tx_drc.vf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/tx.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym tx {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/tx.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/tx.sym} 
+sch2hdl -intstyle ise -family spartan3e -verilog tx_drc.vf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/tx.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym tx {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/tx.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/tx.sym} 

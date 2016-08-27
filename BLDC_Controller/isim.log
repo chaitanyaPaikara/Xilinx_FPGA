@@ -1,7 +1,9 @@
 ISim log file
-Running: C:\Users\Chaitanya Paikara\Documents\GitHub\Xilinx_FPGA\BLDC_Controller\MAIN_MAIN_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_MAIN_sch_tb_isim_beh.wdb 
+Running: C:\Users\Chaitanya Paikara\Documents\GitHub\Xilinx_FPGA\BLDC_Controller\MAIN_MAIN_sch_tb_isim_par.exe -intstyle ise -gui -sdfmax /UUT/=netgen/par/MAIN_timesim.sdf -sdfroot /UUT -tclbatch isim.cmd -wdb C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_MAIN_sch_tb_isim_par.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
 ISim P.28xd (signature 0xa0883be4)
 This is a Full version of ISim.
+INFO: SDF backannotation was successful with SDF file netgen/par/MAIN_timesim.sdf, for root module /UUT/.
 Time resolution is 1 ps
 # onerror resume
 # wave add /

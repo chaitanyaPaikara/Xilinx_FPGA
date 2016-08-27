@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Main.v";
+static const char *ng0 = "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/BLDC_TestBench.v";
 static int ng1[] = {0, 0};
 static int ng2[] = {1, 0};
 
@@ -55,11 +55,11 @@ LAB2:    xsi_set_current_line(48, ng0);
     t2 = (t0 + 2888);
     xsi_vlogvar_assign_value(t2, t1, 0, 0, 1);
     xsi_set_current_line(53, ng0);
-    t1 = ((char*)((ng2)));
+    t1 = ((char*)((ng1)));
     t2 = (t0 + 3048);
     xsi_vlogvar_assign_value(t2, t1, 0, 0, 1);
     xsi_set_current_line(54, ng0);
-    t1 = ((char*)((ng1)));
+    t1 = ((char*)((ng2)));
     t2 = (t0 + 3208);
     xsi_vlogvar_assign_value(t2, t1, 0, 0, 1);
     xsi_set_current_line(55, ng0);

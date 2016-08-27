@@ -24,3 +24,5 @@ sch2hdl -intstyle ise -family spartan3e -verilog LOGIC_INPUT_drc.vf -w {C:/Users
 sch2sym -intstyle ise -family spartan3e -w -refsym LOGIC_INPUT {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/LOGIC_INPUT.sch} {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/LOGIC_INPUT.sym} 
 sch2hdl -intstyle ise -family spartan3e -verilog LOGIC_INPUT_drc.vf -w {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/LOGIC_INPUT.sch} 
 sch2sym -intstyle ise -family spartan3e -w -refsym LOGIC_INPUT {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/LOGIC_INPUT.sch} {C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/LOGIC_INPUT.sym} 
+sch2hdl -intstyle ise -family spartan3e -verilog LOGIC_INPUT_drc.vf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/LOGIC_INPUT.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym LOGIC_INPUT {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/LOGIC_INPUT.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/LOGIC_INPUT.sym} 

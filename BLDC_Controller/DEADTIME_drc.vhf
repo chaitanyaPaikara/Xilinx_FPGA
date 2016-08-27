@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.2
 --  \   \         Application : sch2hdl
 --  /   /         Filename : DEADTIME_drc.vhf
--- /___/   /\     Timestamp : 05/12/2016 21:48:22
+-- /___/   /\     Timestamp : 08/17/2016 23:27:57
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt\unwrapped\sch2hdl.exe -intstyle ise -family spartan3e -flat -suppress -vhdl DEADTIME_drc.vhf -w "C:/Users/Chaitanya Paikara/Downloads/Akash_Driver_v1/Akash_Driver_v1/DEADTIME.sch"
+--Command: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan3e -flat -suppress -vhdl DEADTIME_drc.vhf -w "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/DEADTIME.sch"
 --Design Name: DEADTIME
 --Device: spartan3e
 --Purpose:

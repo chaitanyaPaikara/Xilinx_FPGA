@@ -1,0 +1,173 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.2
+//  \   \         Application : sch2hdl
+//  /   /         Filename : NeW_LOGIC_INPUT.vf
+// /___/   /\     Timestamp : 05/28/2016 13:08:24
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/NeW_LOGIC_INPUT.vf" -w "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/NeW_LOGIC_INPUT.sch"
+//Design Name: NeW_LOGIC_INPUT
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module FTCE_MXILINX_NeW_LOGIC_INPUT(C, 
+                                    CE, 
+                                    CLR, 
+                                    T, 
+                                    Q);
+
+   parameter INIT = 1'b0;
+   
+    input C;
+    input CE;
+    input CLR;
+    input T;
+   output Q;
+   
+   wire TQ;
+   wire Q_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   XOR2  I_36_32 (.I0(T), 
+                 .I1(Q_DUMMY), 
+                 .O(TQ));
+   (* RLOC = "X0Y0" *) 
+   FDCE  I_36_35 (.C(C), 
+                 .CE(CE), 
+                 .CLR(CLR), 
+                 .D(TQ), 
+                 .Q(Q_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module CB4CE_MXILINX_NeW_LOGIC_INPUT(C, 
+                                     CE, 
+                                     CLR, 
+                                     CEO, 
+                                     Q0, 
+                                     Q1, 
+                                     Q2, 
+                                     Q3, 
+                                     TC);
+
+    input C;
+    input CE;
+    input CLR;
+   output CEO;
+   output Q0;
+   output Q1;
+   output Q2;
+   output Q3;
+   output TC;
+   
+   wire T2;
+   wire T3;
+   wire XLXN_1;
+   wire Q0_DUMMY;
+   wire Q1_DUMMY;
+   wire Q2_DUMMY;
+   wire Q3_DUMMY;
+   wire TC_DUMMY;
+   
+   assign Q0 = Q0_DUMMY;
+   assign Q1 = Q1_DUMMY;
+   assign Q2 = Q2_DUMMY;
+   assign Q3 = Q3_DUMMY;
+   assign TC = TC_DUMMY;
+   (* HU_SET = "I_Q0_0" *) 
+   FTCE_MXILINX_NeW_LOGIC_INPUT #( .INIT(1'b0) ) I_Q0 (.C(C), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .T(XLXN_1), 
+                                      .Q(Q0_DUMMY));
+   (* HU_SET = "I_Q1_1" *) 
+   FTCE_MXILINX_NeW_LOGIC_INPUT #( .INIT(1'b0) ) I_Q1 (.C(C), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .T(Q0_DUMMY), 
+                                      .Q(Q1_DUMMY));
+   (* HU_SET = "I_Q2_2" *) 
+   FTCE_MXILINX_NeW_LOGIC_INPUT #( .INIT(1'b0) ) I_Q2 (.C(C), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .T(T2), 
+                                      .Q(Q2_DUMMY));
+   (* HU_SET = "I_Q3_3" *) 
+   FTCE_MXILINX_NeW_LOGIC_INPUT #( .INIT(1'b0) ) I_Q3 (.C(C), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .T(T3), 
+                                      .Q(Q3_DUMMY));
+   AND4  I_36_31 (.I0(Q3_DUMMY), 
+                 .I1(Q2_DUMMY), 
+                 .I2(Q1_DUMMY), 
+                 .I3(Q0_DUMMY), 
+                 .O(TC_DUMMY));
+   AND3  I_36_32 (.I0(Q2_DUMMY), 
+                 .I1(Q1_DUMMY), 
+                 .I2(Q0_DUMMY), 
+                 .O(T3));
+   AND2  I_36_33 (.I0(Q1_DUMMY), 
+                 .I1(Q0_DUMMY), 
+                 .O(T2));
+   VCC  I_36_58 (.P(XLXN_1));
+   AND2  I_36_67 (.I0(CE), 
+                 .I1(TC_DUMMY), 
+                 .O(CEO));
+endmodule
+`timescale 1ns / 1ps
+
+module NeW_LOGIC_INPUT(CLK, 
+                       HIGH, 
+                       TX, 
+                       TX_OUT);
+
+    input CLK;
+    input HIGH;
+    input TX;
+   output TX_OUT;
+   
+   wire RESET;
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_14;
+   
+   (* HU_SET = "XLXI_1_4" *) 
+   CB4CE_MXILINX_NeW_LOGIC_INPUT  XLXI_1 (.C(CLK), 
+                                         .CE(XLXN_14), 
+                                         .CLR(RESET), 
+                                         .CEO(), 
+                                         .Q0(XLXN_1), 
+                                         .Q1(XLXN_2), 
+                                         .Q2(XLXN_3), 
+                                         .Q3(XLXN_5), 
+                                         .TC());
+   AND4  XLXI_4 (.I0(XLXN_5), 
+                .I1(XLXN_4), 
+                .I2(XLXN_2), 
+                .I3(XLXN_1), 
+                .O(RESET));
+   INV  XLXI_5 (.I(XLXN_3), 
+               .O(XLXN_4));
+   LDC #( .INIT(1'b0) ) XLXI_10 (.CLR(RESET), 
+                .D(HIGH), 
+                .G(TX), 
+                .Q(XLXN_14));
+   LDC #( .INIT(1'b0) ) XLXI_11 (.CLR(RESET), 
+                .D(HIGH), 
+                .G(TX), 
+                .Q(TX_OUT));
+endmodule

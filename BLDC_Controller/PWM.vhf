@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.2
 --  \   \         Application : sch2hdl
 --  /   /         Filename : PWM.vhf
--- /___/   /\     Timestamp : 05/12/2016 19:01:23
+-- /___/   /\     Timestamp : 08/18/2016 00:28:13
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Chaitanya Paikara/Downloads/Akash_Driver_v1/Akash_Driver_v1/PWM.vhf" -w "C:/Users/Chaitanya Paikara/Downloads/Akash_Driver_v1/Akash_Driver_v1/PWM.sch"
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" -w "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.sch"
 --Design Name: PWM
 --Device: spartan3e
 --Purpose:
@@ -218,29 +218,31 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity PWM is
-   port ( CE  : in    std_logic; 
-          CLK : in    std_logic; 
-          D0  : in    std_logic; 
-          D1  : in    std_logic; 
-          D2  : in    std_logic; 
-          D3  : in    std_logic; 
-          PWM : out   std_logic);
+   port ( CE      : in    std_logic; 
+          CLK     : in    std_logic; 
+          D0      : in    std_logic; 
+          D1      : in    std_logic; 
+          D2      : in    std_logic; 
+          D3      : in    std_logic; 
+          PWM     : out   std_logic; 
+          XLXN_37 : out   std_logic; 
+          XLXN_38 : out   std_logic);
 end PWM;
 
 architecture BEHAVIORAL of PWM is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal XLXN_12               : std_logic;
-   signal XLXN_13               : std_logic;
-   signal XLXN_14               : std_logic;
-   signal XLXN_15               : std_logic;
-   signal XLXN_24               : std_logic;
-   signal XLXN_25               : std_logic;
-   signal XLXN_26               : std_logic;
-   signal XLXN_27               : std_logic;
-   signal XLXN_28               : std_logic;
-   signal XLXN_32               : std_logic;
-   signal XLXI_1_CLR_openSignal : std_logic;
+   signal XLXN_12 : std_logic;
+   signal XLXN_13 : std_logic;
+   signal XLXN_14 : std_logic;
+   signal XLXN_15 : std_logic;
+   signal XLXN_24 : std_logic;
+   signal XLXN_25 : std_logic;
+   signal XLXN_26 : std_logic;
+   signal XLXN_27 : std_logic;
+   signal XLXN_28 : std_logic;
+   signal XLXN_32 : std_logic;
+   signal XLXN_36 : std_logic;
    component CB4CE_MXILINX_PWM
       port ( C   : in    std_logic; 
              CE  : in    std_logic; 
@@ -287,18 +289,23 @@ architecture BEHAVIORAL of PWM is
    end component;
    attribute BOX_TYPE of NOR4 : component is "BLACK_BOX";
    
+   component GND
+      port ( G : out   std_logic);
+   end component;
+   attribute BOX_TYPE of GND : component is "BLACK_BOX";
+   
    attribute HU_SET of XLXI_1 : label is "XLXI_1_4";
 begin
    XLXI_1 : CB4CE_MXILINX_PWM
       port map (C=>CLK,
                 CE=>CE,
-                CLR=>XLXI_1_CLR_openSignal,
-                CEO=>open,
+                CLR=>XLXN_36,
+                CEO=>XLXN_37,
                 Q0=>XLXN_24,
                 Q1=>XLXN_25,
                 Q2=>XLXN_26,
                 Q3=>XLXN_27,
-                TC=>open);
+                TC=>XLXN_38);
    
    XLXI_2 : XNOR2
       port map (I0=>XLXN_24,
@@ -339,6 +346,9 @@ begin
                 I2=>XLXN_25,
                 I3=>XLXN_24,
                 O=>XLXN_28);
+   
+   XLXI_13 : GND
+      port map (G=>XLXN_36);
    
 end BEHAVIORAL;
 

@@ -5,43 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="863" delta="old" >&quot;<arg fmt="%s" index="1">../../../../Downloads/Code.v</arg>&quot; line <arg fmt="%d" index="2">28</arg>: Name conflict (<arg fmt="%s" index="3">&lt;ADDR&gt; and &lt;addr&gt;, renaming ADDR as addr_rnm0</arg>).
-</msg>
-
-<msg type="warning" file="Xst" num="863" delta="old" >&quot;<arg fmt="%s" index="1">../../../../Downloads/Code.v</arg>&quot; line <arg fmt="%d" index="2">27</arg>: Name conflict (<arg fmt="%s" index="3">&lt;DATA&gt; and &lt;data&gt;, renaming DATA as data_rnm0</arg>).
-</msg>
-
-<msg type="error" file="Xst" num="850" delta="old" >&quot;<arg fmt="%s" index="1">../../../../Downloads/Code.v</arg>&quot; line <arg fmt="%d" index="2">43</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
-</msg>
-
-<msg type="error" file="Xst" num="850" delta="old" >&quot;<arg fmt="%s" index="1">../../../../Downloads/Code.v</arg>&quot; line <arg fmt="%d" index="2">71</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
-</msg>
-
-<msg type="error" file="Xst" num="850" delta="old" >&quot;<arg fmt="%s" index="1">../../../../Downloads/Code.v</arg>&quot; line <arg fmt="%d" index="2">55</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
-</msg>
-
-<msg type="error" file="Xst" num="850" delta="old" >&quot;<arg fmt="%s" index="1">../../../../Downloads/Code.v</arg>&quot; line <arg fmt="%d" index="2">56</arg>: Unsupported <arg fmt="%s" index="3">Fork Statement</arg>. 
-</msg>
-
-<msg type="error" file="Xst" num="850" delta="old" >&quot;<arg fmt="%s" index="1">../../../../Downloads/Code.v</arg>&quot; line <arg fmt="%d" index="2">82</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
-</msg>
-
-<msg type="error" file="Xst" num="850" delta="old" >&quot;<arg fmt="%s" index="1">../../../../Downloads/Code.v</arg>&quot; line <arg fmt="%d" index="2">55</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
-</msg>
-
-<msg type="error" file="Xst" num="850" delta="old" >&quot;<arg fmt="%s" index="1">../../../../Downloads/Code.v</arg>&quot; line <arg fmt="%d" index="2">56</arg>: Unsupported <arg fmt="%s" index="3">Fork Statement</arg>. 
-</msg>
-
-<msg type="error" file="Xst" num="850" delta="old" >&quot;<arg fmt="%s" index="1">../../../../Downloads/Code.v</arg>&quot; line <arg fmt="%d" index="2">43</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
-</msg>
-
-<msg type="error" file="Xst" num="850" delta="old" >&quot;<arg fmt="%s" index="1">../../../../Downloads/Code.v</arg>&quot; line <arg fmt="%d" index="2">71</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
-</msg>
-
-<msg type="error" file="Xst" num="850" delta="old" >&quot;<arg fmt="%s" index="1">../../../../Downloads/Code.v</arg>&quot; line <arg fmt="%d" index="2">55</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
-</msg>
-
-<msg type="error" file="Xst" num="850" delta="old" >&quot;<arg fmt="%s" index="1">../../../../Downloads/Code.v</arg>&quot; line <arg fmt="%d" index="2">56</arg>: Unsupported <arg fmt="%s" index="3">Fork Statement</arg>. 
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">100</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
 </msg>
 
 </messages>

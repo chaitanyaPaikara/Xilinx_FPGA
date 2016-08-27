@@ -1,0 +1,26 @@
+Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/NeW_LOGIC_INPUT_isim_beh.exe -prj C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/NeW_LOGIC_INPUT_beh.prj work.NeW_LOGIC_INPUT work.glbl 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/NeW_LOGIC_INPUT.vf" into library work
+Analyzing Verilog file "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module XOR2
+Compiling module FDCE
+Compiling module FTCE_MXILINX_NeW_LOGIC_INPUT
+Compiling module AND4
+Compiling module AND3
+Compiling module AND2
+Compiling module VCC
+Compiling module CB4CE_MXILINX_NeW_LOGIC_INPUT
+Compiling module INV
+Compiling module LDC
+Compiling module NeW_LOGIC_INPUT
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 12 Verilog Units
+Built simulation executable C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/NeW_LOGIC_INPUT_isim_beh.exe
+Fuse Memory Usage: 28300 KB
+Fuse CPU Usage: 530 ms

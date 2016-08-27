@@ -6,8 +6,7 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="TX_OUT">
-        </signal>
+        <signal name="TX_OUT" />
         <signal name="CLK" />
         <signal name="TX" />
         <signal name="SERIAL_OUT" />
@@ -37,12 +36,12 @@
         <port polarity="Input" name="STOP_Bit" />
         <port polarity="Input" name="CLR" />
         <blockdef name="LOGIC_INPUT">
-            <timestamp>2016-5-10T16:47:10</timestamp>
-            <rect width="256" x="64" y="-128" height="128" />
+            <timestamp>2016-5-28T7:9:37</timestamp>
+            <line x2="384" y1="32" y2="32" x1="320" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="256" x="64" y="-128" height="192" />
         </blockdef>
         <blockdef name="PISO">
             <timestamp>2016-5-10T16:24:36</timestamp>
@@ -82,7 +81,7 @@
             <blockpin signalname="CLK" name="CLK" />
             <blockpin signalname="TX" name="TX" />
             <blockpin signalname="TX_OUT" name="TX_OUT" />
-            <blockpin name="CLR" />
+            <blockpin name="RESET" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">

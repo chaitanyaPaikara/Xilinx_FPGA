@@ -1,0 +1,3 @@
+verilog isim_temp "NeW_LOGIC_INPUT.vf"
+verilog isim_temp "NEW_LOGIC_TB.v"
+verilog isim_temp "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v"

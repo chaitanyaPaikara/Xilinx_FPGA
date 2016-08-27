@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-05-23T19:11:44</DateModified>
+  <DateModified>2016-05-26T23:13:26</DateModified>
   <ModuleName>Main</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Chaitanya Paikara/Downloads/I2C/iseconfig/Main.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Chaitanya Paikara/Downloads/I2C\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C_V2/iseconfig/Main.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C_V2\</ImplementationReportsDirectory>
   <DateInitialized>2016-05-22T17:23:38</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

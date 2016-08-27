@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.2
 //  \   \         Application : sch2hdl
 //  /   /         Filename : LOGIC_INPUT.vf
-// /___/   /\     Timestamp : 05/10/2016 23:21:20
+// /___/   /\     Timestamp : 05/28/2016 12:42:40
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/LOGIC_INPUT.vf" -w "C:/Users/Chaitanya Paikara/Downloads/USART_Tx-2016-05-08/Dummy/LOGIC_INPUT.sch"
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/LOGIC_INPUT.vf" -w "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Dummy/LOGIC_INPUT.sch"
 //Design Name: LOGIC_INPUT
 //Device: spartan3e
 //Purpose:
@@ -129,12 +129,12 @@ endmodule
 
 module LOGIC_INPUT(CLK, 
                    TX, 
-                   CLR, 
+                   RESET, 
                    TX_OUT);
 
     input CLK;
     input TX;
-   output CLR;
+   output RESET;
    output TX_OUT;
    
    wire XLXN_3;
@@ -145,13 +145,13 @@ module LOGIC_INPUT(CLK,
    wire XLXN_9;
    wire XLXN_11;
    wire XLXN_12;
-   wire CLR_DUMMY;
+   wire RESET_DUMMY;
    wire TX_OUT_DUMMY;
    
-   assign CLR = CLR_DUMMY;
+   assign RESET = RESET_DUMMY;
    assign TX_OUT = TX_OUT_DUMMY;
    NOR2  XLXI_1 (.I0(XLXN_3), 
-                .I1(CLR_DUMMY), 
+                .I1(RESET_DUMMY), 
                 .O(TX_OUT_DUMMY));
    NOR2  XLXI_2 (.I0(TX), 
                 .I1(TX_OUT_DUMMY), 
@@ -159,7 +159,7 @@ module LOGIC_INPUT(CLK,
    (* HU_SET = "XLXI_3_4" *) 
    CB4CE_MXILINX_LOGIC_INPUT  XLXI_3 (.C(CLK), 
                                      .CE(XLXN_11), 
-                                     .CLR(CLR_DUMMY), 
+                                     .CLR(RESET_DUMMY), 
                                      .CEO(), 
                                      .Q0(XLXN_5), 
                                      .Q1(XLXN_6), 
@@ -170,15 +170,14 @@ module LOGIC_INPUT(CLK,
                 .I1(XLXN_8), 
                 .I2(XLXN_6), 
                 .I3(XLXN_5), 
-                .O(CLR_DUMMY));
+                .O(RESET_DUMMY));
    INV  XLXI_5 (.I(XLXN_7), 
                .O(XLXN_8));
    NOR2  XLXI_7 (.I0(XLXN_12), 
-                .I1(CLR_DUMMY), 
+                .I1(RESET_DUMMY), 
                 .O(XLXN_11));
    NOR2  XLXI_8 (.I0(TX), 
                 .I1(XLXN_11), 
                 .O(XLXN_12));
-   PULLDOWN  XLXI_11 (.O(CLR_DUMMY));
    PULLDOWN  XLXI_12 (.O(TX_OUT_DUMMY));
 endmodule

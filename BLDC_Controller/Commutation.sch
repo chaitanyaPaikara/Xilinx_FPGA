@@ -8,7 +8,6 @@
     <netlist>
         <signal name="H1" />
         <signal name="H2" />
-        <signal name="XLXN_3" />
         <signal name="H3" />
         <signal name="XLXN_36" />
         <signal name="XLXN_40" />

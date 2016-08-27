@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="DEAD_TIME">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2016-5-12T16:15:4</timestamp>
+    <timestamp>2016-8-17T18:54:23</timestamp>
     <pin polarity="Input" x="0" y="-160" name="BB" />
     <pin polarity="Input" x="0" y="-224" name="B" />
     <pin polarity="Input" x="0" y="-288" name="AA" />

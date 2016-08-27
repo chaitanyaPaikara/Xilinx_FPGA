@@ -7,24 +7,29 @@ module LOGIC_INPUT_LOGIC_INPUT_sch_tb();
 // Inputs
    reg TX;
    reg CLK;
-
+	reg RESET;
+	
 // Output
    wire TX_OUT;
-   wire CLR;
-
+   
 // Bidirs
 
 // Instantiate the UUT
    LOGIC_INPUT UUT (
 		.TX_OUT(TX_OUT), 
 		.TX(TX), 
-		.CLR(CLR), 
-		.CLK(CLK)
+		.CLK(CLK), 
+		.RESET(RESET)
    );
 // Initialize Inputs
        initial begin
 		TX = 0;
 		CLK = 0;
+		RESET=0;
+		#20;
+		RESET=1;
+		#20;
+		RESET=0;
    end
 	always begin
 	#60;
