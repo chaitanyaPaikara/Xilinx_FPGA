@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="Slave">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2016-5-22T16:53:46</timestamp>
+    <timestamp>2016-9-26T17:13:1</timestamp>
     <attr value="Slave" name="VeriModel" />
     <pin polarity="Input" x="0" y="-32" name="CLK" />
     <pin polarity="BiDirectional" x="384" y="-32" name="SDA" />

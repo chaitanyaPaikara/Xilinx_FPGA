@@ -36,13 +36,6 @@ reg STOP;
 
 assign SDA = (flag_WR?1'b0:1'bZ);
 
-task delay:
-begin
-
-
-
-endtask
-
 task Acknowledgement;
 begin
 @(posedge CLK);

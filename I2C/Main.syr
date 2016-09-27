@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: Main.prj
 
@@ -104,7 +104,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling verilog file "Slave.v" in library work
+Compiling verilog file "Slave_VNew.v" in library work
 Compiling verilog file "Code_V2.v" in library work
 Module <Slave> compiled
 Module <Code_V2> compiled
@@ -112,7 +112,8 @@ No errors in compilation
 Analysis of file <"Main.prj"> succeeded.
  
 Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.vhf" in Library work.
-Architecture behavioral of Entity main is up to date.
+Entity <main> compiled.
+Entity <main> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -131,15 +132,52 @@ Analyzing Entity <Main> in library <work> (Architecture <behavioral>).
 Entity <Main> analyzed. Unit <Main> generated.
 
 Analyzing module <Code_V2> in library <work>.
-ERROR:Xst:850 - "Code_V2.v" line 100: Unsupported Wait Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 109: Unsupported Event Control Statement. 
 	Enabling task <START_STOP>.
+ERROR:Xst:850 - "Code_V2.v" line 54: Unsupported Event Control Statement. 
+	Enabling task <Set_Address>.
+ERROR:Xst:850 - "Code_V2.v" line 80: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 80: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 80: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 80: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 80: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 80: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 80: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 80: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 85: Unsupported Event Control Statement. 
+	Enabling task <Acknowledgement>.
+	Enabling task <delay>.
+ERROR:Xst:2634 - "Code_V2.v" line 45: For loop stop condition should depend on loop variable or be static.
+ERROR:Xst:850 - "Code_V2.v" line 64: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 65: Unsupported Fork Statement. 
+	Enabling task <delay>.
+ERROR:Xst:2634 - "Code_V2.v" line 45: For loop stop condition should depend on loop variable or be static.
+	Enabling task <Send_Data>.
+ERROR:Xst:850 - "Code_V2.v" line 93: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 93: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 93: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 93: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 93: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 93: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 93: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 93: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 98: Unsupported Event Control Statement. 
+	Enabling task <Acknowledgement>.
+	Enabling task <delay>.
+ERROR:Xst:2634 - "Code_V2.v" line 45: For loop stop condition should depend on loop variable or be static.
+ERROR:Xst:850 - "Code_V2.v" line 64: Unsupported Event Control Statement. 
+ERROR:Xst:850 - "Code_V2.v" line 65: Unsupported Fork Statement. 
+	Enabling task <delay>.
+ERROR:Xst:2634 - "Code_V2.v" line 45: For loop stop condition should depend on loop variable or be static.
+	Enabling task <START_STOP>.
+ERROR:Xst:850 - "Code_V2.v" line 54: Unsupported Event Control Statement. 
  
-Found 1 error(s). Aborting synthesis.
+Found 29 error(s). Aborting synthesis.
 --> 
 
-Total memory usage is 293540 kilobytes
+Total memory usage is 302112 kilobytes
 
-Number of errors   :    1 (   0 filtered)
+Number of errors   :   29 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

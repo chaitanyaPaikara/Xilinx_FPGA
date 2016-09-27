@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.2
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Main_drc.vhf
--- /___/   /\     Timestamp : 08/09/2016 23:20:27
+-- /___/   /\     Timestamp : 09/26/2016 23:09:07
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

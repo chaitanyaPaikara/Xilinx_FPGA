@@ -5,7 +5,91 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">100</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+<msg type="error" file="Xst" num="850" delta="old" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">109</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="old" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">80</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">80</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">80</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">80</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">80</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">80</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">80</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">80</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">85</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="2634" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">45</arg>: For loop stop condition should depend on loop variable or be static.
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">64</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">65</arg>: Unsupported <arg fmt="%s" index="3">Fork Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="2634" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">45</arg>: For loop stop condition should depend on loop variable or be static.
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">93</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">93</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">93</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">93</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">93</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">93</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">93</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">93</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">98</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="2634" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">45</arg>: For loop stop condition should depend on loop variable or be static.
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">64</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">65</arg>: Unsupported <arg fmt="%s" index="3">Fork Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="2634" delta="new" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">45</arg>: For loop stop condition should depend on loop variable or be static.
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="old" >&quot;<arg fmt="%s" index="1">Code_V2.v</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Unsupported <arg fmt="%s" index="3">Event Control Statement</arg>. 
 </msg>
 
 </messages>

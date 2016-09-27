@@ -1114,7 +1114,7 @@ extern void work_m_00000000002353237397_1786443910_init()
 {
 	static char *pe[] = {(void *)Cont_39_0,(void *)Initial_94_1};
 	static char *se[] = {(void *)sp_START_STOP,(void *)sp_Acknowledgement,(void *)sp_Set_Address,(void *)sp_Send_Data};
-	xsi_register_didat("work_m_00000000002353237397_1786443910", "isim/Main_Main_sch_tb_isim_beh.exe.sim/work/m_00000000002353237397_1786443910.didat");
+	xsi_register_didat("work_m_00000000002353237397_1786443910", "isim/Code_V2_TB2_isim_beh.exe.sim/work/m_00000000002353237397_1786443910.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }

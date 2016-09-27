@@ -1,6 +1,6 @@
-AR main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.vhf" sub00/vhpl01 1470765206
-EN main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.vhf" sub00/vhpl00 1470765205
-MO Code_V2 NULL Code_V2.v vlg72/_code___v2.bin 1470765205
+AR main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.vhf" sub00/vhpl01 1474911567
+EN main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.vhf" sub00/vhpl00 1474911566
+MO Code_V2 NULL Code_V2.v vlg72/_code___v2.bin 1474911566
 MO test NULL test.v vlg34/test.bin 1463784250
-MO Slave NULL Slave.v vlg0B/_slave.bin 1470765205
+MO Slave NULL Slave_VNew.v vlg0B/_slave.bin 1474911566
 MO Code NULL ../../../../Downloads/Code.v vlg67/_code.bin 1463783852

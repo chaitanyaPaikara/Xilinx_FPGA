@@ -31,3 +31,24 @@ sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C
 xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.syr" 
 xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.syr" 
 xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.syr" 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.syr" 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.syr" 
+sch2sym -intstyle ise -family spartan3e -w -refsym Main {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Main.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.sch} 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/I2C/Main.syr" 
