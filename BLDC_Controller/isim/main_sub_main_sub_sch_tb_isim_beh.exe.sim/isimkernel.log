@@ -1,0 +1,6 @@
+Command line:
+   main_sub_main_sub_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  5912
+

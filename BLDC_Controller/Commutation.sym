@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="Commutation">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2016-8-17T17:56:51</timestamp>
-    <pin polarity="Input" x="0" y="-352" name="H1" />
+    <timestamp>2016-10-19T14:27:36</timestamp>
     <pin polarity="Input" x="0" y="-192" name="H2" />
     <pin polarity="Input" x="0" y="-32" name="H3" />
+    <pin polarity="Input" x="0" y="-352" name="H1" />
     <pin polarity="Output" x="384" y="-352" name="A" />
     <pin polarity="Output" x="384" y="-288" name="AA" />
     <pin polarity="Output" x="384" y="-224" name="B" />
@@ -13,9 +13,9 @@
     <pin polarity="Output" x="384" y="-32" name="CC" />
     <graph>
         <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-392" type="symbol" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin H1" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-192" type="pin H2" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin H3" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin H1" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-352" type="pin A" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-288" type="pin AA" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-224" type="pin B" />

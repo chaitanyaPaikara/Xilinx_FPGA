@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.50 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.50 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: MAIN.prj
 
@@ -42,7 +42,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "MAIN"
 Output Format                      : NGC
-Target Device                      : xc3s100e-5-cp132
+Target Device                      : xc3s250e-5-cp132
 
 ---- Source Options
 Top Module Name                    : MAIN
@@ -104,52 +104,20 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" in Library work.
-Entity <FTRSE_MXILINX_MAIN> compiled.
-Entity <FTRSE_MXILINX_MAIN> (Architecture <BEHAVIORAL>) compiled.
-Entity <CB4RE_MXILINX_MAIN> compiled.
-Entity <CB4RE_MXILINX_MAIN> (Architecture <BEHAVIORAL>) compiled.
-Entity <PWM_V2_MUSER_MAIN> compiled.
-Entity <PWM_V2_MUSER_MAIN> (Architecture <BEHAVIORAL>) compiled.
-Entity <Comparator_MUSER_MAIN> compiled.
-Entity <Comparator_MUSER_MAIN> (Architecture <BEHAVIORAL>) compiled.
-Entity <PWM_VNB_MUSER_MAIN> compiled.
-Entity <PWM_VNB_MUSER_MAIN> (Architecture <BEHAVIORAL>) compiled.
-Entity <deadtime_muser_main> compiled.
-Entity <deadtime_muser_main> (Architecture <behavioral>) compiled.
-Entity <or6_mxilinx_main> compiled.
-Entity <or6_mxilinx_main> (Architecture <behavioral>) compiled.
-Entity <m2_1_mxilinx_main> compiled.
-Entity <m2_1_mxilinx_main> (Architecture <behavioral>) compiled.
-Entity <commutation_muser_main> compiled.
-Entity <commutation_muser_main> (Architecture <behavioral>) compiled.
-Entity <main> compiled.
-Entity <main> (Architecture <behavioral>) compiled.
-Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Commutation.vhf" in Library work.
-Entity <commutation> compiled.
-Entity <commutation> (Architecture <behavioral>) compiled.
+Compiling verilog file "PWM_Verilog.v" in library work
+Module <PWM_Verilog> compiled
+No errors in compilation
+Analysis of file <"MAIN.prj"> succeeded.
+ 
 Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/DEADTIME.vhf" in Library work.
-Entity <deadtime> compiled.
-Entity <deadtime> (Architecture <behavioral>) compiled.
-Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" in Library work.
-Entity <FTRSE_MXILINX_PWM_VNB> compiled.
-Entity <FTRSE_MXILINX_PWM_VNB> (Architecture <BEHAVIORAL>) compiled.
-Entity <CB4RE_MXILINX_PWM_VNB> compiled.
-Entity <CB4RE_MXILINX_PWM_VNB> (Architecture <BEHAVIORAL>) compiled.
-Entity <PWM_V2_MUSER_PWM_VNB> compiled.
-Entity <PWM_V2_MUSER_PWM_VNB> (Architecture <BEHAVIORAL>) compiled.
-Entity <Comparator_MUSER_PWM_VNB> compiled.
-Entity <Comparator_MUSER_PWM_VNB> (Architecture <BEHAVIORAL>) compiled.
-Entity <PWM_VNB> compiled.
-Entity <PWM_VNB> (Architecture <BEHAVIORAL>) compiled.
-Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Comparator.vhf" in Library work.
-Entity <PWM_V2_MUSER_Comparator> compiled.
-Entity <PWM_V2_MUSER_Comparator> (Architecture <BEHAVIORAL>) compiled.
-Entity <Comparator> compiled.
-Entity <Comparator> (Architecture <BEHAVIORAL>) compiled.
-Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_V2.vhf" in Library work.
-Entity <PWM_V2> compiled.
-Entity <PWM_V2> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity deadtime is up to date.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" in Library work.
+Architecture behavioral of Entity or6_mxilinx_main is up to date.
+Architecture behavioral of Entity commutation_muser_main is up to date.
+Architecture behavioral of Entity m2_1_mxilinx_main is up to date.
+Architecture behavioral of Entity main is up to date.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Commutation.vhf" in Library work.
+Architecture behavioral of Entity commutation is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -160,33 +128,22 @@ Analyzing hierarchy for entity <Commutation_MUSER_MAIN> in library <work> (archi
 
 Analyzing hierarchy for entity <M2_1_MXILINX_MAIN> in library <work> (architecture <behavioral>).
 
+Analyzing hierarchy for module <PWM_Verilog> in library <work>.
+
 Analyzing hierarchy for entity <OR6_MXILINX_MAIN> in library <work> (architecture <behavioral>).
-
-Analyzing hierarchy for entity <DEADTIME_MUSER_MAIN> in library <work> (architecture <behavioral>).
-
-Analyzing hierarchy for entity <PWM_VNB_MUSER_MAIN> in library <work> (architecture <BEHAVIORAL>).
-
-Analyzing hierarchy for entity <Comparator_MUSER_MAIN> in library <work> (architecture <BEHAVIORAL>).
-
-Analyzing hierarchy for entity <CB4RE_MXILINX_MAIN> in library <work> (architecture <BEHAVIORAL>).
-
-Analyzing hierarchy for entity <PWM_V2_MUSER_MAIN> in library <work> (architecture <BEHAVIORAL>).
-
-Analyzing hierarchy for entity <FTRSE_MXILINX_MAIN> in library <work> (architecture <BEHAVIORAL>) with generics.
-	INIT = '0'
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <MAIN> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_30_5" for instance <XLXI_30> in unit <MAIN>.
-    Set user-defined property "HU_SET =  XLXI_32_6" for instance <XLXI_32> in unit <MAIN>.
-    Set user-defined property "HU_SET =  XLXI_33_7" for instance <XLXI_33> in unit <MAIN>.
-    Set user-defined property "HU_SET =  XLXI_48_10" for instance <XLXI_48> in unit <MAIN>.
-    Set user-defined property "HU_SET =  XLXI_49_8" for instance <XLXI_49> in unit <MAIN>.
-    Set user-defined property "HU_SET =  XLXI_50_9" for instance <XLXI_50> in unit <MAIN>.
-    Set user-defined property "HU_SET =  XLXI_67_11" for instance <XLXI_67> in unit <MAIN>.
+    Set user-defined property "HU_SET =  XLXI_30_0" for instance <XLXI_30> in unit <MAIN>.
+    Set user-defined property "HU_SET =  XLXI_32_1" for instance <XLXI_32> in unit <MAIN>.
+    Set user-defined property "HU_SET =  XLXI_33_2" for instance <XLXI_33> in unit <MAIN>.
+    Set user-defined property "HU_SET =  XLXI_48_4" for instance <XLXI_48> in unit <MAIN>.
+    Set user-defined property "HU_SET =  XLXI_49_3" for instance <XLXI_49> in unit <MAIN>.
+    Set user-defined property "HU_SET =  XLXI_50_5" for instance <XLXI_50> in unit <MAIN>.
+    Set user-defined property "HU_SET =  XLXI_134_6" for instance <XLXI_134> in unit <MAIN>.
 Entity <MAIN> analyzed. Unit <MAIN> generated.
 
 Analyzing Entity <Commutation_MUSER_MAIN> in library <work> (Architecture <behavioral>).
@@ -195,37 +152,13 @@ Entity <Commutation_MUSER_MAIN> analyzed. Unit <Commutation_MUSER_MAIN> generate
 Analyzing Entity <M2_1_MXILINX_MAIN> in library <work> (Architecture <behavioral>).
 Entity <M2_1_MXILINX_MAIN> analyzed. Unit <M2_1_MXILINX_MAIN> generated.
 
+Analyzing module <PWM_Verilog> in library <work>.
+Module <PWM_Verilog> is correct for synthesis.
+ 
 Analyzing Entity <OR6_MXILINX_MAIN> in library <work> (Architecture <behavioral>).
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_106> in unit <OR6_MXILINX_MAIN>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_107> in unit <OR6_MXILINX_MAIN>.
 Entity <OR6_MXILINX_MAIN> analyzed. Unit <OR6_MXILINX_MAIN> generated.
-
-Analyzing Entity <DEADTIME_MUSER_MAIN> in library <work> (Architecture <behavioral>).
-Entity <DEADTIME_MUSER_MAIN> analyzed. Unit <DEADTIME_MUSER_MAIN> generated.
-
-Analyzing Entity <PWM_VNB_MUSER_MAIN> in library <work> (Architecture <BEHAVIORAL>).
-WARNING:Xst:753 - "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" line 453: Unconnected output port 'CEO' of component 'CB4RE_MXILINX_MAIN'.
-    Set user-defined property "HU_SET =  XLXI_3_4" for instance <XLXI_3> in unit <PWM_VNB_MUSER_MAIN>.
-Entity <PWM_VNB_MUSER_MAIN> analyzed. Unit <PWM_VNB_MUSER_MAIN> generated.
-
-Analyzing Entity <Comparator_MUSER_MAIN> in library <work> (Architecture <BEHAVIORAL>).
-Entity <Comparator_MUSER_MAIN> analyzed. Unit <Comparator_MUSER_MAIN> generated.
-
-Analyzing Entity <PWM_V2_MUSER_MAIN> in library <work> (Architecture <BEHAVIORAL>).
-Entity <PWM_V2_MUSER_MAIN> analyzed. Unit <PWM_V2_MUSER_MAIN> generated.
-
-Analyzing Entity <CB4RE_MXILINX_MAIN> in library <work> (Architecture <BEHAVIORAL>).
-    Set user-defined property "HU_SET =  I_Q0_0" for instance <I_Q0> in unit <CB4RE_MXILINX_MAIN>.
-    Set user-defined property "HU_SET =  I_Q1_1" for instance <I_Q1> in unit <CB4RE_MXILINX_MAIN>.
-    Set user-defined property "HU_SET =  I_Q2_2" for instance <I_Q2> in unit <CB4RE_MXILINX_MAIN>.
-    Set user-defined property "HU_SET =  I_Q3_3" for instance <I_Q3> in unit <CB4RE_MXILINX_MAIN>.
-Entity <CB4RE_MXILINX_MAIN> analyzed. Unit <CB4RE_MXILINX_MAIN> generated.
-
-Analyzing generic Entity <FTRSE_MXILINX_MAIN> in library <work> (Architecture <BEHAVIORAL>).
-	INIT = '0'
-    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_MAIN>.
-    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_MAIN>.
-Entity <FTRSE_MXILINX_MAIN> analyzed. Unit <FTRSE_MXILINX_MAIN> generated.
 
 
 =========================================================================
@@ -233,6 +166,16 @@ Entity <FTRSE_MXILINX_MAIN> analyzed. Unit <FTRSE_MXILINX_MAIN> generated.
 =========================================================================
 
 Performing bidirectional port resolution...
+
+Synthesizing Unit <PWM_Verilog>.
+    Related source file is "PWM_Verilog.v".
+    Found 4-bit comparator lessequal for signal <PWM$cmp_le0000> created at line 49.
+    Found 4-bit up counter for signal <Q>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Comparator(s).
+Unit <PWM_Verilog> synthesized.
+
 
 Synthesizing Unit <Commutation_MUSER_MAIN>.
     Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf".
@@ -250,36 +193,6 @@ WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless sig
 Unit <OR6_MXILINX_MAIN> synthesized.
 
 
-Synthesizing Unit <DEADTIME_MUSER_MAIN>.
-    Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf".
-Unit <DEADTIME_MUSER_MAIN> synthesized.
-
-
-Synthesizing Unit <PWM_V2_MUSER_MAIN>.
-    Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf".
-Unit <PWM_V2_MUSER_MAIN> synthesized.
-
-
-Synthesizing Unit <FTRSE_MXILINX_MAIN>.
-    Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf".
-Unit <FTRSE_MXILINX_MAIN> synthesized.
-
-
-Synthesizing Unit <Comparator_MUSER_MAIN>.
-    Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf".
-Unit <Comparator_MUSER_MAIN> synthesized.
-
-
-Synthesizing Unit <CB4RE_MXILINX_MAIN>.
-    Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf".
-Unit <CB4RE_MXILINX_MAIN> synthesized.
-
-
-Synthesizing Unit <PWM_VNB_MUSER_MAIN>.
-    Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf".
-Unit <PWM_VNB_MUSER_MAIN> synthesized.
-
-
 Synthesizing Unit <MAIN>.
     Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf".
 Unit <MAIN> synthesized.
@@ -288,7 +201,12 @@ Unit <MAIN> synthesized.
 =========================================================================
 HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# Counters                                             : 1
+ 4-bit up counter                                      : 1
+# Comparators                                          : 1
+ 4-bit comparator lessequal                            : 1
+
 =========================================================================
 
 =========================================================================
@@ -300,8 +218,10 @@ Found no macro
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 4
- Flip-Flops                                            : 4
+# Counters                                             : 1
+ 4-bit up counter                                      : 1
+# Comparators                                          : 1
+ 4-bit comparator lessequal                            : 1
 
 =========================================================================
 
@@ -316,12 +236,6 @@ Optimizing unit <Commutation_MUSER_MAIN> ...
 Optimizing unit <M2_1_MXILINX_MAIN> ...
 
 Optimizing unit <OR6_MXILINX_MAIN> ...
-
-Optimizing unit <DEADTIME_MUSER_MAIN> ...
-
-Optimizing unit <FTRSE_MXILINX_MAIN> ...
-
-Optimizing unit <CB4RE_MXILINX_MAIN> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -360,27 +274,26 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 15
+# IOs                              : 14
 
 Cell Usage :
-# BELS                             : 82
-#      AND2                        : 32
+# BELS                             : 40
+#      AND2                        : 9
 #      AND2B1                      : 6
-#      AND3                        : 1
-#      AND4                        : 1
-#      GND                         : 3
-#      INV                         : 9
-#      OR2                         : 14
-#      OR3                         : 5
+#      GND                         : 2
+#      INV                         : 4
+#      LUT2                        : 1
+#      LUT3                        : 3
+#      LUT4                        : 4
+#      OR2                         : 9
+#      OR3                         : 1
 #      OR4                         : 1
-#      VCC                         : 2
-#      XOR2                        : 8
 # FlipFlops/Latches                : 4
-#      FDRE                        : 4
+#      FDE                         : 4
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 14
-#      IBUF                        : 8
+# IO Buffers                       : 13
+#      IBUF                        : 7
 #      OBUF                        : 6
 # Others                           : 2
 #      FMAP                        : 2
@@ -389,13 +302,13 @@ Cell Usage :
 Device utilization summary:
 ---------------------------
 
-Selected Device : 3s100ecp132-5 
+Selected Device : 3s250ecp132-5 
 
- Number of Slices:                        5  out of    960     0%  
- Number of Slice Flip Flops:              4  out of   1920     0%  
- Number of 4 input LUTs:                  9  out of   1920     0%  
- Number of IOs:                          15
- Number of bonded IOBs:                  15  out of     83    18%  
+ Number of Slices:                        6  out of   2448     0%  
+ Number of Slice Flip Flops:              4  out of   4896     0%  
+ Number of 4 input LUTs:                 12  out of   4896     0%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of     92    15%  
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -419,7 +332,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 4     |
+clk                                | BUFGP                  | 4     |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -430,146 +343,124 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 4.291ns (Maximum Frequency: 233.057MHz)
-   Minimum input arrival time before clock: 9.145ns
-   Maximum output required time after clock: 14.255ns
-   Maximum combinational path delay: 15.594ns
+   Minimum period: 2.289ns (Maximum Frequency: 436.862MHz)
+   Minimum input arrival time before clock: 6.176ns
+   Maximum output required time after clock: 9.564ns
+   Maximum combinational path delay: 10.168ns
 
 Timing Detail:
 --------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 4.291ns (frequency: 233.057MHz)
-  Total number of paths / destination ports: 26 / 8
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.289ns (frequency: 436.862MHz)
+  Total number of paths / destination ports: 10 / 4
 -------------------------------------------------------------------------
-Delay:               4.291ns (Levels of Logic = 4)
-  Source:            XLXI_70/XLXI_3/I_Q0/I_36_35 (FF)
-  Destination:       XLXI_70/XLXI_3/I_Q3/I_36_35 (FF)
-  Source Clock:      CLK rising
-  Destination Clock: CLK rising
+Delay:               2.289ns (Levels of Logic = 1)
+  Source:            XLXI_93/Q_0 (FF)
+  Destination:       XLXI_93/Q_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
 
-  Data Path: XLXI_70/XLXI_3/I_Q0/I_36_35 to XLXI_70/XLXI_3/I_Q3/I_36_35
+  Data Path: XLXI_93/Q_0 to XLXI_93/Q_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             7   0.514   0.602  I_36_35 (Q)
-     end scope: 'I_Q0'
-     AND3:I2->O            1   0.612   0.357  I_36_32 (T3)
-     begin scope: 'I_Q3'
-     XOR2:I0->O            1   0.612   0.357  I_36_32 (TQ)
-     OR2:I1->O             1   0.612   0.357  I_36_73 (D_S)
-     FDRE:D                    0.268          I_36_35
+     FDE:C->Q              5   0.514   0.538  XLXI_93/Q_0 (XLXI_93/Q_0)
+     INV:I->O              1   0.612   0.357  XLXI_93/Mcount_Q_xor<0>11_INV_0 (Result<0>)
+     FDE:D                     0.268          XLXI_93/Q_0
     ----------------------------------------
-    Total                      4.291ns (2.618ns logic, 1.673ns route)
-                                       (61.0% logic, 39.0% route)
+    Total                      2.289ns (1.394ns logic, 0.895ns route)
+                                       (60.9% logic, 39.1% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 96 / 4
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 48 / 4
 -------------------------------------------------------------------------
-Offset:              9.145ns (Levels of Logic = 10)
-  Source:            H1 (PAD)
-  Destination:       XLXI_70/XLXI_3/I_Q3/I_36_35 (FF)
-  Destination Clock: CLK rising
+Offset:              6.176ns (Levels of Logic = 6)
+  Source:            H2 (PAD)
+  Destination:       XLXI_93/Q_0 (FF)
+  Destination Clock: clk rising
 
-  Data Path: H1 to XLXI_70/XLXI_3/I_Q3/I_36_35
+  Data Path: H2 to XLXI_93/Q_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   1.106   0.451  H1_IBUF (H1_IBUF)
-     INV:I->O              2   0.612   0.380  XLXI_28/XLXI_24 (XLXI_28/XLXN_36)
-     AND2:I1->O            2   0.612   0.380  XLXI_28/XLXI_18 (XLXN_63)
-     INV:I->O              1   0.612   0.357  XLXI_69/XLXI_15 (XLXI_69/XLXN_39)
-     AND2:I1->O            3   0.612   0.451  XLXI_69/XLXI_3 (XLXN_113)
-     begin scope: 'XLXI_67'
+     IBUF:I->O             3   1.106   0.451  H2_IBUF (H2_IBUF)
+     INV:I->O              2   0.612   0.380  XLXI_28/XLXI_34 (XLXI_28/XLXN_54)
+     OR2:I1->O             3   0.612   0.451  XLXI_28/XLXI_28 (XLXN_239)
+     begin scope: 'XLXI_134'
      OR3:I0->O             1   0.612   0.357  I_36_88 (I35)
-     OR4:I3->O             5   0.612   0.538  I_36_87 (O_DUMMY)
-     end scope: 'XLXI_67'
-     begin scope: 'XLXI_70/XLXI_3'
-     begin scope: 'I_Q3'
-     OR2:I0->O             1   0.612   0.357  I_36_77 (CE_S)
-     FDRE:CE                   0.483          I_36_35
+     OR4:I3->O             4   0.612   0.499  I_36_87 (O_DUMMY)
+     end scope: 'XLXI_134'
+     FDE:CE                    0.483          XLXI_93/Q_0
     ----------------------------------------
-    Total                      9.145ns (5.873ns logic, 3.272ns route)
-                                       (64.2% logic, 35.8% route)
+    Total                      6.176ns (4.037ns logic, 2.139ns route)
+                                       (65.4% logic, 34.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 180 / 6
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 48 / 6
 -------------------------------------------------------------------------
-Offset:              14.255ns (Levels of Logic = 13)
-  Source:            XLXI_70/XLXI_3/I_Q0/I_36_35 (FF)
+Offset:              9.564ns (Levels of Logic = 7)
+  Source:            XLXI_93/Q_3 (FF)
   Destination:       B_OUT (PAD)
-  Source Clock:      CLK rising
+  Source Clock:      clk rising
 
-  Data Path: XLXI_70/XLXI_3/I_Q0/I_36_35 to B_OUT
+  Data Path: XLXI_93/Q_3 to B_OUT
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             7   0.514   0.602  I_36_35 (Q)
-     end scope: 'I_Q0'
-     end scope: 'XLXI_70/XLXI_3'
-     AND2:I0->O            1   0.612   0.357  XLXI_70/XLXI_2/XLXI_1/XLXI_3 (XLXI_70/XLXI_2/XLXI_1/XLXN_3)
-     OR3:I0->O             2   0.612   0.380  XLXI_70/XLXI_2/XLXI_1/XLXI_4 (XLXI_70/XLXI_2/XLXN_1)
-     AND2:I1->O            1   0.612   0.357  XLXI_70/XLXI_2/XLXI_2/XLXI_3 (XLXI_70/XLXI_2/XLXI_2/XLXN_3)
-     OR3:I0->O             2   0.612   0.380  XLXI_70/XLXI_2/XLXI_2/XLXI_4 (XLXI_70/XLXI_2/XLXN_2)
-     AND2:I1->O            1   0.612   0.357  XLXI_70/XLXI_2/XLXI_3/XLXI_3 (XLXI_70/XLXI_2/XLXI_3/XLXN_3)
-     OR3:I0->O             2   0.612   0.380  XLXI_70/XLXI_2/XLXI_3/XLXI_4 (XLXI_70/XLXI_2/XLXN_3)
-     AND2:I1->O            1   0.612   0.357  XLXI_70/XLXI_2/XLXI_4/XLXI_3 (XLXI_70/XLXI_2/XLXI_4/XLXN_3)
-     OR3:I0->O             6   0.612   0.569  XLXI_70/XLXI_2/XLXI_4/XLXI_4 (XLXN_128)
+     FDE:C->Q              3   0.514   0.520  XLXI_93/Q_3 (XLXI_93/Q_3)
+     LUT4:I1->O            1   0.612   0.509  XLXI_93/PWM35 (XLXI_93/PWM35)
+     LUT3:I0->O            1   0.612   0.509  XLXI_93/PWM41 (XLXI_93/PWM41)
+     LUT4:I0->O            6   0.612   0.569  XLXI_93/PWM48 (XLXN_229)
      begin scope: 'XLXI_50'
      AND2:I0->O            1   0.612   0.357  I_36_9 (M1)
      OR2:I0->O             1   0.612   0.357  I_36_8 (O)
      end scope: 'XLXI_50'
      OBUF:I->O                 3.169          CC_OUT_OBUF (CC_OUT)
     ----------------------------------------
-    Total                     14.255ns (9.803ns logic, 4.452ns route)
-                                       (68.8% logic, 31.2% route)
+    Total                      9.564ns (6.743ns logic, 2.821ns route)
+                                       (70.5% logic, 29.5% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 234 / 6
+  Total number of paths / destination ports: 78 / 6
 -------------------------------------------------------------------------
-Delay:               15.594ns (Levels of Logic = 14)
-  Source:            D0 (PAD)
+Delay:               10.168ns (Levels of Logic = 8)
+  Source:            D<1> (PAD)
   Destination:       B_OUT (PAD)
 
-  Data Path: D0 to B_OUT
+  Data Path: D<1> to B_OUT
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.106   0.357  D0_IBUF (D0_IBUF)
-     XOR2:I1->O            2   0.612   0.380  XLXI_70/XLXI_4 (XLXI_70/XLXN_5)
-     AND2:I1->O            1   0.612   0.357  XLXI_70/XLXI_2/XLXI_1/XLXI_2 (XLXI_70/XLXI_2/XLXI_1/XLXN_2)
-     OR3:I1->O             2   0.612   0.380  XLXI_70/XLXI_2/XLXI_1/XLXI_4 (XLXI_70/XLXI_2/XLXN_1)
-     AND2:I1->O            1   0.612   0.357  XLXI_70/XLXI_2/XLXI_2/XLXI_3 (XLXI_70/XLXI_2/XLXI_2/XLXN_3)
-     OR3:I0->O             2   0.612   0.380  XLXI_70/XLXI_2/XLXI_2/XLXI_4 (XLXI_70/XLXI_2/XLXN_2)
-     AND2:I1->O            1   0.612   0.357  XLXI_70/XLXI_2/XLXI_3/XLXI_3 (XLXI_70/XLXI_2/XLXI_3/XLXN_3)
-     OR3:I0->O             2   0.612   0.380  XLXI_70/XLXI_2/XLXI_3/XLXI_4 (XLXI_70/XLXI_2/XLXN_3)
-     AND2:I1->O            1   0.612   0.357  XLXI_70/XLXI_2/XLXI_4/XLXI_3 (XLXI_70/XLXI_2/XLXI_4/XLXN_3)
-     OR3:I0->O             6   0.612   0.569  XLXI_70/XLXI_2/XLXI_4/XLXI_4 (XLXN_128)
+     IBUF:I->O             2   1.106   0.532  D_1_IBUF (D_1_IBUF)
+     LUT4:I0->O            1   0.612   0.509  XLXI_93/PWM35 (XLXI_93/PWM35)
+     LUT3:I0->O            1   0.612   0.509  XLXI_93/PWM41 (XLXI_93/PWM41)
+     LUT4:I0->O            6   0.612   0.569  XLXI_93/PWM48 (XLXN_229)
      begin scope: 'XLXI_50'
      AND2:I0->O            1   0.612   0.357  I_36_9 (M1)
      OR2:I0->O             1   0.612   0.357  I_36_8 (O)
      end scope: 'XLXI_50'
      OBUF:I->O                 3.169          CC_OUT_OBUF (CC_OUT)
     ----------------------------------------
-    Total                     15.594ns (11.007ns logic, 4.587ns route)
-                                       (70.6% logic, 29.4% route)
+    Total                     10.168ns (7.335ns logic, 2.833ns route)
+                                       (72.1% logic, 27.9% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.69 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.36 secs
  
 --> 
 
-Total memory usage is 325352 kilobytes
+Total memory usage is 323784 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

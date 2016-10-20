@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.2
 --  \   \         Application : sch2hdl
 --  /   /         Filename : PWM_VNB.vhf
--- /___/   /\     Timestamp : 08/25/2016 21:38:02
+-- /___/   /\     Timestamp : 09/29/2016 22:37:35
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -170,10 +170,10 @@ architecture BEHAVIORAL of CB4RE_MXILINX_PWM_VNB is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_12";
-   attribute HU_SET of I_Q1 : label is "I_Q1_13";
-   attribute HU_SET of I_Q2 : label is "I_Q2_14";
-   attribute HU_SET of I_Q3 : label is "I_Q3_15";
+   attribute HU_SET of I_Q0 : label is "I_Q0_0";
+   attribute HU_SET of I_Q1 : label is "I_Q1_1";
+   attribute HU_SET of I_Q2 : label is "I_Q2_2";
+   attribute HU_SET of I_Q3 : label is "I_Q3_3";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -400,7 +400,7 @@ architecture BEHAVIORAL of PWM_VNB is
    signal XLXN_7  : std_logic;
    signal XLXN_8  : std_logic;
    signal XLXN_9  : std_logic;
-   signal XLXN_19 : std_logic;
+   signal XLXN_20 : std_logic;
    component Comparator_MUSER_PWM_VNB
       port ( a0    : in    std_logic; 
              b0    : in    std_logic; 
@@ -437,7 +437,15 @@ architecture BEHAVIORAL of PWM_VNB is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_16";
+   component AND3
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_4";
 begin
    XLXI_2 : Comparator_MUSER_PWM_VNB
       port map (a0=>XLXN_1,
@@ -453,13 +461,13 @@ begin
    XLXI_3 : CB4RE_MXILINX_PWM_VNB
       port map (C=>CLK,
                 CE=>CE,
-                R=>XLXN_19,
+                R=>XLXN_20,
                 CEO=>open,
                 Q0=>XLXN_1,
                 Q1=>XLXN_2,
                 Q2=>XLXN_3,
                 Q3=>XLXN_4,
-                TC=>XLXN_19);
+                TC=>open);
    
    XLXI_4 : XOR2
       port map (I0=>XLXN_9,
@@ -483,6 +491,12 @@ begin
    
    XLXI_8 : VCC
       port map (P=>XLXN_9);
+   
+   XLXI_9 : AND3
+      port map (I0=>XLXN_4,
+                I1=>XLXN_3,
+                I2=>XLXN_2,
+                O=>XLXN_20);
    
 end BEHAVIORAL;
 

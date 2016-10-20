@@ -1,6 +1,3 @@
-vhdl work "C:\Users\Chaitanya Paikara\Documents\GitHub\Xilinx_FPGA\BLDC_Controller\PWM_V2.vhf"
-vhdl work "C:\Users\Chaitanya Paikara\Documents\GitHub\Xilinx_FPGA\BLDC_Controller\Comparator.vhf"
-vhdl work "C:\Users\Chaitanya Paikara\Documents\GitHub\Xilinx_FPGA\BLDC_Controller\PWM_VNB.vhf"
-vhdl work "C:\Users\Chaitanya Paikara\Documents\GitHub\Xilinx_FPGA\BLDC_Controller\DEADTIME.vhf"
 vhdl work "C:\Users\Chaitanya Paikara\Documents\GitHub\Xilinx_FPGA\BLDC_Controller\Commutation.vhf"
 vhdl work "C:\Users\Chaitanya Paikara\Documents\GitHub\Xilinx_FPGA\BLDC_Controller\MAIN.vhf"
+vhdl work "C:\Users\Chaitanya Paikara\Documents\GitHub\Xilinx_FPGA\BLDC_Controller\DEADTIME.vhf"

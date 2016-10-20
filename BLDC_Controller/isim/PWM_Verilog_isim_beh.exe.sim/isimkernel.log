@@ -1,0 +1,28 @@
+Command line:
+   PWM_Verilog_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51221
+
+Sun Oct 02 14:25:26 2016
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 835.338 Meg
+
+ Total Signals          : 16
+ Total Nets             : 20
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 105
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 835.338 Meg
+
+Sun Oct 02 14:25:32 2016
+

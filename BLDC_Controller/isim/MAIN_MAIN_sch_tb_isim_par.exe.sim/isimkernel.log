@@ -3,28 +3,28 @@ Command line:
      -simmode  gui
      -sdfmax  /UUT/=netgen/par/MAIN_timesim.sdf
      -sdfroot  /UUT
-     -simrunnum  1
-     -socket  58495
+     -simrunnum  0
+     -socket  58103
 
-Sat Aug 27 18:26:10 2016
+Wed Oct 19 21:33:56 2016
 
 
- Elaboration Time: 0.0625 sec
-
- Current Memory Usage: 843.932 Meg
+ Elaboration Time: 0.046875 sec
 
- Total Signals          : 637
- Total Nets             : 395
- Total Signal Drivers   : 363
- Total Blocks           : 176
- Total Primitive Blocks : 95
- Total Processes        : 370
- Total Traceable Variables  : 928
- Total Scalar Nets and Variables : 7337
+ Current Memory Usage: 845.824 Meg
 
- Total Simulation Time: 0.1875 sec
+ Total Signals          : 488
+ Total Nets             : 314
+ Total Signal Drivers   : 279
+ Total Blocks           : 136
+ Total Primitive Blocks : 75
+ Total Processes        : 286
+ Total Traceable Variables  : 736
+ Total Scalar Nets and Variables : 6700
 
- Current Memory Usage: 686.645 Meg
+ Total Simulation Time: 0.171875 sec
 
-Sat Aug 27 18:28:31 2016
+ Current Memory Usage: 1160.4 Meg
+
+Wed Oct 19 21:34:32 2016
 

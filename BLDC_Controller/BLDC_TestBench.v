@@ -51,7 +51,7 @@ module MAIN_MAIN_sch_tb();
 		H1 = 0;
 		D3 = 0;
 		D2 = 0;
-		D1 = 1;
+		D1 = 0;
 		D0 = 0;
 		CLK = 1;
    end

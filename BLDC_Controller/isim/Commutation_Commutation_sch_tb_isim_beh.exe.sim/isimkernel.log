@@ -1,0 +1,28 @@
+Command line:
+   Commutation_Commutation_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56532
+
+Wed Oct 19 20:09:57 2016
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 841.429 Meg
+
+ Total Signals          : 80
+ Total Nets             : 56
+ Total Signal Drivers   : 23
+ Total Blocks           : 15
+ Total Primitive Blocks : 13
+ Total Processes        : 28
+ Total Traceable Variables  : 34
+ Total Scalar Nets and Variables : 622
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 369.57 Meg
+
+Wed Oct 19 20:18:10 2016
+

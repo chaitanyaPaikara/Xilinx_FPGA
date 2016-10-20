@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.2
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Commutation_drc.vhf
--- /___/   /\     Timestamp : 08/17/2016 23:26:42
+-- /___/   /\     Timestamp : 10/19/2016 19:57:32
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -39,9 +39,16 @@ end Commutation;
 
 architecture BEHAVIORAL of Commutation is
    attribute BOX_TYPE   : string ;
-   signal XLXN_36 : std_logic;
-   signal XLXN_40 : std_logic;
-   signal XLXN_44 : std_logic;
+   signal XLXN_52 : std_logic;
+   signal XLXN_54 : std_logic;
+   signal XLXN_56 : std_logic;
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
    component AND2
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -56,47 +63,47 @@ architecture BEHAVIORAL of Commutation is
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
 begin
-   XLXI_18 : AND2
-      port map (I0=>H3,
-                I1=>XLXN_36,
+   XLXI_27 : OR2
+      port map (I0=>H2,
+                I1=>XLXN_52,
                 O=>A);
    
-   XLXI_19 : AND2
-      port map (I0=>XLXN_44,
-                I1=>H1,
-                O=>AA);
-   
-   XLXI_20 : AND2
-      port map (I0=>XLXN_40,
-                I1=>H1,
+   XLXI_28 : OR2
+      port map (I0=>H3,
+                I1=>XLXN_54,
                 O=>B);
    
-   XLXI_21 : AND2
-      port map (I0=>H2,
-                I1=>XLXN_36,
-                O=>BB);
-   
-   XLXI_22 : AND2
-      port map (I0=>H3,
-                I1=>XLXN_40,
+   XLXI_29 : OR2
+      port map (I0=>H1,
+                I1=>XLXN_56,
                 O=>C);
    
-   XLXI_23 : AND2
+   XLXI_30 : AND2
       port map (I0=>H2,
-                I1=>XLXN_44,
+                I1=>XLXN_52,
+                O=>AA);
+   
+   XLXI_31 : AND2
+      port map (I0=>H3,
+                I1=>XLXN_54,
+                O=>BB);
+   
+   XLXI_32 : AND2
+      port map (I0=>H1,
+                I1=>XLXN_56,
                 O=>CC);
    
-   XLXI_24 : INV
+   XLXI_33 : INV
       port map (I=>H1,
-                O=>XLXN_36);
+                O=>XLXN_52);
    
-   XLXI_25 : INV
+   XLXI_34 : INV
       port map (I=>H2,
-                O=>XLXN_40);
+                O=>XLXN_54);
    
-   XLXI_26 : INV
+   XLXI_35 : INV
       port map (I=>H3,
-                O=>XLXN_44);
+                O=>XLXN_56);
    
 end BEHAVIORAL;
 

@@ -1,0 +1,10 @@
+Command line:
+   MAIN_1_MAIN_1_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  13025
+
+Wed Sep 28 21:37:38 2016
+
+
+ Elaboration Time: 0.078125 sec

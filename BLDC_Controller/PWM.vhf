@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.2
 --  \   \         Application : sch2hdl
 --  /   /         Filename : PWM.vhf
--- /___/   /\     Timestamp : 08/18/2016 00:28:13
+-- /___/   /\     Timestamp : 09/30/2016 22:25:29
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -225,8 +225,7 @@ entity PWM is
           D2      : in    std_logic; 
           D3      : in    std_logic; 
           PWM     : out   std_logic; 
-          XLXN_37 : out   std_logic; 
-          XLXN_38 : out   std_logic);
+          XLXN_37 : out   std_logic);
 end PWM;
 
 architecture BEHAVIORAL of PWM is
@@ -239,10 +238,10 @@ architecture BEHAVIORAL of PWM is
    signal XLXN_24 : std_logic;
    signal XLXN_25 : std_logic;
    signal XLXN_26 : std_logic;
-   signal XLXN_27 : std_logic;
-   signal XLXN_28 : std_logic;
    signal XLXN_32 : std_logic;
    signal XLXN_36 : std_logic;
+   signal XLXN_39 : std_logic;
+   signal XLXN_43 : std_logic;
    component CB4CE_MXILINX_PWM
       port ( C   : in    std_logic; 
              CE  : in    std_logic; 
@@ -280,15 +279,6 @@ architecture BEHAVIORAL of PWM is
    end component;
    attribute BOX_TYPE of LDC : component is "BLACK_BOX";
    
-   component NOR4
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of NOR4 : component is "BLACK_BOX";
-   
    component GND
       port ( G : out   std_logic);
    end component;
@@ -304,8 +294,8 @@ begin
                 Q0=>XLXN_24,
                 Q1=>XLXN_25,
                 Q2=>XLXN_26,
-                Q3=>XLXN_27,
-                TC=>XLXN_38);
+                Q3=>XLXN_39,
+                TC=>XLXN_43);
    
    XLXI_2 : XNOR2
       port map (I0=>XLXN_24,
@@ -323,7 +313,7 @@ begin
                 O=>XLXN_14);
    
    XLXI_5 : XNOR2
-      port map (I0=>XLXN_27,
+      port map (I0=>XLXN_39,
                 I1=>D3,
                 O=>XLXN_15);
    
@@ -335,17 +325,10 @@ begin
                 O=>XLXN_32);
    
    XLXI_9 : LDC
-      port map (CLR=>XLXN_28,
+      port map (CLR=>XLXN_43,
                 D=>XLXN_32,
                 G=>XLXN_32,
                 Q=>PWM);
-   
-   XLXI_12 : NOR4
-      port map (I0=>XLXN_27,
-                I1=>XLXN_26,
-                I2=>XLXN_25,
-                I3=>XLXN_24,
-                O=>XLXN_28);
    
    XLXI_13 : GND
       port map (G=>XLXN_36);

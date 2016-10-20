@@ -1,6 +1,4 @@
-vhdl work "PWM_V2.vhf"
-vhdl work "Comparator.vhf"
-vhdl work "PWM_VNB.vhf"
-vhdl work "DEADTIME.vhf"
+verilog work "PWM_Verilog.v"
 vhdl work "Commutation.vhf"
 vhdl work "MAIN.vhf"
+vhdl work "DEADTIME.vhf"

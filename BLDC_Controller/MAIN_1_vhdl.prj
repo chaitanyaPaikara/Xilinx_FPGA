@@ -1,0 +1,6 @@
+vhdl work "C:\Xilinx\BLDC_Controller\PWM_V2.vhf"
+vhdl work "C:\Xilinx\BLDC_Controller\Comparator.vhf"
+vhdl work "C:\Xilinx\BLDC_Controller\PWM_VNB.vhf"
+vhdl work "C:\Xilinx\BLDC_Controller\Commutation.vhf"
+vhdl work "C:\Xilinx\BLDC_Controller\MAIN_1.vhf"
+vhdl work "C:\Xilinx\BLDC_Controller\MAIN.vhf"
