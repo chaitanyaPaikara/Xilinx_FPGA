@@ -2,14 +2,14 @@ Command line:
    PWM_VER_TB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  58069
+     -socket  59544
 
-Wed Oct 19 21:09:48 2016
+Fri Oct 21 21:41:27 2016
 
 
  Elaboration Time: 0.03125 sec
 
- Current Memory Usage: 840.745 Meg
+ Current Memory Usage: 841.269 Meg
 
  Total Signals          : 17
  Total Nets             : 20
@@ -20,9 +20,9 @@ Wed Oct 19 21:09:48 2016
  Total Traceable Variables  : 23
  Total Scalar Nets and Variables : 111
 
- Total Simulation Time: 0.046875 sec
+ Total Simulation Time: 0.03125 sec
 
- Current Memory Usage: 1155.32 Meg
+ Current Memory Usage: 841.269 Meg
 
-Wed Oct 19 21:10:31 2016
+Fri Oct 21 21:41:45 2016
 

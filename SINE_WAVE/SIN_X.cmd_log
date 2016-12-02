@@ -1,0 +1,1 @@
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/SINE_WAVE/SIN_X.v} -lang verilog -prj SINE_WAVE -o SIN_X.spl -module SIN_X -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 

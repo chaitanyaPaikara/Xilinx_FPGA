@@ -1,0 +1,28 @@
+Command line:
+   Fuzzylogic_based_tuner_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55528
+
+Fri Dec 02 01:38:43 2016
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 840.79 Meg
+
+ Total Signals          : 37
+ Total Nets             : 151
+ Total Signal Drivers   : 29
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 33
+ Total Traceable Variables  : 42
+ Total Scalar Nets and Variables : 494
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 840.79 Meg
+
+Fri Dec 02 01:38:54 2016
+

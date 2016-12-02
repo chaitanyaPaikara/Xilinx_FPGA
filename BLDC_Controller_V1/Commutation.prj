@@ -1,0 +1,4 @@
+vhdl work "Commutation.vhf"
+vhdl work "MAIN.vhf"
+vhdl work "MAIN_1.vhf"
+vhdl work "PWM_NB1.vhf"

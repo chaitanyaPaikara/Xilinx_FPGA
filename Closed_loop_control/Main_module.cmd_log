@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/LENOVO/Closed_loop_control/Main_module.xst" -ofn "C:/LENOVO/Closed_loop_control/Main_module.syr" 
+sch2hdl -intstyle ise -family spartan3e -verilog Main_module_drc.vf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Closed_loop_control/Main_module.sch} 
+sch2hdl -intstyle ise -family spartan3e -verilog Main_module_drc.vf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Closed_loop_control/Main_module.sch} 
+sch2sym -intstyle ise -family spartan3e -refsym Main_module {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Closed_loop_control/Main_module.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Closed_loop_control/Main_module.sym} 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Closed_loop_control/Main_module.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Closed_loop_control/Main_module.syr" 
+sch2hdl -intstyle ise -family spartan3e -verilog Main_module_drc.vf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Closed_loop_control/Main_module.sch} 

@@ -1,0 +1,33 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/SINE_WAVE/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/SINE_WAVE/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SIN_X.v" in library work
+ERROR:HDLCompilers:26 - "SIN_X.v" line 38 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "SIN_X.v" line 38 expecting 'endfunction', found '12'
+Module <SIN_Wt> compiled
+ERROR:HDLCompilers:26 - "SIN_X.v" line 38 expecting 'endmodule', found '0'
+Analysis of file <"SIN_X.prj"> failed.
+--> 
+
+Total memory usage is 261508 kilobytes
+
+Number of errors   :    3 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

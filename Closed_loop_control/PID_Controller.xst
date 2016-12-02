@@ -1,0 +1,5 @@
+set -tmpdir "C:/LENOVO/Closed_loop_control/xst/projnav.tmp"
+set -xsthdpdir "C:/LENOVO/Closed_loop_control/xst"
+elaborate
+-ifn PID_Controller.prj
+-ifmt mixed

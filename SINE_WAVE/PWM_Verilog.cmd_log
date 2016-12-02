@@ -1,0 +1,7 @@
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/SINE_WAVE/PWM.v} -lang verilog -prj SINE_WAVE -o PWM_Verilog.spl -module PWM_Verilog -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PWM_Verilog.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/SINE_WAVE/PWM_Verilog.sym} 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/SINE_WAVE/PWM_Verilog.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/SINE_WAVE/PWM_Verilog.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 "PWM_Verilog.ngc" PWM_Verilog.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o PWM_Verilog_map.ncd PWM_Verilog.ngd PWM_Verilog.pcf 
+par -w -intstyle ise -ol high -t 1 PWM_Verilog_map.ncd PWM_Verilog.ncd PWM_Verilog.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PWM_Verilog.twx PWM_Verilog.ncd -o PWM_Verilog.twr PWM_Verilog.pcf 

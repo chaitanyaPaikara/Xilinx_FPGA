@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/LENOVO/PID_Controller_Verilog/PID_Controller.v -lang verilog -prj Closed_loop_control -o PID_Controller.spl -module PID_Controller -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PID_Controller.spl C:/LENOVO/Closed_loop_control/PID_Controller.sym 

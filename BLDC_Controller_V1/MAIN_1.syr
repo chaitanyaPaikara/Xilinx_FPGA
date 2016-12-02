@@ -1,0 +1,344 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: MAIN_1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MAIN_1.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MAIN_1"
+Output Format                      : NGC
+Target Device                      : xc3s250e-5-cp132
+
+---- Source Options
+Top Module Name                    : MAIN_1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN.vhf" in Library work.
+Architecture behavioral of Entity commutation_muser_main is up to date.
+Architecture behavioral of Entity ftrse_mxilinx_main is up to date.
+Architecture behavioral of Entity cb4re_mxilinx_main is up to date.
+Architecture behavioral of Entity pwm_v2_muser_main is up to date.
+Architecture behavioral of Entity comparator_muser_main is up to date.
+Architecture behavioral of Entity pwm_vnb_muser_main is up to date.
+Architecture behavioral of Entity or6_mxilinx_main is up to date.
+Architecture behavioral of Entity m2_1_mxilinx_main is up to date.
+Architecture behavioral of Entity main is up to date.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_1.vhf" in Library work.
+Entity <ftrse_mxilinx_main_1> compiled.
+Entity <ftrse_mxilinx_main_1> (Architecture <behavioral>) compiled.
+Entity <cb4re_mxilinx_main_1> compiled.
+Entity <cb4re_mxilinx_main_1> (Architecture <behavioral>) compiled.
+Entity <pwm_v2_muser_main_1> compiled.
+Entity <pwm_v2_muser_main_1> (Architecture <behavioral>) compiled.
+Entity <comparator_muser_main_1> compiled.
+Entity <comparator_muser_main_1> (Architecture <behavioral>) compiled.
+Entity <PWM_NB1_MUSER_MAIN_1> compiled.
+Entity <PWM_NB1_MUSER_MAIN_1> (Architecture <BEHAVIORAL>) compiled.
+Entity <commutation_muser_main_1> compiled.
+Entity <commutation_muser_main_1> (Architecture <behavioral>) compiled.
+Entity <or6_mxilinx_main_1> compiled.
+Entity <or6_mxilinx_main_1> (Architecture <behavioral>) compiled.
+Entity <m2_1_mxilinx_main_1> compiled.
+Entity <m2_1_mxilinx_main_1> (Architecture <behavioral>) compiled.
+Entity <main_1> compiled.
+Entity <main_1> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Commutation.vhf" in Library work.
+Architecture behavioral of Entity commutation is up to date.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM_NB1.vhf" in Library work.
+Entity <FTRSE_MXILINX_PWM_NB1> compiled.
+Entity <FTRSE_MXILINX_PWM_NB1> (Architecture <BEHAVIORAL>) compiled.
+Entity <CB4RE_MXILINX_PWM_NB1> compiled.
+Entity <CB4RE_MXILINX_PWM_NB1> (Architecture <BEHAVIORAL>) compiled.
+Entity <PWM_V2_MUSER_PWM_NB1> compiled.
+Entity <PWM_V2_MUSER_PWM_NB1> (Architecture <BEHAVIORAL>) compiled.
+Entity <Comparator_MUSER_PWM_NB1> compiled.
+Entity <Comparator_MUSER_PWM_NB1> (Architecture <BEHAVIORAL>) compiled.
+Entity <PWM_NB1> compiled.
+Entity <PWM_NB1> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Comparator.vhf" in Library work.
+Architecture behavioral of Entity pwm_v2_muser_comparator is up to date.
+Architecture behavioral of Entity comparator is up to date.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM_V2.vhf" in Library work.
+Architecture behavioral of Entity pwm_v2 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <MAIN_1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <M2_1_MXILINX_MAIN_1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <OR6_MXILINX_MAIN_1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Commutation_MUSER_MAIN_1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PWM_NB1_MUSER_MAIN_1> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <Comparator_MUSER_MAIN_1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CB4RE_MXILINX_MAIN_1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PWM_V2_MUSER_MAIN_1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FTRSE_MXILINX_MAIN_1> in library <work> (architecture <behavioral>) with generics.
+	INIT = '0'
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <MAIN_1> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_30_5" for instance <XLXI_30> in unit <MAIN_1>.
+    Set user-defined property "HU_SET =  XLXI_32_6" for instance <XLXI_32> in unit <MAIN_1>.
+    Set user-defined property "HU_SET =  XLXI_33_7" for instance <XLXI_33> in unit <MAIN_1>.
+    Set user-defined property "HU_SET =  XLXI_48_10" for instance <XLXI_48> in unit <MAIN_1>.
+    Set user-defined property "HU_SET =  XLXI_49_8" for instance <XLXI_49> in unit <MAIN_1>.
+    Set user-defined property "HU_SET =  XLXI_50_9" for instance <XLXI_50> in unit <MAIN_1>.
+    Set user-defined property "HU_SET =  XLXI_67_11" for instance <XLXI_67> in unit <MAIN_1>.
+Entity <MAIN_1> analyzed. Unit <MAIN_1> generated.
+
+Analyzing Entity <M2_1_MXILINX_MAIN_1> in library <work> (Architecture <behavioral>).
+Entity <M2_1_MXILINX_MAIN_1> analyzed. Unit <M2_1_MXILINX_MAIN_1> generated.
+
+Analyzing Entity <OR6_MXILINX_MAIN_1> in library <work> (Architecture <behavioral>).
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_106> in unit <OR6_MXILINX_MAIN_1>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_107> in unit <OR6_MXILINX_MAIN_1>.
+Entity <OR6_MXILINX_MAIN_1> analyzed. Unit <OR6_MXILINX_MAIN_1> generated.
+
+Analyzing Entity <Commutation_MUSER_MAIN_1> in library <work> (Architecture <behavioral>).
+Entity <Commutation_MUSER_MAIN_1> analyzed. Unit <Commutation_MUSER_MAIN_1> generated.
+
+Analyzing Entity <PWM_NB1_MUSER_MAIN_1> in library <work> (Architecture <BEHAVIORAL>).
+WARNING:Xst:753 - "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_1.vhf" line 453: Unconnected output port 'CEO' of component 'CB4RE_MXILINX_MAIN_1'.
+    Set user-defined property "HU_SET =  XLXI_2_4" for instance <XLXI_2> in unit <PWM_NB1_MUSER_MAIN_1>.
+Entity <PWM_NB1_MUSER_MAIN_1> analyzed. Unit <PWM_NB1_MUSER_MAIN_1> generated.
+
+Analyzing Entity <Comparator_MUSER_MAIN_1> in library <work> (Architecture <behavioral>).
+Entity <Comparator_MUSER_MAIN_1> analyzed. Unit <Comparator_MUSER_MAIN_1> generated.
+
+Analyzing Entity <PWM_V2_MUSER_MAIN_1> in library <work> (Architecture <behavioral>).
+Entity <PWM_V2_MUSER_MAIN_1> analyzed. Unit <PWM_V2_MUSER_MAIN_1> generated.
+
+Analyzing Entity <CB4RE_MXILINX_MAIN_1> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_Q0_0" for instance <I_Q0> in unit <CB4RE_MXILINX_MAIN_1>.
+    Set user-defined property "HU_SET =  I_Q1_1" for instance <I_Q1> in unit <CB4RE_MXILINX_MAIN_1>.
+    Set user-defined property "HU_SET =  I_Q2_2" for instance <I_Q2> in unit <CB4RE_MXILINX_MAIN_1>.
+    Set user-defined property "HU_SET =  I_Q3_3" for instance <I_Q3> in unit <CB4RE_MXILINX_MAIN_1>.
+Entity <CB4RE_MXILINX_MAIN_1> analyzed. Unit <CB4RE_MXILINX_MAIN_1> generated.
+
+Analyzing generic Entity <FTRSE_MXILINX_MAIN_1> in library <work> (Architecture <behavioral>).
+	INIT = '0'
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_MAIN_1>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_MAIN_1>.
+Entity <FTRSE_MXILINX_MAIN_1> analyzed. Unit <FTRSE_MXILINX_MAIN_1> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <M2_1_MXILINX_MAIN_1>.
+    Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_1.vhf".
+Unit <M2_1_MXILINX_MAIN_1> synthesized.
+
+
+Synthesizing Unit <OR6_MXILINX_MAIN_1>.
+    Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_1.vhf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <OR6_MXILINX_MAIN_1> synthesized.
+
+
+Synthesizing Unit <Commutation_MUSER_MAIN_1>.
+    Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_1.vhf".
+Unit <Commutation_MUSER_MAIN_1> synthesized.
+
+
+Synthesizing Unit <PWM_V2_MUSER_MAIN_1>.
+    Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_1.vhf".
+Unit <PWM_V2_MUSER_MAIN_1> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_MAIN_1>.
+    Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_1.vhf".
+Unit <FTRSE_MXILINX_MAIN_1> synthesized.
+
+
+Synthesizing Unit <Comparator_MUSER_MAIN_1>.
+    Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_1.vhf".
+Unit <Comparator_MUSER_MAIN_1> synthesized.
+
+
+Synthesizing Unit <CB4RE_MXILINX_MAIN_1>.
+    Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_1.vhf".
+Unit <CB4RE_MXILINX_MAIN_1> synthesized.
+
+
+Synthesizing Unit <PWM_NB1_MUSER_MAIN_1>.
+    Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_1.vhf".
+Unit <PWM_NB1_MUSER_MAIN_1> synthesized.
+
+
+Synthesizing Unit <MAIN_1>.
+    Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_1.vhf".
+Unit <MAIN_1> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+ERROR:Xst:528 - Multi-source in Unit <MAIN_1> on signal <C>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of OR2 instance <XLXI_48/I_36_8>
+   Output signal of INV instance <XLXI_80>
+
+ERROR:Xst:528 - Multi-source in Unit <MAIN_1> on signal <B>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of OR2 instance <XLXI_33/I_36_8>
+   Output signal of INV instance <XLXI_82>
+
+ERROR:Xst:528 - Multi-source in Unit <MAIN_1> on signal <A>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of OR2 instance <XLXI_32/I_36_8>
+   Output signal of INV instance <XLXI_84>
+
+ERROR:Xst:528 - Multi-source in Unit <MAIN_1> on signal <CC>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of OR2 instance <XLXI_50/I_36_8>
+   Output signal of INV instance <XLXI_78>
+
+ERROR:Xst:528 - Multi-source in Unit <MAIN_1> on signal <BB>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of OR2 instance <XLXI_49/I_36_8>
+   Output signal of INV instance <XLXI_81>
+
+ERROR:Xst:528 - Multi-source in Unit <MAIN_1> on signal <AA>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of OR2 instance <XLXI_30/I_36_8>
+   Output signal of INV instance <XLXI_83>
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.04 secs
+ 
+--> 
+
+Total memory usage is 305252 kilobytes
+
+Number of errors   :    6 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

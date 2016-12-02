@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Closed_loop_control/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Closed_loop_control/xst"
+elaborate
+-ifn Fuzzy_logic_based_tuner.prj
+-ifmt mixed

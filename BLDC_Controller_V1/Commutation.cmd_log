@@ -1,0 +1,18 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Commutation_drc.vhf -w {C:/Users/Chaitanya Paikara/Downloads/Akash_Driver_v1/Akash_Driver_v1/Commutation.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Commutation {C:/Users/Chaitanya Paikara/Downloads/Akash_Driver_v1/Akash_Driver_v1/Commutation.sch} {C:/Users/Chaitanya Paikara/Downloads/Akash_Driver_v1/Akash_Driver_v1/Commutation.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Commutation_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Commutation.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Commutation {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Commutation.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Commutation.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Commutation_drc.vhf -w C:/Xilinx/BLDC_Controller/Commutation.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym Commutation C:/Xilinx/BLDC_Controller/Commutation.sch C:/Xilinx/BLDC_Controller/Commutation.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym Commutation C:/Xilinx/BLDC_Controller/Commutation.sch C:/Xilinx/BLDC_Controller/Commutation.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Commutation_drc.vhf -w C:/Xilinx/BLDC_Controller/Commutation.sch 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Commutation_drc.vhf -w C:/Xilinx/BLDC_Controller/Commutation.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym Commutation C:/Xilinx/BLDC_Controller/Commutation.sch C:/Xilinx/BLDC_Controller/Commutation.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Commutation_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Commutation.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Commutation {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Commutation.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Commutation.sym} 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Commutation.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Commutation.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc COMMUTATION_ucf.ucf -p xc3s250e-cp132-5 "Commutation.ngc" Commutation.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o Commutation_map.ncd Commutation.ngd Commutation.pcf 
+par -w -intstyle ise -ol high -t 1 Commutation_map.ncd Commutation.ncd Commutation.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Commutation.twx Commutation.ncd -o Commutation.twr Commutation.pcf -ucf COMMUTATION_ucf.ucf 
+bitgen -intstyle ise -f Commutation.ut Commutation.ncd 

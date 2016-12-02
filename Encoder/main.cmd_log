@@ -1,0 +1,3 @@
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/KRSSG/QUES/Encoder/main.v} -lang verilog -prj Encoder -o main.spl -module main -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e main.spl {C:/Users/Chaitanya Paikara/Documents/KRSSG/QUES/Encoder/main.sym} 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/KRSSG/QUES/Encoder/main.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/KRSSG/QUES/Encoder/main.syr" 

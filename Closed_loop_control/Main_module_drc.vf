@@ -1,0 +1,41 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.2
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Main_module_drc.vf
+// /___/   /\     Timestamp : 10/28/2016 18:49:46
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan3e -verilog Main_module_drc.vf -w "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Closed_loop_control/Main_module.sch"
+//Design Name: Main_module
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Main_module();
+
+   
+   
+   PID_Controller  XLXI_1 (.clk(), 
+                          .current_vel(), 
+                          .enable(), 
+                          .Kd(), 
+                          .Ki(), 
+                          .Kp(), 
+                          .target_vel(), 
+                          .vel_output());
+   Fuzzy_logic_based_tuner  XLXI_2 (.clk(), 
+                                   .current_vel(), 
+                                   .enable(), 
+                                   .target_vel(), 
+                                   .Kd(), 
+                                   .Kp());
+endmodule

@@ -1,0 +1,5 @@
+MODULE Main_module
+	SUBMODULE PID_Controller
+		INSTANCE XLXI_1
+	SUBMODULE Fuzzy_logic_based_tuner
+		INSTANCE XLXI_2

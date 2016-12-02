@@ -1,0 +1,123 @@
+--------------------------------------------------------------------------------
+Release 14.2 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml MAIN_2.twx MAIN_2.ncd -o MAIN_2.twr MAIN_2.pcf -ucf
+MAIN_1_BIT.ucf
+
+Design file:              MAIN_2.ncd
+Physical constraint file: MAIN_2.pcf
+Device,package,speed:     xc3s250e,cp132,-5 (PRODUCTION 1.27 2012-07-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock CLK to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+A1          |   11.500(R)|CLK_BUFGP         |   0.000|
+AA1         |   12.519(R)|CLK_BUFGP         |   0.000|
+B1          |   12.662(R)|CLK_BUFGP         |   0.000|
+BB1         |   13.122(R)|CLK_BUFGP         |   0.000|
+C1          |   11.970(R)|CLK_BUFGP         |   0.000|
+CC1         |   12.250(R)|CLK_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.495|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+D0             |A1             |   11.143|
+D0             |AA1            |   12.162|
+D0             |B1             |   12.305|
+D0             |BB1            |   12.765|
+D0             |C1             |   11.613|
+D0             |CC1            |   11.893|
+D1             |A1             |   10.624|
+D1             |AA1            |   11.643|
+D1             |B1             |   11.786|
+D1             |BB1            |   12.246|
+D1             |C1             |   11.094|
+D1             |CC1            |   11.374|
+D2             |A1             |    9.619|
+D2             |AA1            |   10.638|
+D2             |B1             |   10.781|
+D2             |BB1            |   11.241|
+D2             |C1             |   10.089|
+D2             |CC1            |   10.369|
+D3             |A1             |    7.445|
+D3             |AA1            |    8.464|
+D3             |B1             |    8.607|
+D3             |BB1            |    9.067|
+D3             |C1             |    7.915|
+D3             |CC1            |    8.195|
+H1             |A1             |    7.694|
+H1             |AA1            |    7.492|
+H1             |C1             |    5.891|
+H1             |CC1            |    6.138|
+H2             |A1             |    7.626|
+H2             |AA1            |    7.537|
+H2             |B1             |    6.402|
+H2             |BB1            |    6.811|
+H3             |B1             |    6.649|
+H3             |BB1            |    7.114|
+H3             |C1             |    6.090|
+H3             |CC1            |    6.393|
+LOW            |A1             |    6.494|
+LOW            |AA1            |    6.186|
+LOW            |B1             |    7.676|
+LOW            |BB1            |    8.107|
+LOW            |C1             |    7.022|
+LOW            |CC1            |    7.275|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Oct 02 02:02:56 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 174 MB
+
+
+
