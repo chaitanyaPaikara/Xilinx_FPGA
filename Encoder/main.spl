@@ -1,6 +1,5 @@
 [Inputs]
 clk
-ce
 ticks
 [Outputs]
 =rpm[14:0]=

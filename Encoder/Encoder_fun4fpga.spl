@@ -1,0 +1,9 @@
+[Inputs]
+CLK
+ticks
+[Outputs]
+=rpm[10:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Encoder_fun4fpga
+

@@ -1,0 +1,8 @@
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main.v} -lang verilog -prj Encoder -o CLOCK_div_2.spl -module CLOCK_div_2 -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e CLOCK_div_2.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/CLOCK_div_2.sym} 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/CLOCK_div_2.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/CLOCK_div_2.syr" 
+netgen -intstyle ise -ar Structure -tm CLOCK_div_2 -w -dir netgen/synthesis -ofmt vhdl -sim CLOCK_div_2.ngc CLOCK_div_2_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 "CLOCK_div_2.ngc" CLOCK_div_2.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o CLOCK_div_2_map.ncd CLOCK_div_2.ngd CLOCK_div_2.pcf 
+par -w -intstyle ise -ol high -t 1 CLOCK_div_2_map.ncd CLOCK_div_2.ncd CLOCK_div_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml CLOCK_div_2.twx CLOCK_div_2.ncd -o CLOCK_div_2.twr CLOCK_div_2.pcf 

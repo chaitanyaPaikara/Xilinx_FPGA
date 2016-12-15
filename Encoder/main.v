@@ -18,30 +18,14 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module main(input clk,input ticks,output reg[14:0] rpm);
-reg [8:0] x;
-reg [28:0] c;
-initial begin 
-x = 0;
-rpm = 0;
-c = 0;
-end
-always@(posedge ticks)begin
-x = x + 1;
-$display(x);
-end
-always@(posedge clk)begin
-c = c + 1;
-// $display(c);
-end
+module CLOCK_div_2(input clk,input CE,output reg OUT_clk);
+initial 
+	OUT_clk <= 1'b0;
 
-always@(posedge c)begin
-if (c > 25000000)
-begin
-	$display(c);
-	rpm = (x*60*18750)/256;
-	x = 0;
-	c = 0;
-end	
+always@(posedge clk)begin
+if(CE == 1)
+	OUT_clk <= ~OUT_clk;
+else
+	OUT_clk <= 1'b0;
 end
 endmodule

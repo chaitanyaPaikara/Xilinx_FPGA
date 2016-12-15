@@ -1,0 +1,20 @@
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.v} -lang verilog -prj Encoder -o main_v2.spl -module main_v2 -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e main_v2.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.sym} 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.syr" 
+netgen -intstyle ise -ar Structure -tm main_v2 -w -dir netgen/synthesis -ofmt vhdl -sim main_v2.ngc main_v2_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 "main_v2.ngc" main_v2.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o main_v2_map.ncd main_v2.ngd main_v2.pcf 
+par -w -intstyle ise -ol high -t 1 main_v2_map.ncd main_v2.ncd main_v2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml main_v2.twx main_v2.ncd -o main_v2.twr main_v2.pcf 
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.v} -lang verilog -prj Encoder -o main_v2.spl -module main_v2 -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e main_v2.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.sym} 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.syr" 
+netgen -intstyle ise -ar Structure -tm main_v2 -w -dir netgen/synthesis -ofmt vhdl -sim main_v2.ngc main_v2_synthesis.vhd 
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.v} -lang verilog -prj Encoder -o main_v2.spl -module main_v2 -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e main_v2.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.sym} 
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.v} -lang verilog -prj Encoder -o main_v2.spl -module main_v2 -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e main_v2.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.sym} 
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.v} -lang verilog -prj Encoder -o main_v2.spl -module main_v2 -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e main_v2.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main_v2.sym} 

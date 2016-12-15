@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Wed Dec 14 17:17:22 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "rpm<0>" LOCATE = SITE "M5" LEVEL 1;
+COMP "rpm<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "rpm<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "rpm<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "rpm<4>" LOCATE = SITE "N5" LEVEL 1;
+COMP "rpm<5>" LOCATE = SITE "N4" LEVEL 1;
+COMP "rpm<6>" LOCATE = SITE "P4" LEVEL 1;
+COMP "rpm<7>" LOCATE = SITE "G1" LEVEL 1;
+COMP "A" LOCATE = SITE "B2" LEVEL 1;
+COMP "B" LOCATE = SITE "C6" LEVEL 1;
+COMP "C" LOCATE = SITE "A9" LEVEL 1;
+COMP "ticks" LOCATE = SITE "C5" LEVEL 1;
+PIN ticks_pin<0> = BEL "ticks" PINNAME PAD;
+PIN "ticks_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "H1" LOCATE = SITE "D12" LEVEL 1;
+COMP "H2" LOCATE = SITE "A13" LEVEL 1;
+COMP "H3" LOCATE = SITE "C13" LEVEL 1;
+COMP "AA" LOCATE = SITE "A3" LEVEL 1;
+COMP "BB" LOCATE = SITE "B6" LEVEL 1;
+COMP "CC" LOCATE = SITE "B9" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "ticks_BUFGP/IBUFG" BEL "ticks_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

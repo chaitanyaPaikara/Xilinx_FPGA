@@ -1,0 +1,27 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl MAIN_SCHEMATIC_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/MAIN_SCHEMATIC.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym MAIN_SCHEMATIC {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/MAIN_SCHEMATIC.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/MAIN_SCHEMATIC.sym} 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/MAIN_SCHEMATIC.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/MAIN_SCHEMATIC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 "MAIN_SCHEMATIC.ngc" MAIN_SCHEMATIC.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o MAIN_SCHEMATIC_map.ncd MAIN_SCHEMATIC.ngd MAIN_SCHEMATIC.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_SCHEMATIC_map.ncd MAIN_SCHEMATIC.ncd MAIN_SCHEMATIC.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_SCHEMATIC.twx MAIN_SCHEMATIC.ncd -o MAIN_SCHEMATIC.twr MAIN_SCHEMATIC.pcf 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl MAIN_SCHEMATIC_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/MAIN_SCHEMATIC.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym MAIN_SCHEMATIC {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/MAIN_SCHEMATIC.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/MAIN_SCHEMATIC.sym} 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/MAIN_SCHEMATIC.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/MAIN_SCHEMATIC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main_Schematic_UCF.ucf -p xc3s250e-cp132-5 "MAIN_SCHEMATIC.ngc" MAIN_SCHEMATIC.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o MAIN_SCHEMATIC_map.ncd MAIN_SCHEMATIC.ngd MAIN_SCHEMATIC.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_SCHEMATIC_map.ncd MAIN_SCHEMATIC.ncd MAIN_SCHEMATIC.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main_Schematic_UCF.ucf -p xc3s250e-cp132-5 "MAIN_SCHEMATIC.ngc" MAIN_SCHEMATIC.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o MAIN_SCHEMATIC_map.ncd MAIN_SCHEMATIC.ngd MAIN_SCHEMATIC.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_SCHEMATIC_map.ncd MAIN_SCHEMATIC.ncd MAIN_SCHEMATIC.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main_Schematic_UCF.ucf -p xc3s250e-cp132-5 "MAIN_SCHEMATIC.ngc" MAIN_SCHEMATIC.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main_Schematic_UCF.ucf -p xc3s250e-cp132-5 "MAIN_SCHEMATIC.ngc" MAIN_SCHEMATIC.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main_Schematic_UCF.ucf -p xc3s250e-cp132-5 "MAIN_SCHEMATIC.ngc" MAIN_SCHEMATIC.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o MAIN_SCHEMATIC_map.ncd MAIN_SCHEMATIC.ngd MAIN_SCHEMATIC.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_SCHEMATIC_map.ncd MAIN_SCHEMATIC.ncd MAIN_SCHEMATIC.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_SCHEMATIC.twx MAIN_SCHEMATIC.ncd -o MAIN_SCHEMATIC.twr MAIN_SCHEMATIC.pcf -ucf Main_Schematic_UCF.ucf 
+bitgen -intstyle ise -f MAIN_SCHEMATIC.ut MAIN_SCHEMATIC.ncd 
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o MAIN_SCHEMATIC_map.ncd MAIN_SCHEMATIC.ngd MAIN_SCHEMATIC.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_SCHEMATIC_map.ncd MAIN_SCHEMATIC.ncd MAIN_SCHEMATIC.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_SCHEMATIC.twx MAIN_SCHEMATIC.ncd -o MAIN_SCHEMATIC.twr MAIN_SCHEMATIC.pcf -ucf Main_Schematic_UCF.ucf 
+bitgen -intstyle ise -f MAIN_SCHEMATIC.ut MAIN_SCHEMATIC.ncd 

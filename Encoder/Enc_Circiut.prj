@@ -1,0 +1,3 @@
+verilog work "Enc.v"
+verilog work "CLK_RST.v"
+vhdl work "Enc_Circiut.vhf"

@@ -1,0 +1,8 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Wed Dec 14 11:24:48 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+NET "ticks_BUFGP/IBUFG" BEL "ticks_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

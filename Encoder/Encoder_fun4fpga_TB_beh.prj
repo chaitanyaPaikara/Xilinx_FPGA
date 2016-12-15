@@ -1,0 +1,3 @@
+verilog work "Encoder_fun4fpga.v"
+verilog work "Encoder_fun4fpga_TB.v"
+verilog work "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,2 @@
+verilog isim_temp "../BLDC_Controller_V1/Commutation.v"
+verilog isim_temp "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v"

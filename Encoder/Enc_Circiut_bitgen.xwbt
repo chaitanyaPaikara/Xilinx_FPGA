@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Chaitanya Paikara\Documents\GitHub\Xilinx_FPGA\Encoder\Enc_Circiut.ncd
+OUTFILE=C:\Users\Chaitanya Paikara\Documents\GitHub\Xilinx_FPGA\Encoder\Enc_Circiut.bit
+FAMILY=Spartan3E
+PART=xc3s250e-5cp132
+WORKINGDIR=C:\Users\Chaitanya Paikara\Documents\GitHub\Xilinx_FPGA\Encoder
+LICENSE=WebPack
+USER_INFO=__0_0_0

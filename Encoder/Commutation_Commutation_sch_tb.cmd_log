@@ -1,0 +1,3 @@
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Commutation.v} -lang verilog -prj Encoder -o Commutation_Commutation_sch_tb.spl -module Commutation_Commutation_sch_tb -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Commutation_Commutation_sch_tb.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Commutation_Commutation_sch_tb.sym} 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Commutation_Commutation_sch_tb.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Commutation_Commutation_sch_tb.syr" 

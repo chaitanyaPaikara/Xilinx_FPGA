@@ -1,0 +1,9 @@
+[Inputs]
+clk
+CE
+[Outputs]
+OUT_clk
+[BiDir]
+[ATTRIBUTES]
+VeriModel CLOCK_div_2
+

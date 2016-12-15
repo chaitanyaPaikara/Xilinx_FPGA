@@ -1,0 +1,8 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Wed Dec 14 17:17:42 2016
+
+drc -z MAIN_SCHEMATIC.ncd MAIN_SCHEMATIC.pcf
+
+DRC detected 0 errors and 0 warnings.

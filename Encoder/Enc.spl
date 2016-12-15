@@ -1,0 +1,9 @@
+[Inputs]
+ticks
+rst
+[Outputs]
+=rpm[10:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Enc
+

@@ -1,0 +1,2 @@
+vhdl work "Commutation.vhf"
+verilog work "../BLDC_Controller_V1/Commutation.v"

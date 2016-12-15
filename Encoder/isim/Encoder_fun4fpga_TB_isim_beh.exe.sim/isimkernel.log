@@ -1,0 +1,28 @@
+Command line:
+   Encoder_fun4fpga_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59022
+
+Thu Dec 15 11:45:20 2016
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 836.669 Meg
+
+ Total Signals          : 16
+ Total Nets             : 26
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 14
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 147
+
+ Total Simulation Time: 0.390625 sec
+
+ Current Memory Usage: 836.669 Meg
+
+Thu Dec 15 11:45:40 2016
+

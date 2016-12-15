@@ -1,0 +1,3 @@
+verilog work "main.v"
+verilog work "Enc.v"
+vhdl work "encoder.vhf"

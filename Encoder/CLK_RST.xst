@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/xst"
+elaborate
+-ifn CLK_RST.prj
+-ifmt mixed

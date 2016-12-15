@@ -1,0 +1,5 @@
+verilog work "Enc.v"
+verilog work "CLK_RST.v"
+vhdl work "Enc_Circiut.vhf"
+vhdl work "Commutation.vhf"
+vhdl work "MAIN_SCHEMATIC.vhf"

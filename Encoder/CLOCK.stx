@@ -1,0 +1,41 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "main.v" in library work
+Module <CLOCK> compiled
+No errors in compilation
+Analysis of file <"CLOCK.prj"> succeeded.
+ 
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/encoder.vhf" in Library work.
+Architecture behavioral of Entity ftce_mxilinx_encoder is up to date.
+Architecture behavioral of Entity cb16ce_mxilinx_encoder is up to date.
+Architecture behavioral of Entity encoder is up to date.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.35 secs
+ 
+--> 
+
+Total memory usage is 282892 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

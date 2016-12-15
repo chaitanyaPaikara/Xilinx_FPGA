@@ -1,0 +1,439 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: Enc_Circiut.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Enc_Circiut.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Enc_Circiut"
+Output Format                      : NGC
+Target Device                      : xc3s250e-5-cp132
+
+---- Source Options
+Top Module Name                    : Enc_Circiut
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Enc.v" in library work
+Compiling verilog file "CLK_RST.v" in library work
+Module <Enc> compiled
+Module <CLK_RST> compiled
+No errors in compilation
+Analysis of file <"Enc_Circiut.prj"> succeeded.
+ 
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Enc_Circiut.vhf" in Library work.
+Entity <enc_circiut> compiled.
+Entity <enc_circiut> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Enc_Circiut> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for module <CLK_RST> in library <work>.
+
+Analyzing hierarchy for module <Enc> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Enc_Circiut> in library <work> (Architecture <behavioral>).
+Entity <Enc_Circiut> analyzed. Unit <Enc_Circiut> generated.
+
+Analyzing module <CLK_RST> in library <work>.
+Module <CLK_RST> is correct for synthesis.
+ 
+Analyzing module <Enc> in library <work>.
+Module <Enc> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CLK_RST>.
+    Related source file is "CLK_RST.v".
+    Found 1-bit register for signal <rst>.
+    Found 18-bit up counter for signal <c>.
+    Found 18-bit comparator greater for signal <rst$cmp_gt0000> created at line 33.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <CLK_RST> synthesized.
+
+
+Synthesizing Unit <Enc>.
+    Related source file is "Enc.v".
+WARNING:Xst:737 - Found 11-bit latch for signal <rpm>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 19-bit up counter for signal <count>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Enc> synthesized.
+
+
+Synthesizing Unit <Enc_Circiut>.
+    Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Enc_Circiut.vhf".
+Unit <Enc_Circiut> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 18-bit up counter                                     : 1
+ 19-bit up counter                                     : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Latches                                              : 1
+ 11-bit latch                                          : 1
+# Comparators                                          : 1
+ 18-bit comparator greater                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 18-bit up counter                                     : 1
+ 19-bit up counter                                     : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Latches                                              : 1
+ 11-bit latch                                          : 1
+# Comparators                                          : 1
+ 18-bit comparator greater                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <XLXI_2/count_11> of sequential type is unconnected in block <Enc_Circiut>.
+WARNING:Xst:2677 - Node <XLXI_2/count_12> of sequential type is unconnected in block <Enc_Circiut>.
+WARNING:Xst:2677 - Node <XLXI_2/count_13> of sequential type is unconnected in block <Enc_Circiut>.
+WARNING:Xst:2677 - Node <XLXI_2/count_14> of sequential type is unconnected in block <Enc_Circiut>.
+WARNING:Xst:2677 - Node <XLXI_2/count_15> of sequential type is unconnected in block <Enc_Circiut>.
+WARNING:Xst:2677 - Node <XLXI_2/count_16> of sequential type is unconnected in block <Enc_Circiut>.
+WARNING:Xst:2677 - Node <XLXI_2/count_17> of sequential type is unconnected in block <Enc_Circiut>.
+WARNING:Xst:2677 - Node <XLXI_2/count_18> of sequential type is unconnected in block <Enc_Circiut>.
+
+Optimizing unit <Enc_Circiut> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Enc_Circiut, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Enc_Circiut.ngr
+Top Level Output File Name         : Enc_Circiut
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 104
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 29
+#      LUT2                        : 2
+#      LUT3                        : 2
+#      LUT4                        : 2
+#      MUXCY                       : 34
+#      VCC                         : 1
+#      XORCY                       : 29
+# FlipFlops/Latches                : 41
+#      FDC                         : 11
+#      FDRE                        : 19
+#      LD                          : 11
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 11
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250ecp132-5 
+
+ Number of Slices:                       20  out of   2448     0%  
+ Number of Slice Flip Flops:             30  out of   4896     0%  
+ Number of 4 input LUTs:                 39  out of   4896     0%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of     92    14%  
+    IOB Flip Flops:                      11
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 19    |
+ticks                              | BUFGP                  | 11    |
+XLXI_1/rst                         | NONE(XLXI_2/rpm_0)     | 11    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+XLXI_1/rst(XLXI_1/rst:Q)           | NONE(XLXI_2/count_0)   | 11    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.483ns (Maximum Frequency: 182.392MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.114ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.483ns (frequency: 182.392MHz)
+  Total number of paths / destination ports: 550 / 56
+-------------------------------------------------------------------------
+Delay:               5.483ns (Levels of Logic = 9)
+  Source:            XLXI_1/c_0 (FF)
+  Destination:       XLXI_1/c_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: XLXI_1/c_0 to XLXI_1/c_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.514   0.532  XLXI_1/c_0 (XLXI_1/c_0)
+     LUT4:I0->O            1   0.612   0.000  XLXI_1/Mcompar_rst_cmp_gt0000_lut<0> (XLXI_1/Mcompar_rst_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  XLXI_1/Mcompar_rst_cmp_gt0000_cy<0> (XLXI_1/Mcompar_rst_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Mcompar_rst_cmp_gt0000_cy<1> (XLXI_1/Mcompar_rst_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Mcompar_rst_cmp_gt0000_cy<2> (XLXI_1/Mcompar_rst_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Mcompar_rst_cmp_gt0000_cy<3> (XLXI_1/Mcompar_rst_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Mcompar_rst_cmp_gt0000_cy<4> (XLXI_1/Mcompar_rst_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Mcompar_rst_cmp_gt0000_cy<5> (XLXI_1/Mcompar_rst_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           2   0.399   0.449  XLXI_1/Mcompar_rst_cmp_gt0000_cy<6> (XLXI_1/Mcompar_rst_cmp_gt0000_cy<6>)
+     LUT2:I1->O           18   0.612   0.908  XLXI_1/c_and00001 (XLXI_1/c_and0000)
+     FDRE:R                    0.795          XLXI_1/c_0
+    ----------------------------------------
+    Total                      5.483ns (3.594ns logic, 1.889ns route)
+                                       (65.6% logic, 34.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ticks'
+  Clock period: 3.441ns (frequency: 290.617MHz)
+  Total number of paths / destination ports: 66 / 11
+-------------------------------------------------------------------------
+Delay:               3.441ns (Levels of Logic = 11)
+  Source:            XLXI_2/count_1 (FF)
+  Destination:       XLXI_2/count_10 (FF)
+  Source Clock:      ticks rising
+  Destination Clock: ticks rising
+
+  Data Path: XLXI_2/count_1 to XLXI_2/count_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.532  XLXI_2/count_1 (XLXI_2/count_1)
+     LUT1:I0->O            1   0.612   0.000  XLXI_2/Mcount_count_cy<1>_rt (XLXI_2/Mcount_count_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  XLXI_2/Mcount_count_cy<1> (XLXI_2/Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_count_cy<2> (XLXI_2/Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_count_cy<3> (XLXI_2/Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_count_cy<4> (XLXI_2/Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_count_cy<5> (XLXI_2/Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_count_cy<6> (XLXI_2/Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_count_cy<7> (XLXI_2/Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_count_cy<8> (XLXI_2/Mcount_count_cy<8>)
+     MUXCY:CI->O           0   0.051   0.000  XLXI_2/Mcount_count_cy<9> (XLXI_2/Mcount_count_cy<9>)
+     XORCY:CI->O           1   0.699   0.000  XLXI_2/Mcount_count_xor<10> (Result<10>1)
+     FDC:D                     0.268          XLXI_2/count_10
+    ----------------------------------------
+    Total                      3.441ns (2.909ns logic, 0.532ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_1/rst'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              4.114ns (Levels of Logic = 1)
+  Source:            XLXI_2/rpm_10 (LATCH)
+  Destination:       rpm<10> (PAD)
+  Source Clock:      XLXI_1/rst falling
+
+  Data Path: XLXI_2/rpm_10 to rpm<10>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.357  XLXI_2/rpm_10 (XLXI_2/rpm_10)
+     OBUF:I->O                 3.169          rpm_10_OBUF (rpm<10>)
+    ----------------------------------------
+    Total                      4.114ns (3.757ns logic, 0.357ns route)
+                                       (91.3% logic, 8.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.06 secs
+ 
+--> 
+
+Total memory usage is 303520 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

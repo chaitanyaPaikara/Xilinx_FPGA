@@ -1,0 +1,3 @@
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main.v} -lang verilog -prj Encoder -o CLOCK.spl -module CLOCK -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e CLOCK.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/CLOCK.sym} 
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/main.v} -lang verilog -prj Encoder -o CLOCK.spl -module CLOCK -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 

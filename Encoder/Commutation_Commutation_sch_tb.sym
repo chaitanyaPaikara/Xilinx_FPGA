@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="Commutation_Commutation_sch_tb">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-12-14T5:59:25</timestamp>
+    <attr value="Commutation_Commutation_sch_tb" name="VeriModel" />
+    <graph>
+        <rect width="256" x="64" y="0" height="0" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-8" type="symbol" />
+    </graph>
+</symbol>

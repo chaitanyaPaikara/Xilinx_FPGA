@@ -1,18 +1,18 @@
-Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Chaitanya Paikara/Documents/KRSSG/QUES/Encoder/main_TB_isim_beh.exe -prj C:/Users/Chaitanya Paikara/Documents/KRSSG/QUES/Encoder/main_TB_beh.prj work.main_TB work.glbl 
+Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga_TB_isim_beh.exe -prj C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga_TB_beh.prj work.Encoder_fun4fpga_TB work.glbl 
 ISim P.28xd (signature 0xa0883be4)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/Chaitanya Paikara/Documents/KRSSG/QUES/Encoder/main.v" into library work
-Analyzing Verilog file "C:/Users/Chaitanya Paikara/Documents/KRSSG/QUES/Encoder/main_TB.v" into library work
+Analyzing Verilog file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.v" into library work
+Analyzing Verilog file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga_TB.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Compiling module main
-Compiling module main_TB
+Compiling module Encoder_fun4fpga
+Compiling module Encoder_fun4fpga_TB
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Compiled 3 Verilog Units
-Built simulation executable C:/Users/Chaitanya Paikara/Documents/KRSSG/QUES/Encoder/main_TB_isim_beh.exe
-Fuse Memory Usage: 27348 KB
-Fuse CPU Usage: 593 ms
+Built simulation executable C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga_TB_isim_beh.exe
+Fuse Memory Usage: 26696 KB
+Fuse CPU Usage: 296 ms

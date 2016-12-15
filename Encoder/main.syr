@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: main.prj
 
@@ -68,7 +68,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -120,8 +120,6 @@ Analyzing hierarchy for module <main> in library <work>.
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <main>.
-WARNING:Xst:905 - "main.v" line 34: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <x>
 Module <main> is correct for synthesis.
  
 
@@ -131,20 +129,18 @@ Module <main> is correct for synthesis.
 
 Performing bidirectional port resolution...
 INFO:Xst:2679 - Register <x> in unit <main> has a constant value of 000000000 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <c> in unit <main> has a constant value of 00000000000000000000000000000 during circuit operation. The register is replaced by logic.
 
 Synthesizing Unit <main>.
     Related source file is "main.v".
-WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:737 - Found 15-bit latch for signal <rpm>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:643 - "main.v" line 37: The result of a 15x15-bit multiplication is partially used. Only the 15 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 15-bit register for signal <rpm>.
     Found 29-bit up counter for signal <c>.
-    Found 29-bit comparator greater for signal <rpm$cmp_gt0000> created at line 35.
-    Found 9x6-bit multiplier for signal <rpm$mult0000> created at line 37.
-    Found 15x15-bit multiplier for signal <rpm$mult0002> created at line 37.
+    Found 29-bit comparator greater for signal <rpm$cmp_gt0000> created at line 39.
+    Found 15x15-bit multiplier for signal <rpm$mult0000> created at line 42.
+    Found 9x6-bit multiplier for signal <rpm$mult0001> created at line 42.
     Found 9-bit up counter for signal <x>.
     Summary:
 	inferred   2 Counter(s).
+	inferred  15 D-type flip-flop(s).
 	inferred   2 Multiplier(s).
 	inferred   1 Comparator(s).
 Unit <main> synthesized.
@@ -160,8 +156,8 @@ Macro Statistics
 # Counters                                             : 2
  29-bit up counter                                     : 1
  9-bit up counter                                      : 1
-# Latches                                              : 1
- 15-bit latch                                          : 1
+# Registers                                            : 1
+ 15-bit register                                       : 1
 # Comparators                                          : 1
  29-bit comparator greater                             : 1
 
@@ -182,8 +178,8 @@ Macro Statistics
 # Counters                                             : 2
  29-bit up counter                                     : 1
  9-bit up counter                                      : 1
-# Latches                                              : 1
- 15-bit latch                                          : 1
+# Registers                                            : 15
+ Flip-Flops                                            : 15
 # Comparators                                          : 1
  29-bit comparator greater                             : 1
 
@@ -238,160 +234,15 @@ Drivers are:
    Output signal of FD instance <x_8>
    Signal <x<8>> in Unit <main> is assigned to GND
 
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_cy<0>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_0>
-   Signal <c<0>> in Unit <main> is assigned to GND
 
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<1>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_1>
-   Signal <c<1>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<2>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_2>
-   Signal <c<2>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<3>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_3>
-   Signal <c<3>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<4>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_4>
-   Signal <c<4>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<5>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_5>
-   Signal <c<5>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<6>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_6>
-   Signal <c<6>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<7>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_7>
-   Signal <c<7>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<8>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_8>
-   Signal <c<8>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<9>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_9>
-   Signal <c<9>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<10>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_10>
-   Signal <c<10>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<11>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_11>
-   Signal <c<11>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<12>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_12>
-   Signal <c<12>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<13>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_13>
-   Signal <c<13>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<14>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_14>
-   Signal <c<14>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<15>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_15>
-   Signal <c<15>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<16>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_16>
-   Signal <c<16>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<17>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_17>
-   Signal <c<17>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<18>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_18>
-   Signal <c<18>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<19>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_19>
-   Signal <c<19>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<20>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_20>
-   Signal <c<20>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<21>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_21>
-   Signal <c<21>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<22>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_22>
-   Signal <c<22>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<23>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_23>
-   Signal <c<23>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<24>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_24>
-   Signal <c<24>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<25>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_25>
-   Signal <c<25>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<26>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_26>
-   Signal <c<26>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<27>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_27>
-   Signal <c<27>> in Unit <main> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <main> on signal <Mcount_c_lut<28>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FD instance <c_28>
-   Signal <c<28>> in Unit <main> is assigned to GND
-
-
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.45 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.42 secs
  
 --> 
 
-Total memory usage is 290324 kilobytes
+Total memory usage is 290340 kilobytes
 
-Number of errors   :   38 (   0 filtered)
-Number of warnings :    4 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of errors   :    9 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

@@ -1,0 +1,5 @@
+verilog work "main.v"
+verilog work "Enc.v"
+vhdl work "encoder.vhf"
+verilog work "encoder_TB.v"
+verilog work "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,87 @@
+--------------------------------------------------------------------------------
+Release 14.2 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml Enc.twx Enc.ncd -o Enc.twr Enc.pcf
+
+Design file:              Enc.ncd
+Physical constraint file: Enc.pcf
+Device,package,speed:     xc3s250e,cp132,-5 (PRODUCTION 1.27 2012-07-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock rst to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+rpm<0>      |    5.551(F)|rst_IBUF          |   0.000|
+rpm<1>      |    5.549(F)|rst_IBUF          |   0.000|
+rpm<2>      |    5.551(F)|rst_IBUF          |   0.000|
+rpm<3>      |    5.566(F)|rst_IBUF          |   0.000|
+rpm<4>      |    5.550(F)|rst_IBUF          |   0.000|
+rpm<5>      |    5.547(F)|rst_IBUF          |   0.000|
+rpm<6>      |    5.550(F)|rst_IBUF          |   0.000|
+rpm<7>      |    5.547(F)|rst_IBUF          |   0.000|
+rpm<8>      |    5.550(F)|rst_IBUF          |   0.000|
+rpm<9>      |    5.547(F)|rst_IBUF          |   0.000|
+rpm<10>     |    5.570(F)|rst_IBUF          |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock rst
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ticks          |         |         |    9.873|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ticks
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ticks          |    3.480|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Wed Dec 14 11:24:59 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 175 MB
+
+
+

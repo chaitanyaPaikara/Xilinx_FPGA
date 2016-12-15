@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Thu Dec 15 11:41:18 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "rpm<0>" LOCATE = SITE "M5" LEVEL 1;
+COMP "rpm<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "rpm<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "rpm<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "rpm<4>" LOCATE = SITE "N5" LEVEL 1;
+COMP "rpm<5>" LOCATE = SITE "N4" LEVEL 1;
+COMP "rpm<6>" LOCATE = SITE "P4" LEVEL 1;
+COMP "rpm<7>" LOCATE = SITE "G1" LEVEL 1;
+COMP "ticks" LOCATE = SITE "C5" LEVEL 1;
+COMP "CLK" LOCATE = SITE "B8" LEVEL 1;
+NET "CLK_BUFGP/IBUFG" BEL "CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

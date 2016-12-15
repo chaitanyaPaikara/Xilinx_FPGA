@@ -1,0 +1,32 @@
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.v} -lang verilog -prj Encoder -o Encoder_fun4fpga.spl -module Encoder_fun4fpga -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Encoder_fun4fpga.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.sym} 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.syr" 
+netgen -intstyle ise -ar Structure -tm Encoder_fun4fpga -w -dir netgen/synthesis -ofmt vhdl -sim Encoder_fun4fpga.ngc Encoder_fun4fpga_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm Encoder_fun4fpga.bmm -p xc3s250e-cp132-5 "Encoder_fun4fpga.ngc" Encoder_fun4fpga.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o Encoder_fun4fpga_map.ncd Encoder_fun4fpga.ngd Encoder_fun4fpga.pcf 
+par -w -intstyle ise -ol high -t 1 Encoder_fun4fpga_map.ncd Encoder_fun4fpga.ncd Encoder_fun4fpga.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Encoder_fun4fpga.twx Encoder_fun4fpga.ncd -o Encoder_fun4fpga.twr Encoder_fun4fpga.pcf 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm Encoder_fun4fpga.bmm -p xc3s250e-cp132-5 "Encoder_fun4fpga.ngc" Encoder_fun4fpga.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o Encoder_fun4fpga_map.ncd Encoder_fun4fpga.ngd Encoder_fun4fpga.pcf 
+par -w -intstyle ise -ol high -t 1 Encoder_fun4fpga_map.ncd Encoder_fun4fpga.ncd Encoder_fun4fpga.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Encoder_fun4fpga.twx Encoder_fun4fpga.ncd -o Encoder_fun4fpga.twr Encoder_fun4fpga.pcf 
+bitgen -intstyle ise -f Encoder_fun4fpga.ut Encoder_fun4fpga.ncd 
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.v} -lang verilog -prj Encoder -o Encoder_fun4fpga.spl -module Encoder_fun4fpga -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Encoder_fun4fpga.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.sym} 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.syr" 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.syr" 
+netgen -intstyle ise -ar Structure -tm Encoder_fun4fpga -w -dir netgen/synthesis -ofmt vhdl -sim Encoder_fun4fpga.ngc Encoder_fun4fpga_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Encoder_fun4fpga_UCF.ucf -bm Encoder_fun4fpga.bmm -p xc3s250e-cp132-5 "Encoder_fun4fpga.ngc" Encoder_fun4fpga.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o Encoder_fun4fpga_map.ncd Encoder_fun4fpga.ngd Encoder_fun4fpga.pcf 
+par -w -intstyle ise -ol high -t 1 Encoder_fun4fpga_map.ncd Encoder_fun4fpga.ncd Encoder_fun4fpga.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Encoder_fun4fpga.twx Encoder_fun4fpga.ncd -o Encoder_fun4fpga.twr Encoder_fun4fpga.pcf -ucf Encoder_fun4fpga_UCF.ucf 
+bitgen -intstyle ise -f Encoder_fun4fpga.ut Encoder_fun4fpga.ncd 
+vhdtdtfi -lib work {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.v} -lang verilog -prj Encoder -o Encoder_fun4fpga.spl -module Encoder_fun4fpga -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Encoder_fun4fpga.spl {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.sym} 
+xst -intstyle ise -ifn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.xst" -ofn "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Encoder_fun4fpga_UCF.ucf -bm Encoder_fun4fpga.bmm -p xc3s250e-cp132-5 "Encoder_fun4fpga.ngc" Encoder_fun4fpga.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o Encoder_fun4fpga_map.ncd Encoder_fun4fpga.ngd Encoder_fun4fpga.pcf 
+par -w -intstyle ise -ol high -t 1 Encoder_fun4fpga_map.ncd Encoder_fun4fpga.ncd Encoder_fun4fpga.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Encoder_fun4fpga.twx Encoder_fun4fpga.ncd -o Encoder_fun4fpga.twr Encoder_fun4fpga.pcf -ucf Encoder_fun4fpga_UCF.ucf 
+bitgen -intstyle ise -f Encoder_fun4fpga.ut Encoder_fun4fpga.ncd 
