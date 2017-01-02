@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="PWM">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2016-8-17T18:10:15</timestamp>
+    <timestamp>2016-12-8T15:52:42</timestamp>
     <pin polarity="Input" x="0" y="-352" name="CLK" />
     <pin polarity="Input" x="0" y="-288" name="D0" />
     <pin polarity="Input" x="0" y="-224" name="D1" />
@@ -21,8 +21,8 @@
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin CE" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-352" type="pin PWM" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="32" type="pin XLXN_37" />
-        <line x2="384" y1="32" y2="32" x1="320" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="96" type="pin XLXN_38" />
+        <line x2="384" y1="32" y2="32" x1="320" />
         <line x2="384" y1="96" y2="96" x1="320" />
         <line x2="0" y1="-352" y2="-352" x1="64" />
         <line x2="0" y1="-288" y2="-288" x1="64" />

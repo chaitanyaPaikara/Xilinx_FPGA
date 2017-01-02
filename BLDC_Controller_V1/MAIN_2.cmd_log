@@ -22,3 +22,19 @@ map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o MAIN_2_
 par -w -intstyle ise -ol high -t 1 MAIN_2_map.ncd MAIN_2.ncd MAIN_2.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_2.twx MAIN_2.ncd -o MAIN_2.twr MAIN_2.pcf -ucf MAIN_1_BIT.ucf 
 bitgen -intstyle ise -f MAIN_2.ut MAIN_2.ncd 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl MAIN_2_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym MAIN_2 {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl MAIN_2_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym MAIN_2 {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl MAIN_2_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym MAIN_2 {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl MAIN_2_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym MAIN_2 {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl MAIN_2_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym MAIN_2 {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl MAIN_2_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym MAIN_2 {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl MAIN_2_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym MAIN_2 {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl MAIN_2_drc.vhf -w {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym MAIN_2 {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sch} {C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.sym} 

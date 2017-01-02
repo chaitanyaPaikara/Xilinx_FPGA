@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-10-02T03:05:12</DateModified>
+  <DateModified>2016-12-09T15:39:32</DateModified>
   <ModuleName>Commutation</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/iseconfig/MAIN_2.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1</ImplementationReportsDirectory>
-  <DateInitialized>2016-10-02T03:05:12</DateInitialized>
+  <ImplementationReportsDirectory>C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1\</ImplementationReportsDirectory>
+  <DateInitialized>2016-12-09T15:39:32</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

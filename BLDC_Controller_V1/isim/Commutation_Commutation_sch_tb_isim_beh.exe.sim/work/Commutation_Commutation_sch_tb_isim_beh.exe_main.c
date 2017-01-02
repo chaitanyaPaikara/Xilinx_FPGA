@@ -14,10 +14,10 @@
 
 struct XSI_INFO xsi_info;
 
-char *STD_STANDARD;
-char *IEEE_P_1242562249;
 char *IEEE_P_2592010699;
 char *UNISIM_P_0947159679;
+char *IEEE_P_1242562249;
+char *STD_STANDARD;
 
 
 int main(int argc, char **argv)
@@ -40,11 +40,11 @@ int main(int argc, char **argv)
     xsi_register_tops("work_m_00000000001714354883_3457186721");
     xsi_register_tops("work_m_00000000004134447467_2073120511");
 
-    STD_STANDARD = xsi_get_engine_memory("std_standard");
-    IEEE_P_1242562249 = xsi_get_engine_memory("ieee_p_1242562249");
     IEEE_P_2592010699 = xsi_get_engine_memory("ieee_p_2592010699");
     xsi_register_ieee_std_logic_1164(IEEE_P_2592010699);
     UNISIM_P_0947159679 = xsi_get_engine_memory("unisim_p_0947159679");
+    IEEE_P_1242562249 = xsi_get_engine_memory("ieee_p_1242562249");
+    STD_STANDARD = xsi_get_engine_memory("std_standard");
 
     return xsi_run_simulation(argc, argv);
 

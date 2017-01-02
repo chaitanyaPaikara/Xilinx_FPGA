@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="Commutation">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2016-10-1T21:34:56</timestamp>
+    <timestamp>2016-12-9T10:11:37</timestamp>
     <pin polarity="Input" x="0" y="-352" name="H1" />
     <pin polarity="Input" x="0" y="-192" name="H2" />
     <pin polarity="Input" x="0" y="-32" name="H3" />

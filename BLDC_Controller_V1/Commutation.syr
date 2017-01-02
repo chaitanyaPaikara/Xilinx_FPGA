@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> Reading design: Commutation.prj
 
@@ -104,12 +104,24 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM_VNB.vhf" in Library work.
+Architecture behavioral of Entity ftrse_mxilinx_pwm_vnb is up to date.
+Architecture behavioral of Entity cb4re_mxilinx_pwm_vnb is up to date.
+Architecture behavioral of Entity pwm_v2_muser_pwm_vnb is up to date.
+Architecture behavioral of Entity comparator_muser_pwm_vnb is up to date.
+Architecture behavioral of Entity pwm_vnb is up to date.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM_V2.vhf" in Library work.
+Architecture behavioral of Entity pwm_v2 is up to date.
 Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM_NB1.vhf" in Library work.
 Architecture behavioral of Entity ftrse_mxilinx_pwm_nb1 is up to date.
 Architecture behavioral of Entity cb4re_mxilinx_pwm_nb1 is up to date.
 Architecture behavioral of Entity pwm_v2_muser_pwm_nb1 is up to date.
 Architecture behavioral of Entity comparator_muser_pwm_nb1 is up to date.
 Architecture behavioral of Entity pwm_nb1 is up to date.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM.vhf" in Library work.
+Architecture behavioral of Entity ftce_mxilinx_pwm is up to date.
+Architecture behavioral of Entity cb4ce_mxilinx_pwm is up to date.
+Architecture behavioral of Entity pwm is up to date.
 Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_1.vhf" in Library work.
 Architecture behavioral of Entity ftrse_mxilinx_main_1 is up to date.
 Architecture behavioral of Entity cb4re_mxilinx_main_1 is up to date.
@@ -130,6 +142,11 @@ Architecture behavioral of Entity pwm_vnb_muser_main is up to date.
 Architecture behavioral of Entity or6_mxilinx_main is up to date.
 Architecture behavioral of Entity m2_1_mxilinx_main is up to date.
 Architecture behavioral of Entity main is up to date.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/DEADTIME.vhf" in Library work.
+Architecture behavioral of Entity deadtime is up to date.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Comparator.vhf" in Library work.
+Architecture behavioral of Entity pwm_v2_muser_comparator is up to date.
+Architecture behavioral of Entity comparator is up to date.
 Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Commutation.vhf" in Library work.
 Entity <commutation> compiled.
 Entity <commutation> (Architecture <behavioral>) compiled.
@@ -218,9 +235,9 @@ Design Statistics
 # IOs                              : 9
 
 Cell Usage :
-# BELS                             : 15
+# BELS                             : 9
 #      AND2                        : 3
-#      INV                         : 9
+#      INV                         : 3
 #      OR2                         : 3
 # IO Buffers                       : 9
 #      IBUF                        : 3
@@ -232,8 +249,8 @@ Device utilization summary:
 
 Selected Device : 3s250ecp132-5 
 
- Number of Slices:                        0  out of   2448     0%  
- Number of 4 input LUTs:                  9  out of   4896     0%  
+ Number of Slices:                        2  out of   2448     0%  
+ Number of 4 input LUTs:                  3  out of   4896     0%  
  Number of IOs:                           9
  Number of bonded IOBs:                   9  out of     92     9%  
 
@@ -268,7 +285,7 @@ Speed Grade: -5
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 7.656ns
+   Maximum combinational path delay: 6.687ns
 
 Timing Detail:
 --------------
@@ -278,7 +295,7 @@ All values displayed in nanoseconds (ns)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 12 / 6
 -------------------------------------------------------------------------
-Delay:               7.656ns (Levels of Logic = 5)
+Delay:               6.687ns (Levels of Logic = 4)
   Source:            H1 (PAD)
   Destination:       AA (PAD)
 
@@ -288,22 +305,21 @@ Delay:               7.656ns (Levels of Logic = 5)
     ----------------------------------------  ------------
      IBUF:I->O             3   1.106   0.451  H1_IBUF (H1_IBUF)
      INV:I->O              2   0.612   0.380  XLXI_24 (XLXN_59)
-     OR2:I1->O             1   0.612   0.357  XLXI_27 (XLXN_61)
-     INV:I->O              1   0.612   0.357  XLXI_36 (A_OBUF)
+     OR2:I1->O             1   0.612   0.357  XLXI_27 (A_OBUF)
      OBUF:I->O                 3.169          A_OBUF (A)
     ----------------------------------------
-    Total                      7.656ns (6.111ns logic, 1.545ns route)
-                                       (79.8% logic, 20.2% route)
+    Total                      6.687ns (5.499ns logic, 1.188ns route)
+                                       (82.2% logic, 17.8% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.85 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.49 secs
  
 --> 
 
-Total memory usage is 305280 kilobytes
+Total memory usage is 307548 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

@@ -1,0 +1,86 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "pwm_4.v" in library work
+Module <pwm_4> compiled
+No errors in compilation
+Analysis of file <"pwm_4.prj"> succeeded.
+ 
+WARNING:HDLParsers:3607 - Unit work/FTCE_MXILINX_PWM is now defined in a different file.  It was defined in "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf", and is now defined in "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM.vhf".
+WARNING:HDLParsers:3607 - Unit work/FTCE_MXILINX_PWM/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf", and is now defined in "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM.vhf".
+WARNING:HDLParsers:3607 - Unit work/CB4CE_MXILINX_PWM is now defined in a different file.  It was defined in "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf", and is now defined in "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM.vhf".
+WARNING:HDLParsers:3607 - Unit work/CB4CE_MXILINX_PWM/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf", and is now defined in "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM.vhf".
+WARNING:HDLParsers:3607 - Unit work/PWM is now defined in a different file.  It was defined in "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf", and is now defined in "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM.vhf".
+WARNING:HDLParsers:3607 - Unit work/PWM/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf", and is now defined in "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM.vhf".
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM_VNB.vhf" in Library work.
+Architecture behavioral of Entity ftrse_mxilinx_pwm_vnb is up to date.
+Architecture behavioral of Entity cb4re_mxilinx_pwm_vnb is up to date.
+Architecture behavioral of Entity pwm_v2_muser_pwm_vnb is up to date.
+Architecture behavioral of Entity comparator_muser_pwm_vnb is up to date.
+Architecture behavioral of Entity pwm_vnb is up to date.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM_V2.vhf" in Library work.
+Architecture behavioral of Entity pwm_v2 is up to date.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM_NB1.vhf" in Library work.
+Architecture behavioral of Entity ftrse_mxilinx_pwm_nb1 is up to date.
+Architecture behavioral of Entity cb4re_mxilinx_pwm_nb1 is up to date.
+Architecture behavioral of Entity pwm_v2_muser_pwm_nb1 is up to date.
+Architecture behavioral of Entity comparator_muser_pwm_nb1 is up to date.
+Architecture behavioral of Entity pwm_nb1 is up to date.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM.vhf" in Library work.
+Architecture behavioral of Entity ftce_mxilinx_pwm is up to date.
+Architecture behavioral of Entity cb4ce_mxilinx_pwm is up to date.
+Architecture behavioral of Entity pwm is up to date.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_1.vhf" in Library work.
+Architecture behavioral of Entity ftrse_mxilinx_main_1 is up to date.
+Architecture behavioral of Entity cb4re_mxilinx_main_1 is up to date.
+Architecture behavioral of Entity pwm_v2_muser_main_1 is up to date.
+Architecture behavioral of Entity comparator_muser_main_1 is up to date.
+Architecture behavioral of Entity pwm_nb1_muser_main_1 is up to date.
+Architecture behavioral of Entity commutation_muser_main_1 is up to date.
+Architecture behavioral of Entity or6_mxilinx_main_1 is up to date.
+Architecture behavioral of Entity m2_1_mxilinx_main_1 is up to date.
+Architecture behavioral of Entity main_1 is up to date.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN.vhf" in Library work.
+Architecture behavioral of Entity commutation_muser_main is up to date.
+Architecture behavioral of Entity ftrse_mxilinx_main is up to date.
+Architecture behavioral of Entity cb4re_mxilinx_main is up to date.
+Architecture behavioral of Entity pwm_v2_muser_main is up to date.
+Architecture behavioral of Entity comparator_muser_main is up to date.
+Architecture behavioral of Entity pwm_vnb_muser_main is up to date.
+Architecture behavioral of Entity or6_mxilinx_main is up to date.
+Architecture behavioral of Entity m2_1_mxilinx_main is up to date.
+Architecture behavioral of Entity main is up to date.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/DEADTIME.vhf" in Library work.
+Architecture behavioral of Entity deadtime is up to date.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Comparator.vhf" in Library work.
+Architecture behavioral of Entity pwm_v2_muser_comparator is up to date.
+Architecture behavioral of Entity comparator is up to date.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.34 secs
+ 
+--> 
+
+Total memory usage is 286940 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

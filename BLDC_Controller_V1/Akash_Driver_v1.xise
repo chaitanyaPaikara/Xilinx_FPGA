@@ -15,84 +15,35 @@
   <version xil_pn:ise_version="14.2" xil_pn:schema_version="2"/>
 
   <files>
-    <file xil_pn:name="PWM.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
     <file xil_pn:name="Commutation.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
     </file>
-    <file xil_pn:name="DEADTIME.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="BLDC_TestBench.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="112"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="2"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="112"/>
-    </file>
-    <file xil_pn:name="PWM_V2.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="Comparator.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="PWM_VNB.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
     <file xil_pn:name="sim_com_1.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="121"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="121"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="121"/>
     </file>
-    <file xil_pn:name="deadtime_v2.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="main_sun_1.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="125"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="125"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="125"/>
-    </file>
-    <file xil_pn:name="v2.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="130"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="130"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="130"/>
-    </file>
-    <file xil_pn:name="MAIN_1_NEW.ucf" xil_pn:type="FILE_UCF">
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="clk_change.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="Dead_Time.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
     <file xil_pn:name="MAIN_2.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="5"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="MAIN_1_BIT.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="MAIN_2_SIM.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="6"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="229"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="229"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="229"/>
-    </file>
     <file xil_pn:name="COMMUTATION_ucf.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="pwm_4.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="Main_2_TB.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="272"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="272"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="272"/>
     </file>
   </files>
 
@@ -321,8 +272,8 @@
     <property xil_pn:name="Run for Specified Time Translate" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Safe Implementation" xil_pn:value="No" xil_pn:valueState="default"/>
     <property xil_pn:name="Security" xil_pn:value="Enable Readback and Reconfiguration" xil_pn:valueState="default"/>
-    <property xil_pn:name="Selected Module Instance Name" xil_pn:value="/MAIN_2_MAIN_2_sch_tb/UUT" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.MAIN_2" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Selected Module Instance Name" xil_pn:value="/Commutation_Commutation_sch_tb" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.Commutation_Commutation_sch_tb" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Post-Map" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Post-Route" xil_pn:value="work.MAIN_MAIN_sch_tb" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Post-Translate" xil_pn:value="" xil_pn:valueState="default"/>
@@ -338,7 +289,7 @@
     <property xil_pn:name="Slice Packing" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Slice Utilization Ratio" xil_pn:value="100" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify 'define Macro Name and Value" xil_pn:value="" xil_pn:valueState="default"/>
-    <property xil_pn:name="Specify Top Level Instance Names Behavioral" xil_pn:value="work.MAIN_2" xil_pn:valueState="default"/>
+    <property xil_pn:name="Specify Top Level Instance Names Behavioral" xil_pn:value="work.Commutation_Commutation_sch_tb" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify Top Level Instance Names Post-Map" xil_pn:value="Default" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify Top Level Instance Names Post-Route" xil_pn:value="work.MAIN_MAIN_sch_tb" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify Top Level Instance Names Post-Translate" xil_pn:value="Default" xil_pn:valueState="default"/>
@@ -388,7 +339,7 @@
     <!--                                                                                  -->
     <!-- The following properties are for internal use only. These should not be modified.-->
     <!--                                                                                  -->
-    <property xil_pn:name="PROP_BehavioralSimTop" xil_pn:value="Module|MAIN_2_MAIN_2_sch_tb" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="PROP_BehavioralSimTop" xil_pn:value="Module|Commutation_Commutation_sch_tb" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_DesignName" xil_pn:value="Akash_Driver_v1" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_DevFamilyPMName" xil_pn:value="spartan3e" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_FPGAConfiguration" xil_pn:value="FPGAConfiguration" xil_pn:valueState="default"/>
@@ -404,7 +355,6 @@
   </properties>
 
   <bindings>
-    <binding xil_pn:location="/MAIN_1" xil_pn:name="MAIN_1_NEW.ucf"/>
     <binding xil_pn:location="/MAIN_2" xil_pn:name="MAIN_1_BIT.ucf"/>
     <binding xil_pn:location="/Commutation" xil_pn:name="COMMUTATION_ucf.ucf"/>
   </bindings>

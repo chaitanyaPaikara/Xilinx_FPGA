@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.2
 --  \   \         Application : sch2hdl
 --  /   /         Filename : PWM_drc.vhf
--- /___/   /\     Timestamp : 08/17/2016 23:40:10
+-- /___/   /\     Timestamp : 12/08/2016 21:22:39
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan3e -flat -suppress -vhdl PWM_drc.vhf -w "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.sch"
+--Command: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan3e -flat -suppress -vhdl PWM_drc.vhf -w "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM.sch"
 --Design Name: PWM
 --Device: spartan3e
 --Purpose:

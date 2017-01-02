@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.2
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Commutation.vhf
--- /___/   /\     Timestamp : 10/02/2016 03:06:20
+-- /___/   /\     Timestamp : 12/08/2016 21:09:11
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -42,12 +42,6 @@ architecture BEHAVIORAL of Commutation is
    signal XLXN_58 : std_logic;
    signal XLXN_59 : std_logic;
    signal XLXN_60 : std_logic;
-   signal XLXN_61 : std_logic;
-   signal XLXN_62 : std_logic;
-   signal XLXN_63 : std_logic;
-   signal XLXN_64 : std_logic;
-   signal XLXN_65 : std_logic;
-   signal XLXN_71 : std_logic;
    component INV
       port ( I : in    std_logic; 
              O : out   std_logic);
@@ -84,55 +78,31 @@ begin
    XLXI_27 : OR2
       port map (I0=>H2,
                 I1=>XLXN_59,
-                O=>XLXN_61);
+                O=>A);
    
    XLXI_28 : OR2
       port map (I0=>H3,
                 I1=>XLXN_60,
-                O=>XLXN_63);
+                O=>B);
    
    XLXI_29 : OR2
       port map (I0=>H1,
                 I1=>XLXN_58,
-                O=>XLXN_65);
+                O=>C);
    
    XLXI_33 : AND2
       port map (I0=>H2,
                 I1=>XLXN_59,
-                O=>XLXN_62);
+                O=>AA);
    
    XLXI_34 : AND2
       port map (I0=>H3,
                 I1=>XLXN_60,
-                O=>XLXN_64);
+                O=>BB);
    
    XLXI_35 : AND2
       port map (I0=>H1,
                 I1=>XLXN_58,
-                O=>XLXN_71);
-   
-   XLXI_36 : INV
-      port map (I=>XLXN_61,
-                O=>A);
-   
-   XLXI_37 : INV
-      port map (I=>XLXN_62,
-                O=>AA);
-   
-   XLXI_38 : INV
-      port map (I=>XLXN_63,
-                O=>B);
-   
-   XLXI_39 : INV
-      port map (I=>XLXN_64,
-                O=>BB);
-   
-   XLXI_40 : INV
-      port map (I=>XLXN_65,
-                O=>C);
-   
-   XLXI_41 : INV
-      port map (I=>XLXN_71,
                 O=>CC);
    
 end BEHAVIORAL;

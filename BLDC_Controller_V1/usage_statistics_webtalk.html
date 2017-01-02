@@ -17,7 +17,7 @@
 </TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Project ID (random number)</B></TD>
-<TD><xtag-property name="RandomID">a0f727f145b64da6a078f36c7f455085</xtag-property>.<xtag-property name="ProjectID">AE155C8C3D5247938B5A5AE667D23F91</xtag-property>.<xtag-property name="ProjectIteration">37</xtag-property></TD>
+<TD><xtag-property name="RandomID">a0f727f145b64da6a078f36c7f455085</xtag-property>.<xtag-property name="ProjectID">AE155C8C3D5247938B5A5AE667D23F91</xtag-property>.<xtag-property name="ProjectIteration">38</xtag-property></TD>
 <TD BGCOLOR='#FFFF99'><B>Target Package:</B></TD>
 <TD><xtag-property name="TargetPackage">cp132</xtag-property></TD>
 </TR>
@@ -29,7 +29,7 @@
 </TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Date Generated</B></TD>
-<TD><xtag-property name="Date Generated">2016-10-02T03:06:55</xtag-property></TD>
+<TD><xtag-property name="Date Generated">2016-12-09T15:42:55</xtag-property></TD>
 <TD BGCOLOR='#FFFF99'><B>Tool Flow</B></TD>
 <TD><xtag-property name="ToolFlow">ISE</xtag-property></TD>
 </TR>
@@ -72,15 +72,13 @@
 <xtag-group><xtag-group-name name="NetStatistics">NetStatistics</xtag-group-name>
 <UL>
 <LI><xtag-item1>NumNets_Active=18</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_DOUBLE=18</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_DOUBLE=23</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Active_DUMMY=12</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Active_DUMMYESC=3</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_HUNIHEX=5</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_HUNIHEX=10</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Active_INPUT=18</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Active_IOBOUTPUT=3</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_OMUX=3</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Active_OUTPUT=6</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_VUNIHEX=2</xtag-item1></LI>
 </UL>
 </xtag-group>
 <xtag-group><xtag-group-name name="SiteStatistics">SiteStatistics</xtag-group-name>
@@ -89,7 +87,6 @@
 <LI><xtag-item1>IBUF-DIFFS=2</xtag-item1></LI>
 <LI><xtag-item1>IOB-DIFFM=4</xtag-item1></LI>
 <LI><xtag-item1>IOB-DIFFS=2</xtag-item1></LI>
-<LI><xtag-item1>SLICEL-SLICEM=1</xtag-item1></LI>
 </UL>
 </xtag-group>
 </TD>
@@ -125,14 +122,14 @@
 </xtag-group>
 <xtag-group><xtag-group-name name="IOB">IOB</xtag-group-name>
 <UL>
-<LI><xtag-item3>O1=[O1_INV:6] [O1:0]</xtag-item3></LI>
+<LI><xtag-item3>O1=[O1_INV:0] [O1:6]</xtag-item3></LI>
 </UL>
 </TD>
 <TD>
 </xtag-group>
 <xtag-group><xtag-group-name name="IOB_OUTBUF">IOB_OUTBUF</xtag-group-name>
 <UL>
-<LI><xtag-item3>IN=[IN_INV:6] [IN:0]</xtag-item3></LI>
+<LI><xtag-item3>IN=[IN_INV:0] [IN:6]</xtag-item3></LI>
 </UL>
 </TD>
 <TD>
@@ -243,6 +240,17 @@
 <LI><xtag-cmdline>par -w -intstyle ise -ol high -t 1 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
 <LI><xtag-cmdline>trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
 <LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl &lt;fname&gt;.vhf -w {C:/Users/Chaitanya &lt;fname&gt;.sch}</xtag-cmdline></LI>
+<LI><xtag-cmdline>sch2sym -intstyle ise -family spartan3e -w -refsym &lt;design&gt; {C:/Users/Chaitanya &lt;fname&gt;.sch} {C:/Users/Chaitanya &lt;fname&gt;.sym}</xtag-cmdline></LI>
+<LI><xtag-cmdline>sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl &lt;fname&gt;.vhf -w {C:/Users/Chaitanya &lt;fname&gt;.sch}</xtag-cmdline></LI>
+<LI><xtag-cmdline>sch2sym -intstyle ise -family spartan3e -w -refsym &lt;design&gt; {C:/Users/Chaitanya &lt;fname&gt;.sch} {C:/Users/Chaitanya &lt;fname&gt;.sym}</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>netgen -intstyle ise -ar Structure -tm &lt;design&gt; -w -dir netgen/synthesis -ofmt vhdl -sim &lt;fname&gt;.ngc &lt;fname&gt;.vhd</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc3s250e-cp132-5 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol high -t 1 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
 <LI><xtag-cmdline>fuse</xtag-cmdline></LI>
 </xtag-section></UL></TD></TR>
 </TABLE>
@@ -250,8 +258,8 @@
 
 <tr>
   <td><xtag-program-name>bitgen</xtag-program-name></td>
-  <td><xtag-total-run-started>16</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>16</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>25</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>25</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -260,8 +268,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>map</xtag-program-name></td>
-  <td><xtag-total-run-started>32</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>32</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>49</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>49</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -270,8 +278,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>netgen</xtag-program-name></td>
-  <td><xtag-total-run-started>12</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>12</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>26</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>25</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -280,8 +288,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>ngdbuild</xtag-program-name></td>
-  <td><xtag-total-run-started>33</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>33</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>51</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>51</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -290,8 +298,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>par</xtag-program-name></td>
-  <td><xtag-total-run-started>31</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>31</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>48</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>48</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -300,8 +308,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>trce</xtag-program-name></td>
-  <td><xtag-total-run-started>30</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>30</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>47</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>47</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -310,8 +318,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>xst</xtag-program-name></td>
-  <td><xtag-total-run-started>253</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>253</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>376</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>375</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -390,7 +398,7 @@ Help files</xtag-group-name></B></TD></TR>
 </TR><TR><TD><xtag-process-property-name>PROP_OverwriteSym</xtag-process-property-name>=<xtag-process-property-value>true</xtag-process-property-value></TD>
 <TD><xtag-design-property-name>PROP_PropSpecInProjFile</xtag-design-property-name>=<xtag-design-property-value>Store all values</xtag-design-property-value></TD>
 
-</TR><TR><TD><xtag-process-property-name>PROP_SelectedInstanceHierarchicalPath</xtag-process-property-name>=<xtag-process-property-value>/MAIN_2_MAIN_2_sch_tb</xtag-process-property-value></TD>
+</TR><TR><TD><xtag-process-property-name>PROP_SelectedInstanceHierarchicalPath</xtag-process-property-name>=<xtag-process-property-value>/Commutation_Commutation_sch_tb</xtag-process-property-value></TD>
 <TD><xtag-design-property-name>PROP_Simulator</xtag-design-property-name>=<xtag-design-property-value>ISim (VHDL/Verilog)</xtag-design-property-value></TD>
 
 </TR><TR><TD><xtag-process-property-name>PROP_SynthTopFile</xtag-process-property-name>=<xtag-process-property-value>changed</xtag-process-property-value></TD>
@@ -403,13 +411,13 @@ Help files</xtag-group-name></B></TD></TR>
 <TD><xtag-design-property-name>PROP_intProjectCreationTimestamp</xtag-design-property-name>=<xtag-design-property-value>2016-05-10T00:41:29</xtag-design-property-value></TD>
 
 </TR><TR><TD><xtag-design-property-name>PROP_intWbtProjectID</xtag-design-property-name>=<xtag-design-property-value>AE155C8C3D5247938B5A5AE667D23F91</xtag-design-property-value></TD>
-<TD><xtag-process-property-name>PROP_intWbtProjectIteration</xtag-process-property-name>=<xtag-process-property-value>37</xtag-process-property-value></TD>
+<TD><xtag-process-property-name>PROP_intWbtProjectIteration</xtag-process-property-name>=<xtag-process-property-value>38</xtag-process-property-value></TD>
 
 </TR><TR><TD><xtag-design-property-name>PROP_intWorkingDirLocWRTProjDir</xtag-design-property-name>=<xtag-design-property-value>Same</xtag-design-property-value></TD>
 <TD><xtag-design-property-name>PROP_intWorkingDirUsed</xtag-design-property-name>=<xtag-design-property-value>No</xtag-design-property-value></TD>
 
 </TR><TR><TD><xtag-process-property-name>PROP_lockPinsUcfFile</xtag-process-property-name>=<xtag-process-property-value>changed</xtag-process-property-value></TD>
-<TD><xtag-process-property-name>PROP_selectedSimRootSourceNode_behav</xtag-process-property-name>=<xtag-process-property-value>work.MAIN_2_MAIN_2_sch_tb</xtag-process-property-value></TD>
+<TD><xtag-process-property-name>PROP_selectedSimRootSourceNode_behav</xtag-process-property-name>=<xtag-process-property-value>work.Commutation_Commutation_sch_tb</xtag-process-property-value></TD>
 
 </TR><TR><TD><xtag-process-property-name>PROP_selectedSimRootSourceNode_par</xtag-process-property-name>=<xtag-process-property-value>work.MAIN_MAIN_sch_tb</xtag-process-property-value></TD>
 <TD><xtag-process-property-name>PROP_xilxBitgStart_IntDone</xtag-process-property-name>=<xtag-process-property-value>true</xtag-process-property-value></TD>
@@ -426,10 +434,10 @@ Help files</xtag-group-name></B></TD></TR>
 </TR><TR><TD><xtag-design-property-name>PROP_DevSpeed</xtag-design-property-name>=<xtag-design-property-value>-5</xtag-design-property-value></TD>
 <TD><xtag-design-property-name>PROP_PreferredLanguage</xtag-design-property-name>=<xtag-design-property-value>VHDL</xtag-design-property-value></TD>
 
-</TR><TR><TD><xtag-source-property-name>FILE_SCHEMATIC</xtag-source-property-name>=<xtag-source-property-value>9</xtag-source-property-value></TD>
-<TD><xtag-source-property-name>FILE_UCF</xtag-source-property-name>=<xtag-source-property-value>3</xtag-source-property-value></TD>
+</TR><TR><TD><xtag-source-property-name>FILE_SCHEMATIC</xtag-source-property-name>=<xtag-source-property-value>2</xtag-source-property-value></TD>
+<TD><xtag-source-property-name>FILE_UCF</xtag-source-property-name>=<xtag-source-property-value>2</xtag-source-property-value></TD>
 
-</TR><TR><TD><xtag-source-property-name>FILE_VERILOG</xtag-source-property-name>=<xtag-source-property-value>7</xtag-source-property-value></TD>
+</TR><TR><TD><xtag-source-property-name>FILE_VERILOG</xtag-source-property-name>=<xtag-source-property-value>3</xtag-source-property-value></TD>
 </TR></xtag-section></TABLE>
 &nbsp;<BR><TABLE BORDER CELLSPACING=0 WIDTH='100%'>
 <xtag-section name="UnisimStatistics">
@@ -437,7 +445,7 @@ Help files</xtag-group-name></B></TD></TR>
 <TR ALIGN=CENTER><TD COLSPAN=4><B><xtag-unisim-type-name>NGDBUILD_PRE_UNISIM_SUMMARY</xtag-unisim-type-name></B></TD></TR><TR>
 <TD><xtag-preunisim-param-name>NGDBUILD_NUM_AND2</xtag-preunisim-param-name>=<xtag-preunisim-param-value>3</xtag-preunisim-param-value></TD>
 <TD><xtag-preunisim-param-name>NGDBUILD_NUM_IBUF</xtag-preunisim-param-name>=<xtag-preunisim-param-value>3</xtag-preunisim-param-value></TD>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_INV</xtag-preunisim-param-name>=<xtag-preunisim-param-value>9</xtag-preunisim-param-value></TD>
+<TD><xtag-preunisim-param-name>NGDBUILD_NUM_INV</xtag-preunisim-param-name>=<xtag-preunisim-param-value>3</xtag-preunisim-param-value></TD>
 <TD><xtag-preunisim-param-name>NGDBUILD_NUM_OBUF</xtag-preunisim-param-name>=<xtag-preunisim-param-value>6</xtag-preunisim-param-value></TD>
 </TR>
 <TR>
@@ -445,7 +453,7 @@ Help files</xtag-group-name></B></TD></TR>
 <TR ALIGN=CENTER><TD COLSPAN=4><B><xtag-unisim-type-name>NGDBUILD_POST_UNISIM_SUMMARY</xtag-unisim-type-name></B></TD></TR><TR>
 <TD><xtag-postunisim-param-name>NGDBUILD_NUM_AND2</xtag-postunisim-param-name>=<xtag-postunisim-param-value>3</xtag-postunisim-param-value></TD>
 <TD><xtag-postunisim-param-name>NGDBUILD_NUM_IBUF</xtag-postunisim-param-name>=<xtag-postunisim-param-value>3</xtag-postunisim-param-value></TD>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_INV</xtag-postunisim-param-name>=<xtag-postunisim-param-value>9</xtag-postunisim-param-value></TD>
+<TD><xtag-postunisim-param-name>NGDBUILD_NUM_INV</xtag-postunisim-param-name>=<xtag-postunisim-param-value>3</xtag-postunisim-param-value></TD>
 <TD><xtag-postunisim-param-name>NGDBUILD_NUM_OBUF</xtag-postunisim-param-name>=<xtag-postunisim-param-value>6</xtag-postunisim-param-value></TD>
 </TR>
 <TR>
@@ -523,4 +531,4 @@ Help files</xtag-group-name></B></TD></TR>
 <TR>
 <TD><xtag-xstoptions-param-name>-slice_utilization_ratio_maxmargin</xtag-xstoptions-param-name>=<xtag-xstoptions-param-value>5</xtag-xstoptions-param-value></TD>
 </xtag-section></TABLE>
-&nbsp;<BR><TABLE BORDER CELLSPACING=0 WIDTH='100%'><xtag-section name="ISimStatistics"><TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD COLSPAN=1><B>ISim Statistics</B></TD></TR><TR><TD><xtag-isim-property-name>Xilinx HDL Libraries Used</xtag-isim-property-name>=<xtag-isim-property-value>ieee, unisim</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Fuse Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>999 ms, 53220 KB</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Signals</xtag-isim-property-name>=<xtag-isim-property-value>499</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Nets</xtag-isim-property-name>=<xtag-isim-property-value>147</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Blocks</xtag-isim-property-name>=<xtag-isim-property-value>106</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Processes</xtag-isim-property-name>=<xtag-isim-property-value>119</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Simulation Time</xtag-isim-property-name>=<xtag-isim-property-value>22 us</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Simulation Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>0.0625 sec, 653103 KB</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Simulation Mode</xtag-isim-property-name>=<xtag-isim-property-value>gui</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Hardware CoSim</xtag-isim-property-name>=<xtag-isim-property-value>0</xtag-isim-property-value></TD></TR></xtag-section></TABLE></BODY></HTML>
+&nbsp;<BR><TABLE BORDER CELLSPACING=0 WIDTH='100%'><xtag-section name="ISimStatistics"><TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD COLSPAN=1><B>ISim Statistics</B></TD></TR><TR><TD><xtag-isim-property-name>Xilinx HDL Libraries Used</xtag-isim-property-name>=<xtag-isim-property-value>ieee, unisim</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Fuse Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>1687 ms, 52488 KB</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Signals</xtag-isim-property-name>=<xtag-isim-property-value>80</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Nets</xtag-isim-property-name>=<xtag-isim-property-value>56</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Blocks</xtag-isim-property-name>=<xtag-isim-property-value>15</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Processes</xtag-isim-property-name>=<xtag-isim-property-value>28</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Simulation Time</xtag-isim-property-name>=<xtag-isim-property-value>31 us</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Simulation Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>0.09375 sec, 1130889 KB</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Simulation Mode</xtag-isim-property-name>=<xtag-isim-property-value>gui</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Hardware CoSim</xtag-isim-property-name>=<xtag-isim-property-value>0</xtag-isim-property-value></TD></TR></xtag-section></TABLE></BODY></HTML>

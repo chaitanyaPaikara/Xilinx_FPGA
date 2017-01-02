@@ -1,53 +1,36 @@
-Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2_MAIN_2_sch_tb_isim_beh.exe -prj C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2_MAIN_2_sch_tb_beh.prj work.MAIN_2_MAIN_2_sch_tb work.glbl 
+Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Commutation_Commutation_sch_tb_isim_beh.exe -prj C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Commutation_Commutation_sch_tb_beh.prj work.Commutation_Commutation_sch_tb work.glbl 
 ISim P.28xd (signature 0xa0883be4)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2_SIM.v" into library work
+Analyzing Verilog file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/sim_com_1.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
-Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM_V2.vhf" into library work
-Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Comparator.vhf" into library work
-Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM_VNB.vhf" into library work
 Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Commutation.vhf" into library work
-Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2.vhf" into library work
 Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Akash_Driver_v1.vhf" into library work
+Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Comparator.vhf" into library work
+Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/DEADTIME.vhf" into library work
 Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/DEAD_TIME.vhf" into library work
 Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN.vhf" into library work
 Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_1.vhf" into library work
+Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM.vhf" into library work
+Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM_V2.vhf" into library work
+Parsing VHDL file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/PWM_VNB.vhf" into library work
 Starting static elaboration
 Completed static elaboration
-Compiling module MAIN_2_MAIN_2_sch_tb
+Compiling module Commutation_Commutation_sch_tb
 Compiling module glbl
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling package vcomponents
-Compiling architecture and2b1_v of entity AND2B1 [and2b1_default]
+Compiling architecture inv_v of entity INV [inv_default]
 Compiling architecture or2_v of entity OR2 [or2_default]
 Compiling architecture and2_v of entity AND2 [and2_default]
-Compiling architecture behavioral of entity M2_1_MXILINX_MAIN_2 [m2_1_mxilinx_main_2_default]
-Compiling architecture or4_v of entity OR4 [or4_default]
-Compiling architecture or3_v of entity OR3 [or3_default]
-Compiling architecture fmap_v of entity FMAP [fmap_default]
-Compiling architecture behavioral of entity OR6_MXILINX_MAIN_2 [or6_mxilinx_main_2_default]
-Compiling architecture inv_v of entity INV [inv_default]
-Compiling architecture behavioral of entity Commutation_MUSER_MAIN_2 [commutation_muser_main_2_default]
-Compiling architecture behavioral of entity PWM_V2_MUSER_MAIN_2 [pwm_v2_muser_main_2_default]
-Compiling architecture gnd_v of entity GND [gnd_default]
-Compiling architecture behavioral of entity Comparator_MUSER_MAIN_2 [comparator_muser_main_2_default]
-Compiling architecture xor2_v of entity XOR2 [xor2_default]
-Compiling architecture fdre_v of entity FDRE [\FDRE('0')\]
-Compiling architecture behavioral of entity FTRSE_MXILINX_MAIN_2 [\FTRSE_MXILINX_MAIN_2('0')\]
-Compiling architecture and4_v of entity AND4 [and4_default]
-Compiling architecture and3_v of entity AND3 [and3_default]
-Compiling architecture vcc_v of entity VCC [vcc_default]
-Compiling architecture behavioral of entity CB4RE_MXILINX_MAIN_2 [cb4re_mxilinx_main_2_default]
-Compiling architecture behavioral of entity PWM_VNB_MUSER_MAIN_2 [pwm_vnb_muser_main_2_default]
-Compiling architecture behavioral of entity MAIN_2 [main_2_default]
+Compiling architecture behavioral of entity Commutation [commutation_default]
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 48 VHDL Units
+Compiled 12 VHDL Units
 Compiled 2 Verilog Units
-Built simulation executable C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/MAIN_2_MAIN_2_sch_tb_isim_beh.exe
-Fuse Memory Usage: 53036 KB
-Fuse CPU Usage: 1171 ms
+Built simulation executable C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller_V1/Commutation_Commutation_sch_tb_isim_beh.exe
+Fuse Memory Usage: 52488 KB
+Fuse CPU Usage: 1687 ms

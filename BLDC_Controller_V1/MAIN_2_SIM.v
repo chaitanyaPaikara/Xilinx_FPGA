@@ -8,7 +8,6 @@ module MAIN_2_MAIN_2_sch_tb();
    reg H3;
    reg H2;
    reg H1;
-   reg LOW;
    reg D3;
    reg D2;
    reg D1;
@@ -29,8 +28,7 @@ module MAIN_2_MAIN_2_sch_tb();
    MAIN_2 UUT (
 		.H3(H3), 
 		.H2(H2), 
-		.H1(H1), 
-		.LOW(LOW), 
+		.H1(H1),  
 		.D3(D3), 
 		.D2(D2), 
 		.D1(D1), 
@@ -45,7 +43,6 @@ module MAIN_2_MAIN_2_sch_tb();
    );
 // Initialize Inputs
    initial begin
-		LOW = 0;
 		H3 = 0;
 		H2 = 0;
 		H1 = 0;
