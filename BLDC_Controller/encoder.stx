@@ -1,0 +1,36 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "encoder.v" in library work
+ERROR:HDLCompilers:26 - "encoder.v" line 21 expecting ')', found ';'
+ERROR:HDLCompilers:28 - "encoder.v" line 26 'x' has not been declared
+ERROR:HDLCompilers:28 - "encoder.v" line 32 'x' has not been declared
+ERROR:HDLCompilers:28 - "encoder.v" line 32 'x' has not been declared
+ERROR:HDLCompilers:28 - "encoder.v" line 38 'x' has not been declared
+ERROR:HDLCompilers:28 - "encoder.v" line 40 'x' has not been declared
+Module <encoder> compiled
+Analysis of file <"encoder.prj"> failed.
+--> 
+
+Total memory usage is 257512 kilobytes
+
+Number of errors   :    6 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

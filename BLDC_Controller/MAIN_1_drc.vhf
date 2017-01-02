@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.2
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MAIN_1_drc.vhf
--- /___/   /\     Timestamp : 09/27/2016 21:52:37
+-- /___/   /\     Timestamp : 12/04/2016 19:30:51
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan3e -flat -suppress -vhdl MAIN_1_drc.vhf -w C:/Xilinx/BLDC_Controller/MAIN_1.sch
+--Command: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan3e -flat -suppress -vhdl MAIN_1_drc.vhf -w "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_1.sch"
 --Design Name: MAIN_1
 --Device: spartan3e
 --Purpose:
@@ -115,678 +115,59 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity FTRSE_MXILINX_MAIN_1 is
-   generic( INIT : bit :=  '0');
-   port ( C  : in    std_logic; 
-          CE : in    std_logic; 
-          R  : in    std_logic; 
-          S  : in    std_logic; 
-          T  : in    std_logic; 
-          Q  : out   std_logic);
-end FTRSE_MXILINX_MAIN_1;
-
-architecture BEHAVIORAL of FTRSE_MXILINX_MAIN_1 is
-   attribute BOX_TYPE   : string ;
-   attribute RLOC       : string ;
-   signal CE_S    : std_logic;
-   signal D_S     : std_logic;
-   signal TQ      : std_logic;
-   signal Q_DUMMY : std_logic;
-   component XOR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of XOR2 : component is "BLACK_BOX";
-   
-   component FDRE
-      generic( INIT : bit :=  '0');
-      port ( C  : in    std_logic; 
-             CE : in    std_logic; 
-             D  : in    std_logic; 
-             R  : in    std_logic; 
-             Q  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of FDRE : component is "BLACK_BOX";
-   
-   component OR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
-   
-   attribute RLOC of I_36_35 : label is "X0Y0";
-begin
-   Q <= Q_DUMMY;
-   I_36_32 : XOR2
-      port map (I0=>T,
-                I1=>Q_DUMMY,
-                O=>TQ);
-   
-   I_36_35 : FDRE
-   generic map( INIT => INIT)
-      port map (C=>C,
-                CE=>CE_S,
-                D=>D_S,
-                R=>R,
-                Q=>Q_DUMMY);
-   
-   I_36_73 : OR2
-      port map (I0=>S,
-                I1=>TQ,
-                O=>D_S);
-   
-   I_36_77 : OR2
-      port map (I0=>CE,
-                I1=>S,
-                O=>CE_S);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity CB4RE_MXILINX_MAIN_1 is
-   port ( C   : in    std_logic; 
-          CE  : in    std_logic; 
-          R   : in    std_logic; 
-          CEO : out   std_logic; 
-          Q0  : out   std_logic; 
-          Q1  : out   std_logic; 
-          Q2  : out   std_logic; 
-          Q3  : out   std_logic; 
-          TC  : out   std_logic);
-end CB4RE_MXILINX_MAIN_1;
-
-architecture BEHAVIORAL of CB4RE_MXILINX_MAIN_1 is
-   attribute HU_SET     : string ;
-   attribute BOX_TYPE   : string ;
-   signal T2       : std_logic;
-   signal T3       : std_logic;
-   signal XLXN_1   : std_logic;
-   signal XLXN_2   : std_logic;
-   signal Q0_DUMMY : std_logic;
-   signal Q1_DUMMY : std_logic;
-   signal Q2_DUMMY : std_logic;
-   signal Q3_DUMMY : std_logic;
-   signal TC_DUMMY : std_logic;
-   component FTRSE_MXILINX_MAIN_1
-      generic( INIT : bit :=  '0');
-      port ( C  : in    std_logic; 
-             CE : in    std_logic; 
-             R  : in    std_logic; 
-             S  : in    std_logic; 
-             T  : in    std_logic; 
-             Q  : out   std_logic);
-   end component;
-   
-   component AND4
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND4 : component is "BLACK_BOX";
-   
-   component AND3
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
-   
-   component AND2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
-   
-   component VCC
-      port ( P : out   std_logic);
-   end component;
-   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
-   
-   component GND
-      port ( G : out   std_logic);
-   end component;
-   attribute BOX_TYPE of GND : component is "BLACK_BOX";
-   
-   attribute HU_SET of I_Q0 : label is "I_Q0_0";
-   attribute HU_SET of I_Q1 : label is "I_Q1_1";
-   attribute HU_SET of I_Q2 : label is "I_Q2_2";
-   attribute HU_SET of I_Q3 : label is "I_Q3_3";
-begin
-   Q0 <= Q0_DUMMY;
-   Q1 <= Q1_DUMMY;
-   Q2 <= Q2_DUMMY;
-   Q3 <= Q3_DUMMY;
-   TC <= TC_DUMMY;
-   I_Q0 : FTRSE_MXILINX_MAIN_1
-      port map (C=>C,
-                CE=>CE,
-                R=>R,
-                S=>XLXN_2,
-                T=>XLXN_1,
-                Q=>Q0_DUMMY);
-   
-   I_Q1 : FTRSE_MXILINX_MAIN_1
-      port map (C=>C,
-                CE=>CE,
-                R=>R,
-                S=>XLXN_2,
-                T=>Q0_DUMMY,
-                Q=>Q1_DUMMY);
-   
-   I_Q2 : FTRSE_MXILINX_MAIN_1
-      port map (C=>C,
-                CE=>CE,
-                R=>R,
-                S=>XLXN_2,
-                T=>T2,
-                Q=>Q2_DUMMY);
-   
-   I_Q3 : FTRSE_MXILINX_MAIN_1
-      port map (C=>C,
-                CE=>CE,
-                R=>R,
-                S=>XLXN_2,
-                T=>T3,
-                Q=>Q3_DUMMY);
-   
-   I_36_31 : AND4
-      port map (I0=>Q3_DUMMY,
-                I1=>Q2_DUMMY,
-                I2=>Q1_DUMMY,
-                I3=>Q0_DUMMY,
-                O=>TC_DUMMY);
-   
-   I_36_32 : AND3
-      port map (I0=>Q2_DUMMY,
-                I1=>Q1_DUMMY,
-                I2=>Q0_DUMMY,
-                O=>T3);
-   
-   I_36_33 : AND2
-      port map (I0=>Q1_DUMMY,
-                I1=>Q0_DUMMY,
-                O=>T2);
-   
-   I_36_58 : VCC
-      port map (P=>XLXN_1);
-   
-   I_36_64 : GND
-      port map (G=>XLXN_2);
-   
-   I_36_69 : AND2
-      port map (I0=>CE,
-                I1=>TC_DUMMY,
-                O=>CEO);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity PWM_V2_MUSER_MAIN_1 is
-   port ( A     : in    std_logic; 
-          B     : in    std_logic; 
-          C     : in    std_logic; 
-          CARRY : out   std_logic);
-end PWM_V2_MUSER_MAIN_1;
-
-architecture BEHAVIORAL of PWM_V2_MUSER_MAIN_1 is
-   attribute BOX_TYPE   : string ;
-   signal XLXN_1 : std_logic;
-   signal XLXN_2 : std_logic;
-   signal XLXN_3 : std_logic;
-   component AND2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
-   
-   component OR3
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR3 : component is "BLACK_BOX";
-   
-begin
-   XLXI_1 : AND2
-      port map (I0=>B,
-                I1=>A,
-                O=>XLXN_1);
-   
-   XLXI_2 : AND2
-      port map (I0=>C,
-                I1=>B,
-                O=>XLXN_2);
-   
-   XLXI_3 : AND2
-      port map (I0=>A,
-                I1=>C,
-                O=>XLXN_3);
-   
-   XLXI_4 : OR3
-      port map (I0=>XLXN_3,
-                I1=>XLXN_2,
-                I2=>XLXN_1,
-                O=>CARRY);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity Comparator_MUSER_MAIN_1 is
-   port ( a0    : in    std_logic; 
-          a1    : in    std_logic; 
-          a2    : in    std_logic; 
-          a3    : in    std_logic; 
-          b0    : in    std_logic; 
-          b1    : in    std_logic; 
-          b2    : in    std_logic; 
-          b3    : in    std_logic; 
-          f_pwm : out   std_logic);
-end Comparator_MUSER_MAIN_1;
-
-architecture BEHAVIORAL of Comparator_MUSER_MAIN_1 is
-   attribute BOX_TYPE   : string ;
-   signal XLXN_1 : std_logic;
-   signal XLXN_2 : std_logic;
-   signal XLXN_3 : std_logic;
-   signal XLXN_4 : std_logic;
-   component PWM_V2_MUSER_MAIN_1
-      port ( A     : in    std_logic; 
-             B     : in    std_logic; 
-             C     : in    std_logic; 
-             CARRY : out   std_logic);
-   end component;
-   
-   component GND
-      port ( G : out   std_logic);
-   end component;
-   attribute BOX_TYPE of GND : component is "BLACK_BOX";
-   
-begin
-   XLXI_1 : PWM_V2_MUSER_MAIN_1
-      port map (A=>a0,
-                B=>b0,
-                C=>XLXN_4,
-                CARRY=>XLXN_1);
-   
-   XLXI_2 : PWM_V2_MUSER_MAIN_1
-      port map (A=>a1,
-                B=>b1,
-                C=>XLXN_1,
-                CARRY=>XLXN_2);
-   
-   XLXI_3 : PWM_V2_MUSER_MAIN_1
-      port map (A=>a2,
-                B=>b2,
-                C=>XLXN_2,
-                CARRY=>XLXN_3);
-   
-   XLXI_4 : PWM_V2_MUSER_MAIN_1
-      port map (A=>a3,
-                B=>b3,
-                C=>XLXN_3,
-                CARRY=>f_pwm);
-   
-   XLXI_5 : GND
-      port map (G=>XLXN_4);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity PWM_VNB_MUSER_MAIN_1 is
-   port ( CE  : in    std_logic; 
-          CLK : in    std_logic; 
-          D0  : in    std_logic; 
-          D1  : in    std_logic; 
-          D2  : in    std_logic; 
-          D3  : in    std_logic; 
-          PWM : out   std_logic);
-end PWM_VNB_MUSER_MAIN_1;
-
-architecture BEHAVIORAL of PWM_VNB_MUSER_MAIN_1 is
-   attribute HU_SET     : string ;
-   attribute BOX_TYPE   : string ;
-   signal XLXN_1  : std_logic;
-   signal XLXN_2  : std_logic;
-   signal XLXN_3  : std_logic;
-   signal XLXN_4  : std_logic;
-   signal XLXN_5  : std_logic;
-   signal XLXN_6  : std_logic;
-   signal XLXN_7  : std_logic;
-   signal XLXN_8  : std_logic;
-   signal XLXN_9  : std_logic;
-   signal XLXN_19 : std_logic;
-   component Comparator_MUSER_MAIN_1
-      port ( a0    : in    std_logic; 
-             b0    : in    std_logic; 
-             a1    : in    std_logic; 
-             b1    : in    std_logic; 
-             a2    : in    std_logic; 
-             b2    : in    std_logic; 
-             a3    : in    std_logic; 
-             b3    : in    std_logic; 
-             f_pwm : out   std_logic);
-   end component;
-   
-   component CB4RE_MXILINX_MAIN_1
-      port ( C   : in    std_logic; 
-             CE  : in    std_logic; 
-             R   : in    std_logic; 
-             CEO : out   std_logic; 
-             Q0  : out   std_logic; 
-             Q1  : out   std_logic; 
-             Q2  : out   std_logic; 
-             Q3  : out   std_logic; 
-             TC  : out   std_logic);
-   end component;
-   
-   component XOR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of XOR2 : component is "BLACK_BOX";
-   
-   component VCC
-      port ( P : out   std_logic);
-   end component;
-   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
-   
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_4";
-begin
-   XLXI_2 : Comparator_MUSER_MAIN_1
-      port map (a0=>XLXN_1,
-                a1=>XLXN_2,
-                a2=>XLXN_3,
-                a3=>XLXN_4,
-                b0=>XLXN_5,
-                b1=>XLXN_6,
-                b2=>XLXN_7,
-                b3=>XLXN_8,
-                f_pwm=>PWM);
-   
-   XLXI_3 : CB4RE_MXILINX_MAIN_1
-      port map (C=>CLK,
-                CE=>CE,
-                R=>XLXN_19,
-                CEO=>open,
-                Q0=>XLXN_1,
-                Q1=>XLXN_2,
-                Q2=>XLXN_3,
-                Q3=>XLXN_4,
-                TC=>XLXN_19);
-   
-   XLXI_4 : XOR2
-      port map (I0=>XLXN_9,
-                I1=>D0,
-                O=>XLXN_5);
-   
-   XLXI_5 : XOR2
-      port map (I0=>XLXN_9,
-                I1=>D1,
-                O=>XLXN_6);
-   
-   XLXI_6 : XOR2
-      port map (I0=>XLXN_9,
-                I1=>D2,
-                O=>XLXN_7);
-   
-   XLXI_7 : XOR2
-      port map (I0=>XLXN_9,
-                I1=>D3,
-                O=>XLXN_8);
-   
-   XLXI_8 : VCC
-      port map (P=>XLXN_9);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity OR6_MXILINX_MAIN_1 is
-   port ( I0 : in    std_logic; 
-          I1 : in    std_logic; 
-          I2 : in    std_logic; 
-          I3 : in    std_logic; 
-          I4 : in    std_logic; 
-          I5 : in    std_logic; 
-          O  : out   std_logic);
-end OR6_MXILINX_MAIN_1;
-
-architecture BEHAVIORAL of OR6_MXILINX_MAIN_1 is
-   attribute BOX_TYPE   : string ;
-   attribute RLOC       : string ;
-   signal dummy   : std_logic;
-   signal I35     : std_logic;
-   signal O_DUMMY : std_logic;
-   component OR4
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR4 : component is "BLACK_BOX";
-   
-   component OR3
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR3 : component is "BLACK_BOX";
-   
-   component FMAP
-      port ( I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             I4 : in    std_logic; 
-             O  : in    std_logic);
-   end component;
-   attribute BOX_TYPE of FMAP : component is "BLACK_BOX";
-   
-   attribute RLOC of I_36_106 : label is "X0Y0";
-   attribute RLOC of I_36_107 : label is "X0Y0";
-begin
-   O <= O_DUMMY;
-   I_36_87 : OR4
-      port map (I0=>I0,
-                I1=>I1,
-                I2=>I2,
-                I3=>I35,
-                O=>O_DUMMY);
-   
-   I_36_88 : OR3
-      port map (I0=>I3,
-                I1=>I4,
-                I2=>I5,
-                O=>I35);
-   
-   I_36_106 : FMAP
-      port map (I1=>I0,
-                I2=>I1,
-                I3=>I2,
-                I4=>I35,
-                O=>O_DUMMY);
-   
-   I_36_107 : FMAP
-      port map (I1=>I3,
-                I2=>I4,
-                I3=>I5,
-                I4=>dummy,
-                O=>I35);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity M2_1_MXILINX_MAIN_1 is
-   port ( D0 : in    std_logic; 
-          D1 : in    std_logic; 
-          S0 : in    std_logic; 
-          O  : out   std_logic);
-end M2_1_MXILINX_MAIN_1;
-
-architecture BEHAVIORAL of M2_1_MXILINX_MAIN_1 is
-   attribute BOX_TYPE   : string ;
-   signal M0 : std_logic;
-   signal M1 : std_logic;
-   component AND2B1
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
-   
-   component OR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
-   
-   component AND2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
-   
-begin
-   I_36_7 : AND2B1
-      port map (I0=>S0,
-                I1=>D0,
-                O=>M0);
-   
-   I_36_8 : OR2
-      port map (I0=>M1,
-                I1=>M0,
-                O=>O);
-   
-   I_36_9 : AND2
-      port map (I0=>D1,
-                I1=>S0,
-                O=>M1);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
 entity MAIN_1 is
-   port ( CLK : in    std_logic; 
-          D0  : in    std_logic; 
-          D1  : in    std_logic; 
-          D2  : in    std_logic; 
-          D3  : in    std_logic; 
-          H1  : in    std_logic; 
-          H2  : in    std_logic; 
-          H3  : in    std_logic; 
-          LOW : in    std_logic; 
-          A   : out   std_logic; 
-          AA  : out   std_logic; 
-          B   : out   std_logic; 
-          BB  : out   std_logic; 
-          C   : out   std_logic; 
-          CC  : out   std_logic);
+   port ( CLK           : in    std_logic; 
+          H1            : in    std_logic; 
+          H2            : in    std_logic; 
+          H3            : in    std_logic; 
+          Ki            : in    std_logic_vector (3 downto 0); 
+          target_vel    : in    std_logic_vector (9 downto 0); 
+          ticks_encoder : in    std_logic; 
+          A             : out   std_logic; 
+          AA            : out   std_logic; 
+          B             : out   std_logic; 
+          BB            : out   std_logic; 
+          C             : out   std_logic; 
+          CC            : out   std_logic);
 end MAIN_1;
 
 architecture BEHAVIORAL of MAIN_1 is
-   attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal AA_OUT   : std_logic;
-   signal A_OUT    : std_logic;
-   signal B_OUT    : std_logic;
-   signal CC_OUT   : std_logic;
-   signal C_OUT    : std_logic;
-   signal XLXN_113 : std_logic;
-   signal XLXN_114 : std_logic;
-   signal XLXN_115 : std_logic;
-   signal XLXN_116 : std_logic;
-   signal XLXN_124 : std_logic;
-   signal XLXN_128 : std_logic;
-   signal XLXN_129 : std_logic;
-   signal XLXN_130 : std_logic;
-   signal XLXN_139 : std_logic;
-   component M2_1_MXILINX_MAIN_1
-      port ( D0 : in    std_logic; 
-             D1 : in    std_logic; 
-             S0 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   
-   component OR6_MXILINX_MAIN_1
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             I4 : in    std_logic; 
-             I5 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   
-   component PWM_VNB_MUSER_MAIN_1
-      port ( D0  : in    std_logic; 
-             D1  : in    std_logic; 
-             D2  : in    std_logic; 
-             D3  : in    std_logic; 
-             CLK : in    std_logic; 
-             PWM : out   std_logic; 
-             CE  : in    std_logic);
-   end component;
-   
+   signal XLXN_167      : std_logic;
+   signal XLXN_168      : std_logic;
+   signal XLXN_169      : std_logic;
+   signal XLXN_171      : std_logic;
+   signal XLXN_216      : std_logic;
+   signal XLXN_267      : std_logic;
+   signal XLXN_268      : std_logic;
+   signal XLXN_269      : std_logic;
+   signal XLXN_270      : std_logic;
+   signal XLXN_271      : std_logic;
+   signal XLXN_272      : std_logic;
+   signal XLXN_275      : std_logic;
+   signal XLXN_276      : std_logic;
+   signal XLXN_277      : std_logic;
+   signal XLXN_278      : std_logic;
+   signal XLXN_279      : std_logic;
+   signal XLXN_281      : std_logic;
+   signal XLXN_288      : std_logic;
+   signal XLXN_289      : std_logic;
+   signal XLXN_335      : std_logic;
+   signal XLXN_336      : std_logic;
+   signal XLXN_337      : std_logic;
+   signal XLXN_338      : std_logic;
+   signal XLXN_347      : std_logic;
+   signal XLXN_352      : std_logic;
+   signal XLXN_357      : std_logic;
+   signal XLXN_361      : std_logic;
+   signal XLXN_362      : std_logic;
+   signal XLXN_363      : std_logic;
+   signal XLXN_364      : std_logic;
+   signal XLXN_366      : std_logic_vector (9 downto 0);
+   signal XLXN_367      : std_logic_vector (3 downto 0);
+   signal XLXN_368      : std_logic_vector (3 downto 0);
+   signal XLXN_370      : std_logic;
+   signal XLXN_375      : std_logic_vector (9 downto 0);
    component Commutation_MUSER_MAIN_1
       port ( H1 : in    std_logic; 
              H2 : in    std_logic; 
@@ -799,108 +180,260 @@ architecture BEHAVIORAL of MAIN_1 is
              CC : out   std_logic);
    end component;
    
+   component pwm_4
+      port ( CLK : in    std_logic; 
+             E   : in    std_logic; 
+             D   : in    std_logic_vector (9 downto 0); 
+             P   : out   std_logic; 
+             X   : out   std_logic);
+   end component;
+   
+   component MUXF8
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             S  : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of MUXF8 : component is "BLACK_BOX";
+   
+   component GND
+      port ( G : out   std_logic);
+   end component;
+   attribute BOX_TYPE of GND : component is "BLACK_BOX";
+   
+   component VCC
+      port ( P : out   std_logic);
+   end component;
+   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
+   
    component INV
       port ( I : in    std_logic; 
              O : out   std_logic);
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_30 : label is "XLXI_30_5";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_6";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_7";
-   attribute HU_SET of XLXI_48 : label is "XLXI_48_10";
-   attribute HU_SET of XLXI_49 : label is "XLXI_49_8";
-   attribute HU_SET of XLXI_50 : label is "XLXI_50_9";
-   attribute HU_SET of XLXI_67 : label is "XLXI_67_11";
+   component pwm_42
+      port ( CLK : in    std_logic; 
+             E   : in    std_logic; 
+             D   : in    std_logic_vector (9 downto 0); 
+             P   : out   std_logic; 
+             X   : out   std_logic);
+   end component;
+   
+   component OR3
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR3 : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   component Fuzzy_logic_based_tuner
+      port ( clk         : in    std_logic; 
+             enable      : in    std_logic; 
+             target_vel  : in    std_logic_vector (9 downto 0); 
+             current_vel : in    std_logic_vector (9 downto 0); 
+             Kp          : out   std_logic_vector (3 downto 0); 
+             Kd          : out   std_logic_vector (3 downto 0));
+   end component;
+   
+   component PID_Controller
+      port ( clk         : in    std_logic; 
+             en          : in    std_logic; 
+             target_vel  : in    std_logic_vector (9 downto 0); 
+             current_vel : in    std_logic_vector (9 downto 0); 
+             Kp          : in    std_logic_vector (3 downto 0); 
+             Kd          : in    std_logic_vector (3 downto 0); 
+             Ki          : in    std_logic_vector (3 downto 0); 
+             vel_output  : out   std_logic_vector (9 downto 0));
+   end component;
+   
+   component encoder
+      port ( clk   : in    std_logic; 
+             ticks : in    std_logic; 
+             rpm   : out   std_logic_vector (9 downto 0));
+   end component;
+   
 begin
-   XLXI_30 : M2_1_MXILINX_MAIN_1
-      port map (D0=>LOW,
-                D1=>XLXN_128,
-                S0=>XLXN_130,
-                O=>AA_OUT);
-   
-   XLXI_32 : M2_1_MXILINX_MAIN_1
-      port map (D0=>LOW,
-                D1=>XLXN_128,
-                S0=>XLXN_124,
-                O=>A_OUT);
-   
-   XLXI_33 : M2_1_MXILINX_MAIN_1
-      port map (D0=>LOW,
-                D1=>XLXN_128,
-                S0=>XLXN_113,
-                O=>B_OUT);
-   
-   XLXI_48 : M2_1_MXILINX_MAIN_1
-      port map (D0=>LOW,
-                D1=>XLXN_128,
-                S0=>XLXN_115,
-                O=>C_OUT);
-   
-   XLXI_49 : M2_1_MXILINX_MAIN_1
-      port map (D0=>LOW,
-                D1=>XLXN_128,
-                S0=>XLXN_114,
-                O=>XLXN_139);
-   
-   XLXI_50 : M2_1_MXILINX_MAIN_1
-      port map (D0=>LOW,
-                D1=>XLXN_128,
-                S0=>XLXN_116,
-                O=>CC_OUT);
-   
-   XLXI_67 : OR6_MXILINX_MAIN_1
-      port map (I0=>XLXN_116,
-                I1=>XLXN_115,
-                I2=>XLXN_114,
-                I3=>XLXN_113,
-                I4=>XLXN_130,
-                I5=>XLXN_124,
-                O=>XLXN_129);
-   
-   XLXI_70 : PWM_VNB_MUSER_MAIN_1
-      port map (CE=>XLXN_129,
-                CLK=>CLK,
-                D0=>D0,
-                D1=>D1,
-                D2=>D2,
-                D3=>D3,
-                PWM=>XLXN_128);
-   
    XLXI_71 : Commutation_MUSER_MAIN_1
       port map (H1=>H1,
                 H2=>H2,
                 H3=>H3,
-                A=>XLXN_124,
-                AA=>XLXN_130,
-                B=>XLXN_113,
-                BB=>XLXN_114,
-                C=>XLXN_115,
-                CC=>XLXN_116);
+                A=>XLXN_167,
+                AA=>XLXN_168,
+                B=>XLXN_169,
+                BB=>XLXN_337,
+                C=>XLXN_171,
+                CC=>XLXN_338);
    
-   XLXI_72 : INV
-      port map (I=>A_OUT,
+   XLXI_106 : pwm_4
+      port map (CLK=>CLK,
+                D(9 downto 0)=>XLXN_366(9 downto 0),
+                E=>XLXN_216,
+                P=>XLXN_352,
+                X=>XLXN_362);
+   
+   XLXI_108 : MUXF8
+      port map (I0=>XLXN_347,
+                I1=>XLXN_357,
+                S=>XLXN_167,
+                O=>XLXN_267);
+   
+   XLXI_109 : MUXF8
+      port map (I0=>XLXN_361,
+                I1=>XLXN_352,
+                S=>XLXN_168,
+                O=>XLXN_268);
+   
+   XLXI_110 : MUXF8
+      port map (I0=>XLXN_347,
+                I1=>XLXN_357,
+                S=>XLXN_169,
+                O=>XLXN_269);
+   
+   XLXI_111 : MUXF8
+      port map (I0=>XLXN_361,
+                I1=>XLXN_352,
+                S=>XLXN_337,
+                O=>XLXN_270);
+   
+   XLXI_112 : MUXF8
+      port map (I0=>XLXN_347,
+                I1=>XLXN_357,
+                S=>XLXN_171,
+                O=>XLXN_271);
+   
+   XLXI_113 : MUXF8
+      port map (I0=>XLXN_361,
+                I1=>XLXN_352,
+                S=>XLXN_338,
+                O=>XLXN_272);
+   
+   XLXI_132 : MUXF8
+      port map (I0=>XLXN_267,
+                I1=>XLXN_281,
+                S=>XLXN_364,
                 O=>A);
    
-   XLXI_73 : INV
-      port map (I=>AA_OUT,
+   XLXI_133 : MUXF8
+      port map (I0=>XLXN_268,
+                I1=>XLXN_275,
+                S=>XLXN_364,
                 O=>AA);
    
-   XLXI_74 : INV
-      port map (I=>B_OUT,
+   XLXI_134 : MUXF8
+      port map (I0=>XLXN_269,
+                I1=>XLXN_276,
+                S=>XLXN_364,
                 O=>B);
    
-   XLXI_75 : INV
-      port map (I=>XLXN_139,
+   XLXI_135 : MUXF8
+      port map (I0=>XLXN_270,
+                I1=>XLXN_277,
+                S=>XLXN_364,
                 O=>BB);
    
-   XLXI_76 : INV
-      port map (I=>C_OUT,
+   XLXI_136 : MUXF8
+      port map (I0=>XLXN_271,
+                I1=>XLXN_278,
+                S=>XLXN_364,
                 O=>C);
    
-   XLXI_77 : INV
-      port map (I=>CC_OUT,
+   XLXI_141 : MUXF8
+      port map (I0=>XLXN_272,
+                I1=>XLXN_279,
+                S=>XLXN_364,
                 O=>CC);
+   
+   XLXI_147 : GND
+      port map (G=>XLXN_277);
+   
+   XLXI_148 : GND
+      port map (G=>XLXN_275);
+   
+   XLXI_149 : GND
+      port map (G=>XLXN_279);
+   
+   XLXI_154 : VCC
+      port map (P=>XLXN_281);
+   
+   XLXI_155 : VCC
+      port map (P=>XLXN_276);
+   
+   XLXI_156 : VCC
+      port map (P=>XLXN_278);
+   
+   XLXI_157 : INV
+      port map (I=>XLXN_167,
+                O=>XLXN_336);
+   
+   XLXI_159 : INV
+      port map (I=>XLXN_169,
+                O=>XLXN_288);
+   
+   XLXI_160 : INV
+      port map (I=>XLXN_171,
+                O=>XLXN_289);
+   
+   XLXI_187 : pwm_42
+      port map (CLK=>CLK,
+                D(9 downto 0)=>XLXN_366(9 downto 0),
+                E=>XLXN_335,
+                P=>XLXN_347,
+                X=>XLXN_363);
+   
+   XLXI_188 : OR3
+      port map (I0=>XLXN_338,
+                I1=>XLXN_337,
+                I2=>XLXN_168,
+                O=>XLXN_216);
+   
+   XLXI_189 : OR3
+      port map (I0=>XLXN_289,
+                I1=>XLXN_288,
+                I2=>XLXN_336,
+                O=>XLXN_335);
+   
+   XLXI_190 : VCC
+      port map (P=>XLXN_357);
+   
+   XLXI_191 : GND
+      port map (G=>XLXN_361);
+   
+   XLXI_192 : OR2
+      port map (I0=>XLXN_363,
+                I1=>XLXN_362,
+                O=>XLXN_364);
+   
+   XLXI_193 : Fuzzy_logic_based_tuner
+      port map (clk=>CLK,
+                current_vel(9 downto 0)=>XLXN_375(9 downto 0),
+                enable=>XLXN_370,
+                target_vel(9 downto 0)=>target_vel(9 downto 0),
+                Kd(3 downto 0)=>XLXN_368(3 downto 0),
+                Kp(3 downto 0)=>XLXN_367(3 downto 0));
+   
+   XLXI_194 : PID_Controller
+      port map (clk=>CLK,
+                current_vel(9 downto 0)=>XLXN_375(9 downto 0),
+                en=>XLXN_370,
+                Kd(3 downto 0)=>XLXN_368(3 downto 0),
+                Ki(3 downto 0)=>Ki(3 downto 0),
+                Kp(3 downto 0)=>XLXN_367(3 downto 0),
+                target_vel(9 downto 0)=>target_vel(9 downto 0),
+                vel_output(9 downto 0)=>XLXN_366(9 downto 0));
+   
+   XLXI_196 : encoder
+      port map (clk=>CLK,
+                ticks=>ticks_encoder,
+                rpm(9 downto 0)=>XLXN_375(9 downto 0));
    
 end BEHAVIORAL;
 

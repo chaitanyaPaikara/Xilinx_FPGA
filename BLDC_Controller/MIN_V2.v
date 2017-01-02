@@ -49,10 +49,10 @@ module MAIN_1_MAIN_1_sch_tb();
 		H3 = 0;
 		H2 = 0;
 		H1 = 0;
-		D3 = 0;
+		D3 = 1;
 		D2 = 1;
 		D1 = 1;
-		D0 = 0;
+		D0 = 1;
 		CLK=1;
 		
    end

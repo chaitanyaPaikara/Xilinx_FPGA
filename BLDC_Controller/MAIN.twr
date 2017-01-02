@@ -3,8 +3,7 @@ Release 14.2 Trace  (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
--n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf
-PIN_Mapping.ucf
+-n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf pinmap.ucf
 
 Design file:              MAIN.ncd
 Physical constraint file: MAIN.pcf
@@ -40,78 +39,84 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Clock clk to Pad
+Clock CLK to Pad
 ------------+------------+------------------+--------+
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-AA_OUT      |   13.359(R)|clk_BUFGP         |   0.000|
-A_OUT       |   13.381(R)|clk_BUFGP         |   0.000|
-BB_OUT      |   13.735(R)|clk_BUFGP         |   0.000|
-B_OUT       |   13.385(R)|clk_BUFGP         |   0.000|
-CC_OUT      |   12.479(R)|clk_BUFGP         |   0.000|
-C_OUT       |   12.839(R)|clk_BUFGP         |   0.000|
+AA_OUT      |   11.658(R)|CLK_BUFGP         |   0.000|
+A_OUT       |   13.309(R)|CLK_BUFGP         |   0.000|
+BB_OUT      |   12.678(R)|CLK_BUFGP         |   0.000|
+B_OUT       |   12.651(R)|CLK_BUFGP         |   0.000|
+CC_OUT      |   12.985(R)|CLK_BUFGP         |   0.000|
+C_OUT       |   13.007(R)|CLK_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
-Clock to Setup on destination clock clk
+Clock to Setup on destination clock CLK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    1.811|         |         |         |
+CLK            |    3.071|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-D<0>           |AA_OUT         |   11.862|
-D<0>           |A_OUT          |   11.884|
-D<0>           |BB_OUT         |   12.238|
-D<0>           |B_OUT          |   11.888|
-D<0>           |CC_OUT         |   10.982|
-D<0>           |C_OUT          |   11.342|
-D<1>           |AA_OUT         |   12.682|
-D<1>           |A_OUT          |   12.704|
-D<1>           |BB_OUT         |   13.058|
-D<1>           |B_OUT          |   12.708|
-D<1>           |CC_OUT         |   11.802|
-D<1>           |C_OUT          |   12.162|
-D<2>           |AA_OUT         |   10.221|
-D<2>           |A_OUT          |   10.243|
-D<2>           |BB_OUT         |   10.597|
-D<2>           |B_OUT          |   10.247|
-D<2>           |CC_OUT         |    9.341|
-D<2>           |C_OUT          |    9.701|
-D<3>           |AA_OUT         |   11.597|
-D<3>           |A_OUT          |   11.619|
-D<3>           |BB_OUT         |   11.973|
-D<3>           |B_OUT          |   11.623|
-D<3>           |CC_OUT         |   10.717|
-D<3>           |C_OUT          |   11.077|
-H1             |AA_OUT         |    6.931|
-H1             |A_OUT          |    6.930|
-H1             |CC_OUT         |    6.965|
-H1             |C_OUT          |    5.835|
-H2             |AA_OUT         |    7.051|
-H2             |A_OUT          |    7.106|
-H2             |BB_OUT         |    6.610|
-H2             |B_OUT          |    6.336|
-H3             |BB_OUT         |    7.140|
-H3             |B_OUT          |    6.615|
-H3             |CC_OUT         |    7.759|
-H3             |C_OUT          |    6.064|
+D0             |AA_OUT         |    9.548|
+D0             |A_OUT          |   11.199|
+D0             |BB_OUT         |   10.568|
+D0             |B_OUT          |   10.541|
+D0             |CC_OUT         |   10.875|
+D0             |C_OUT          |   10.897|
+D1             |AA_OUT         |    9.782|
+D1             |A_OUT          |   11.433|
+D1             |BB_OUT         |   10.802|
+D1             |B_OUT          |   10.775|
+D1             |CC_OUT         |   11.109|
+D1             |C_OUT          |   11.131|
+D2             |AA_OUT         |    8.576|
+D2             |A_OUT          |   10.227|
+D2             |BB_OUT         |    9.596|
+D2             |B_OUT          |    9.569|
+D2             |CC_OUT         |    9.903|
+D2             |C_OUT          |    9.925|
+D3             |AA_OUT         |    8.014|
+D3             |A_OUT          |    9.665|
+D3             |BB_OUT         |    9.034|
+D3             |B_OUT          |    9.007|
+D3             |CC_OUT         |    9.341|
+D3             |C_OUT          |    9.363|
+H1             |AA_OUT         |    6.018|
+H1             |A_OUT          |    8.092|
+H1             |CC_OUT         |    6.916|
+H1             |C_OUT          |    6.965|
+H2             |AA_OUT         |    6.099|
+H2             |A_OUT          |    8.278|
+H2             |BB_OUT         |    5.943|
+H2             |B_OUT          |    5.945|
+H3             |BB_OUT         |    6.301|
+H3             |B_OUT          |    6.269|
+H3             |CC_OUT         |    6.749|
+H3             |C_OUT          |    6.748|
+LOW            |AA_OUT         |    6.353|
+LOW            |A_OUT          |    8.061|
+LOW            |BB_OUT         |    6.248|
+LOW            |B_OUT          |    6.272|
+LOW            |CC_OUT         |    6.744|
+LOW            |C_OUT          |    6.799|
 ---------------+---------------+---------+
 
 
-Analysis completed Wed Oct 19 22:08:14 2016 
+Analysis completed Tue Sep 27 01:53:09 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 180 MB
+Peak Memory Usage: 166 MB
 
 
 

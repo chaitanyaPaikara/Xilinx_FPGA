@@ -50,13 +50,14 @@ module MAIN_MAIN_sch_tb();
 		H2 = 0;
 		H1 = 0;
 		D3 = 0;
-		D2 = 0;
-		D1 = 0;
+		D2 = 1;
+		D1 = 1;
 		D0 = 0;
-		CLK = 1;
+		CLK=1;
+		
    end
 	always begin
-	#10;
+	#20;
 	CLK=~CLK;
 	end
 	always begin

@@ -1,0 +1,28 @@
+Command line:
+   PWM_VNB_PWM_VNB_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  10474
+
+Sat Oct 01 16:03:09 2016
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 840.557 Meg
+
+ Total Signals          : 294
+ Total Nets             : 108
+ Total Signal Drivers   : 75
+ Total Blocks           : 56
+ Total Primitive Blocks : 44
+ Total Processes        : 78
+ Total Traceable Variables  : 45
+ Total Scalar Nets and Variables : 685
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 368.697 Meg
+
+Sat Oct 01 17:28:12 2016
+

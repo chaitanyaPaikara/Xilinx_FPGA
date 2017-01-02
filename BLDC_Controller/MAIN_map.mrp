@@ -9,7 +9,7 @@ Target Device  : xc3s250e
 Target Package : cp132
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Wed Oct 19 22:08:03 2016
+Mapped Date    : Tue Sep 27 01:52:55 2016
 
 Design Summary
 --------------
@@ -17,19 +17,20 @@ Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
   Number of Slice Flip Flops:             4 out of   4,896    1%
-  Number of 4 input LUTs:                14 out of   4,896    1%
+  Number of 4 input LUTs:                13 out of   4,896    1%
 Logic Distribution:
   Number of occupied Slices:              9 out of   2,448    1%
     Number of Slices containing only related logic:       9 out of       9 100%
     Number of Slices containing unrelated logic:          0 out of       9   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:          14 out of   4,896    1%
-  Number of bonded IOBs:                 14 out of      92   15%
+  Total Number of 4 input LUTs:          13 out of   4,896    1%
+  Number of bonded IOBs:                 15 out of      92   16%
   Number of BUFGMUXs:                     1 out of      24    4%
 
-Average Fanout of Non-Clock Nets:                2.36
+  Number of RPM macros:            4
+Average Fanout of Non-Clock Nets:                2.64
 
-Peak Memory Usage:  293 MB
+Peak Memory Usage:  284 MB
 Total REAL time to MAP completion:  1 secs 
 Total CPU time to MAP completion:   1 secs 
 
@@ -75,6 +76,7 @@ Section 2 - Warnings
 
 Section 3 - Informational
 -------------------------
+INFO:LIT:243 - Logical network XLXI_70/XLXI_3/CEO has no load.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs
@@ -82,9 +84,9 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-   1 block(s) removed
-   8 block(s) optimized away
-   6 signal(s) removed
+   2 block(s) removed
+   7 block(s) optimized away
+   7 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -99,30 +101,31 @@ To quickly locate the original cause for the removal of a chain of logic, look
 above the place where that logic is listed in the trimming report, then locate
 the lines that are least indented (begin at the leftmost edge).
 
-The signal "XLXI_134/I35" is sourceless and has been removed.
-The signal "XLXI_134/dummy" is sourceless and has been removed.
+The signal "XLXI_67/I35" is sourceless and has been removed.
+The signal "XLXI_67/dummy" is sourceless and has been removed.
+The signal "XLXI_70/XLXI_3/CEO" is sourceless and has been removed.
 
 The trimmed logic reported below is either:
    1. part of a cycle
    2. part of disabled logic
    3. a side-effect of other trimmed logic
 
-The signal "XLXN_225" is unused and has been removed.
-The signal "XLXN_237" is unused and has been removed.
-The signal "XLXN_238" is unused and has been removed.
-The signal "XLXN_240" is unused and has been removed.
-Unused block "XLXI_134/XST_GND" (ZERO) removed.
+The signal "XLXN_114" is unused and has been removed.
+The signal "XLXN_115" is unused and has been removed.
+The signal "XLXN_116" is unused and has been removed.
+The signal "XLXN_129" is unused and has been removed.
+Unused block "XLXI_67/XST_GND" (ZERO) removed.
+Unused block "XLXI_70/XLXI_3/I_36_69" (AND) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
-GND 		XLXI_122
-AND2B1 		XLXI_30/I_36_7
-AND2B1 		XLXI_32/I_36_7
-AND2B1 		XLXI_33/I_36_7
-AND2B1 		XLXI_48/I_36_7
-AND2B1 		XLXI_49/I_36_7
-AND2B1 		XLXI_50/I_36_7
-OR4 		XLXI_134/I_36_87
+AND2 		XLXI_70/XLXI_2/XLXI_1/XLXI_2
+AND2 		XLXI_70/XLXI_2/XLXI_1/XLXI_3
+GND 		XLXI_70/XLXI_2/XLXI_5
+VCC 		XLXI_70/XLXI_3/I_36_58
+GND 		XLXI_70/XLXI_3/I_36_64
+VCC 		XLXI_70/XLXI_8
+OR4 		XLXI_67/I_36_87
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.
@@ -139,19 +142,24 @@ Section 6 - IOB Properties
 | BB_OUT                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | B_OUT                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | CC_OUT                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| CLK                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | C_OUT                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
-| D<0>                               | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
-| D<1>                               | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
-| D<2>                               | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
-| D<3>                               | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| D0                                 | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| D1                                 | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| D2                                 | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| D3                                 | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | H1                                 | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | H2                                 | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | H3                                 | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
-| clk                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| LOW                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs
 ----------------
+XLXI_70/XLXI_3/XLXI_70/XLXI_3_I_Q0_0    
+XLXI_70/XLXI_3/XLXI_70/XLXI_3_I_Q1_1    
+XLXI_70/XLXI_3/XLXI_70/XLXI_3_I_Q2_2    
+XLXI_70/XLXI_3/XLXI_70/XLXI_3_I_Q3_3    
 
 Section 8 - Guide Report
 ------------------------

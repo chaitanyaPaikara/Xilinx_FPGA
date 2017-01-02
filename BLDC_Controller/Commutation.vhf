@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.2
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Commutation.vhf
--- /___/   /\     Timestamp : 10/19/2016 20:01:02
+-- /___/   /\     Timestamp : 10/11/2016 20:02:42
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Commutation.vhf" -w "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Commutation.sch"
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Xilinx/BLDC_Controller/Commutation.vhf -w C:/Xilinx/BLDC_Controller/Commutation.sch
 --Design Name: Commutation
 --Device: spartan3e
 --Purpose:
@@ -39,9 +39,15 @@ end Commutation;
 
 architecture BEHAVIORAL of Commutation is
    attribute BOX_TYPE   : string ;
-   signal XLXN_52 : std_logic;
-   signal XLXN_54 : std_logic;
-   signal XLXN_56 : std_logic;
+   signal XLXN_58 : std_logic;
+   signal XLXN_59 : std_logic;
+   signal XLXN_60 : std_logic;
+   component INV
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of INV : component is "BLACK_BOX";
+   
    component OR2
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -56,54 +62,48 @@ architecture BEHAVIORAL of Commutation is
    end component;
    attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
    
-   component INV
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of INV : component is "BLACK_BOX";
-   
 begin
+   XLXI_24 : INV
+      port map (I=>H1,
+                O=>XLXN_59);
+   
+   XLXI_25 : INV
+      port map (I=>H2,
+                O=>XLXN_60);
+   
+   XLXI_26 : INV
+      port map (I=>H3,
+                O=>XLXN_58);
+   
    XLXI_27 : OR2
       port map (I0=>H2,
-                I1=>XLXN_52,
+                I1=>XLXN_59,
                 O=>A);
    
    XLXI_28 : OR2
       port map (I0=>H3,
-                I1=>XLXN_54,
+                I1=>XLXN_60,
                 O=>B);
    
    XLXI_29 : OR2
       port map (I0=>H1,
-                I1=>XLXN_56,
+                I1=>XLXN_58,
                 O=>C);
    
-   XLXI_30 : AND2
+   XLXI_33 : AND2
       port map (I0=>H2,
-                I1=>XLXN_52,
+                I1=>XLXN_59,
                 O=>AA);
    
-   XLXI_31 : AND2
+   XLXI_34 : AND2
       port map (I0=>H3,
-                I1=>XLXN_54,
+                I1=>XLXN_60,
                 O=>BB);
    
-   XLXI_32 : AND2
+   XLXI_35 : AND2
       port map (I0=>H1,
-                I1=>XLXN_56,
+                I1=>XLXN_58,
                 O=>CC);
-   
-   XLXI_33 : INV
-      port map (I=>H1,
-                O=>XLXN_52);
-   
-   XLXI_34 : INV
-      port map (I=>H2,
-                O=>XLXN_54);
-   
-   XLXI_35 : INV
-      port map (I=>H3,
-                O=>XLXN_56);
    
 end BEHAVIORAL;
 

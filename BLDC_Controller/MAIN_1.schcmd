@@ -1,0 +1,8 @@
+select figure at 1295 795 8 -branches -sn=1
+select figure at 1295 795 8 -branches -sn=1
+select figure at 1295 795 8 -branches -all -sn=1
+add instance pwm_3 2304 1328 R0 -sn=1
+select figure at 2504 1246 8 -branches -sn=1
+select figure at 2504 1246 8 -branches -all -sn=1
+delete selection -sn=1
+select figure at 1200 679 8 -branches -sn=1

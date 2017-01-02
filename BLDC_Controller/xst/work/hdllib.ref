@@ -1,54 +1,100 @@
-AR comparator_muser_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl33 1475146371
-EN pwm_v2_muser_pwm_vnb NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl40 1475146388
+EN ftrse_mxilinx_main_1 NULL C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl54 1475348760
+AR comparator_muser_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl33 1481657624
+EN pwm_v2_muser_pwm_vnb NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl40 1481657591
+MO Fuzzy_logic_based_tuner NULL Fuzzy_logic_based_tuner.v vlg60/_fuzzy__logic__based__tuner.bin 1480847230
+AR cj4ce_mxilinx_clk_change behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/clk_change.vhf" sub00/vhpl77 1481657584
 AR cb4ce_mxilinx_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl07 1471460304
-EN pwm_v2 NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_V2.vhf" sub00/vhpl50 1475146398
-EN comparator_muser_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl32 1475146370
-AR main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl15 1476895081
-EN pwm NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" sub00/vhpl22 1471460321
-AR deadtime behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/DEADTIME.vhf" sub00/vhpl25 1476895073
-AR pwm_v2 behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_V2.vhf" sub00/vhpl51 1475146399
-EN commutation NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Commutation.vhf" sub00/vhpl16 1476895082
-AR deadtime_muser_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl01 1475133510
+EN clk_change NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/clk_change.vhf" sub00/vhpl78 1481657585
+EN pwm_v2 NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_V2.vhf" sub00/vhpl50 1481657597
+EN pwm_nb_2 NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" sub00/vhpl88 1481657607
+EN clk_change_muser_main_1 NULL C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl72 1475344089
+EN commutation_muser_main_1 NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_1.vhf" sub00/vhpl52 1480847286
+EN commutation_muser_main_2 NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_2.vhf" sub00/vhpl90 1481205148
+MO PID_Controller NULL PID.v vlg78/_p_i_d___controller.bin 1481657583
+AR commutation_muser_main_2 behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_2.vhf" sub00/vhpl91 1481205149
+EN comparator_muser_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl32 1481657623
+AR m2_1_mxilinx_main_1 behavioral C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl67 1475348775
+AR main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl15 1481657632
+EN pwm NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" sub00/vhpl22 1481657613
+AR main_1 behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_1.vhf" sub00/vhpl69 1480847289
+AR deadtime behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/DEADTIME.vhf" sub00/vhpl25 1481657634
+EN cj4ce_mxilinx_clk_change NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/clk_change.vhf" sub00/vhpl76 1481657583
+AR pwm_v2 behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_V2.vhf" sub00/vhpl51 1481657598
+AR pwm_nb_2 behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" sub00/vhpl89 1481657608
+EN commutation NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Commutation.vhf" sub00/vhpl16 1481205152
+AR deadtime_muser_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl01 1472141304
 AR ftce_mxilinx_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl05 1471460302
-EN pwm_vnb NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl44 1475146392
-EN m2_1_mxilinx_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl10 1476895078
-AR pwm_v2_muser_comparator behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Comparator.vhf" sub00/vhpl47 1475146395
-EN deadtime_muser_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl00 1475133509
-AR pwm_v2_muser_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl31 1475146369
-EN cb4re_mxilinx_pwm_vnb NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl38 1475146386
-EN pwm_v2_muser_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl30 1475146368
-EN main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl14 1476895080
-AR commutation_muser_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl13 1476895077
-AR cb4re_mxilinx_pwm_vnb behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl39 1475146387
-AR pwm_vnb behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl45 1475146393
-AR commutation behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Commutation.vhf" sub00/vhpl17 1476895083
-EN ftrse_mxilinx_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl26 1475146364
-EN ftrse_mxilinx_pwm_vnb NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl36 1475146384
+AR clk_change_muser_main_1 behavioral C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl73 1475344090
+EN pwm_vnb NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl44 1481657595
+AR cb4re_mxilinx_main_1 behavioral C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl57 1475348763
+MO pwm_42 NULL pwm_42.v vlg6D/pwm__42.bin 1481205092
+EN m2_1_mxilinx_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl10 1481657629
+AR pwm_v2_muser_comparator behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Comparator.vhf" sub00/vhpl47 1481657636
+EN deadtime_muser_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl00 1472141303
+AR pwm_v2_muser_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl31 1481657622
+AR cb4re_mxilinx_pwm_nb_2 behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" sub00/vhpl83 1481657602
+EN cb4re_mxilinx_pwm_vnb NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl38 1481657589
+EN pwm_v2_muser_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl30 1481657621
+EN main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl14 1481657631
+EN or6_mxilinx_main_1 NULL C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl64 1475743769
+AR commutation_muser_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl13 1481657616
+AR cb4re_mxilinx_pwm_vnb behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl39 1481657590
+AR pwm_vnb behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl45 1481657596
+AR or6_mxilinx_main_1 behavioral C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl65 1475743770
+AR commutation behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Commutation.vhf" sub00/vhpl17 1481205153
+EN ftrse_mxilinx_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl26 1481657617
+EN ftrse_mxilinx_pwm_vnb NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl36 1481657587
 EN cb4ce_mxilinx_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl06 1471460303
-AR cb4ce_mxilinx_pwm behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" sub00/vhpl21 1471460320
-AR pwm_vnb_muser_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl35 1475146373
-AR pwm behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" sub00/vhpl23 1471460322
-EN cb4ce_mxilinx_pwm NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" sub00/vhpl20 1471460319
-AR ftrse_mxilinx_pwm_vnb behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl37 1475146385
-MO PWM_Verilog NULL PWM_Verilog.v vlg27/_p_w_m___verilog.bin 1476895072
+AR cb4ce_mxilinx_pwm behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" sub00/vhpl21 1481657612
+MO encoder NULL encoder.v vlg68/encoder.bin 1481655899
+AR pwm_vnb_muser_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl35 1481657626
+AR pwm behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" sub00/vhpl23 1481657614
+EN cb4ce_mxilinx_pwm NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" sub00/vhpl20 1481657611
+AR ftrse_mxilinx_pwm_vnb behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl37 1481657588
+EN cj4ce_mxilinx_main_1 NULL C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl70 1475344087
+EN pwm_v2_muser_pwm_nb_2 NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" sub00/vhpl84 1481657603
 AR pwm_muser_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl09 1471460306
-EN deadtime NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/DEADTIME.vhf" sub00/vhpl24 1476895072
-MO CLK_Divider NULL CLK_Divider.v vlg70/_c_l_k___divider.bin 1475399586
-EN pwm_vnb_muser_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl34 1475146372
-EN commutation_muser_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl12 1476895076
+EN deadtime NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/DEADTIME.vhf" sub00/vhpl24 1481657633
+EN cb4re_mxilinx_pwm_nb_2 NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" sub00/vhpl82 1481657601
+EN cb4re_mxilinx_main_1 NULL C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl56 1475348762
+MO pwm_3 NULL pwm_3.v vlg3E/pwm__3.bin 1475513928
+MO pwm_4 NULL pwm_4.v vlg3F/pwm__4.bin 1481205092
+AR commutation_muser_main_1 behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_1.vhf" sub00/vhpl53 1480847287
+AR main_2 behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_2.vhf" sub00/vhpl93 1481205151
+AR pwm_v2_muser_main_1 behavioral C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl59 1475348765
+EN pwm_vnb_muser_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl34 1481657625
+EN commutation_muser_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl12 1481657615
+EN comparator_muser_main_1 NULL C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl60 1475348766
 EN ftce_mxilinx_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl04 1471460301
-AR cb4re_mxilinx_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl29 1475146367
+AR pwm_v2_muser_pwm_nb_2 behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" sub00/vhpl85 1481657604
+EN pwm_v2_muser_main_1 NULL C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl58 1475348764
+EN pwm_nb_2_muser_main_1 NULL C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl74 1475348768
+AR cb4re_mxilinx_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl29 1481657620
 EN pwm_muser_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl08 1471460305
-EN ftce_mxilinx_pwm NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" sub00/vhpl18 1471460317
-AR comparator_muser_pwm_vnb behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl43 1475146391
-AR or6_mxilinx_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl03 1476895075
-AR pwm_v2_muser_pwm_vnb behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl41 1475146389
-EN comparator NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Comparator.vhf" sub00/vhpl48 1475146396
-EN comparator_muser_pwm_vnb NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl42 1475146390
-EN cb4re_mxilinx_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl28 1475146366
-AR m2_1_mxilinx_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl11 1476895079
-AR comparator behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Comparator.vhf" sub00/vhpl49 1475146397
-EN pwm_v2_muser_comparator NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Comparator.vhf" sub00/vhpl46 1475146394
-AR ftce_mxilinx_pwm behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" sub00/vhpl19 1471460318
-AR ftrse_mxilinx_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl27 1475146365
-EN or6_mxilinx_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl02 1476895074
+AR clk_change behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/clk_change.vhf" sub00/vhpl79 1481657586
+EN m2_1_mxilinx_main_1 NULL C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl66 1475348774
+EN comparator_muser_pwm_nb_2 NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" sub00/vhpl86 1481657605
+EN ftce_mxilinx_pwm NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" sub00/vhpl18 1481657609
+AR pwm_nb_2_muser_main_1 behavioral C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl75 1475348769
+AR comparator_muser_pwm_vnb behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl43 1481657594
+AR comparator_muser_main_1 behavioral C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl61 1475348767
+AR or6_mxilinx_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl03 1481657628
+AR ftrse_mxilinx_main_1 behavioral C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl55 1475348761
+AR pwm_v2_muser_pwm_vnb behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl41 1481657592
+EN comparator NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Comparator.vhf" sub00/vhpl48 1481657637
+EN comparator_muser_pwm_vnb NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" sub00/vhpl42 1481657593
+EN cb4re_mxilinx_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl28 1481657619
+AR cj4ce_mxilinx_main_1 behavioral C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl71 1475344088
+AR m2_1_mxilinx_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl11 1481657630
+AR comparator behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Comparator.vhf" sub00/vhpl49 1481657638
+AR ftrse_mxilinx_pwm_nb_2 behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" sub00/vhpl81 1481657600
+EN pwm_vnb_muser_main_1 NULL C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl62 1475006324
+AR comparator_muser_pwm_nb_2 behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" sub00/vhpl87 1481657606
+EN pwm_v2_muser_comparator NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Comparator.vhf" sub00/vhpl46 1481657635
+EN ftrse_mxilinx_pwm_nb_2 NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" sub00/vhpl80 1481657599
+AR ftce_mxilinx_pwm behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" sub00/vhpl19 1481657610
+AR ftrse_mxilinx_main behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl27 1481657618
+AR pwm_vnb_muser_main_1 behavioral C:/Xilinx/BLDC_Controller/MAIN_1.vhf sub00/vhpl63 1475006325
+EN main_1 NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_1.vhf" sub00/vhpl68 1480847288
+EN or6_mxilinx_main NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" sub00/vhpl02 1481657627
+EN main_2 NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_2.vhf" sub00/vhpl92 1481205150

@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
 -n 3 -fastpaths -xml MAIN_1.twx MAIN_1.ncd -o MAIN_1.twr MAIN_1.pcf -ucf
-MAIN_1_NEW.ucf
+BLDC.ucf
 
 Design file:              MAIN_1.ncd
 Physical constraint file: MAIN_1.pcf
@@ -40,17 +40,31 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Setup/Hold to clock CLK
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+D<0>        |    4.698(R)|   -1.199(R)|CLK_BUFGP         |   0.000|
+D<1>        |    4.737(R)|   -1.472(R)|CLK_BUFGP         |   0.000|
+D<2>        |    4.274(R)|   -0.975(R)|CLK_BUFGP         |   0.000|
+D<3>        |    4.337(R)|    0.186(R)|CLK_BUFGP         |   0.000|
+H1          |    4.456(R)|   -1.047(R)|CLK_BUFGP         |   0.000|
+H2          |    5.201(R)|   -1.643(R)|CLK_BUFGP         |   0.000|
+H3          |    5.593(R)|   -1.956(R)|CLK_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
 Clock CLK to Pad
 ------------+------------+------------------+--------+
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-A           |   11.372(R)|CLK_BUFGP         |   0.000|
-AA          |   12.391(R)|CLK_BUFGP         |   0.000|
-B           |   12.534(R)|CLK_BUFGP         |   0.000|
-BB          |   12.994(R)|CLK_BUFGP         |   0.000|
-C           |   11.842(R)|CLK_BUFGP         |   0.000|
-CC          |   12.122(R)|CLK_BUFGP         |   0.000|
+A           |   12.620(R)|CLK_BUFGP         |   0.000|
+AA          |   12.270(R)|CLK_BUFGP         |   0.000|
+B           |   12.776(R)|CLK_BUFGP         |   0.000|
+BB          |   13.043(R)|CLK_BUFGP         |   0.000|
+C           |   13.723(R)|CLK_BUFGP         |   0.000|
+CC          |   13.997(R)|CLK_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -58,66 +72,36 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    3.129|         |         |         |
+CLK            |    4.181|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-D0             |A              |   11.005|
-D0             |AA             |   12.024|
-D0             |B              |   12.167|
-D0             |BB             |   12.627|
-D0             |C              |   11.475|
-D0             |CC             |   11.755|
-D1             |A              |   10.486|
-D1             |AA             |   11.505|
-D1             |B              |   11.648|
-D1             |BB             |   12.108|
-D1             |C              |   10.956|
-D1             |CC             |   11.236|
-D2             |A              |    9.481|
-D2             |AA             |   10.500|
-D2             |B              |   10.643|
-D2             |BB             |   11.103|
-D2             |C              |    9.951|
-D2             |CC             |   10.231|
-D3             |A              |    7.583|
-D3             |AA             |    8.602|
-D3             |B              |    8.745|
-D3             |BB             |    9.205|
-D3             |C              |    8.053|
-D3             |CC             |    8.333|
-H1             |A              |    7.694|
-H1             |AA             |    7.492|
-H1             |C              |    5.891|
-H1             |CC             |    6.138|
-H2             |A              |    7.626|
-H2             |AA             |    7.537|
-H2             |B              |    6.402|
-H2             |BB             |    6.811|
-H3             |B              |    6.649|
-H3             |BB             |    7.114|
-H3             |C              |    6.090|
-H3             |CC             |    6.393|
-LOW            |A              |    6.494|
-LOW            |AA             |    6.186|
-LOW            |B              |    7.676|
-LOW            |BB             |    8.107|
-LOW            |C              |    7.022|
-LOW            |CC             |    7.275|
+H1             |A              |   10.994|
+H1             |AA             |   10.738|
+H1             |C              |   10.085|
+H1             |CC             |   10.593|
+H2             |A              |   11.110|
+H2             |AA             |   10.876|
+H2             |B              |   10.825|
+H2             |BB             |   11.221|
+H3             |B              |   10.420|
+H3             |BB             |   10.871|
+H3             |C              |   10.123|
+H3             |CC             |   10.660|
 ---------------+---------------+---------+
 
 
-Analysis completed Wed Sep 28 21:40:01 2016 
+Analysis completed Tue Oct 11 20:17:06 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 166 MB
+Peak Memory Usage: 162 MB
 
 
 

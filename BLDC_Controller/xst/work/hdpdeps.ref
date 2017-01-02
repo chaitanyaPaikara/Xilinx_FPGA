@@ -1,132 +1,270 @@
-V3 70
-FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Commutation.vhf" 2016/10/19.20:01:02 P.28xd
-EN work/Commutation 1476895082 \
+V3 134
+FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/clk_change.vhf" 2016/10/01.22:38:52 P.28xd
+EN work/CJ4CE_MXILINX_clk_change 1481657583 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/clk_change.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/CJ4CE_MXILINX_clk_change/BEHAVIORAL 1481657584 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/clk_change.vhf" \
+      EN work/CJ4CE_MXILINX_clk_change 1481657583 CP FDCE CP INV
+EN work/clk_change 1481657585 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/clk_change.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/clk_change/BEHAVIORAL 1481657586 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/clk_change.vhf" \
+      EN work/clk_change 1481657585 CP CJ4CE_MXILINX_clk_change CP VCC CP GND
+FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Commutation.vhf" 2016/10/11.20:02:44 P.28xd
+EN work/Commutation 1481205152 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Commutation.vhf" \
       PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
       PH unisim/VCOMPONENTS 1341906184
-AR work/Commutation/BEHAVIORAL 1476895083 \
+AR work/Commutation/BEHAVIORAL 1481205153 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Commutation.vhf" \
-      EN work/Commutation 1476895082 CP OR2 CP AND2 CP INV
-FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Comparator.vhf" 2016/08/25.21:38:02 P.28xd
-EN work/PWM_V2_MUSER_Comparator 1475146394 \
+      EN work/Commutation 1481205152 CP INV CP OR2 CP AND2
+FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Comparator.vhf" 2016/08/27.21:59:56 P.28xd
+EN work/PWM_V2_MUSER_Comparator 1481657635 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Comparator.vhf" \
       PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
       PH unisim/VCOMPONENTS 1341906184
-AR work/PWM_V2_MUSER_Comparator/BEHAVIORAL 1475146395 \
+AR work/PWM_V2_MUSER_Comparator/BEHAVIORAL 1481657636 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Comparator.vhf" \
-      EN work/PWM_V2_MUSER_Comparator 1475146394 CP AND2 CP OR3
-EN work/Comparator 1475146396 \
+      EN work/PWM_V2_MUSER_Comparator 1481657635 CP AND2 CP OR3
+EN work/Comparator 1481657637 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Comparator.vhf" \
       PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
       PH unisim/VCOMPONENTS 1341906184
-AR work/Comparator/BEHAVIORAL 1475146397 \
+AR work/Comparator/BEHAVIORAL 1481657638 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/Comparator.vhf" \
-      EN work/Comparator 1475146396 CP PWM_V2_MUSER_Comparator CP GND
-FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/DEADTIME.vhf" 2016/08/25.21:38:02 P.28xd
-EN work/DEADTIME 1476895072 \
+      EN work/Comparator 1481657637 CP PWM_V2_MUSER_Comparator CP GND
+FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/DEADTIME.vhf" 2016/08/27.21:59:58 P.28xd
+EN work/DEADTIME 1481657633 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/DEADTIME.vhf" \
       PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
       PH unisim/VCOMPONENTS 1341906184
-AR work/DEADTIME/BEHAVIORAL 1476895073 \
+AR work/DEADTIME/BEHAVIORAL 1481657634 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/DEADTIME.vhf" \
-      EN work/DEADTIME 1476895072 CP AND2 CP INV
-FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" 2016/10/19.21:29:55 P.28xd
-EN work/OR6_MXILINX_MAIN 1476895074 \
+      EN work/DEADTIME 1481657633 CP AND2 CP INV
+FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" 2016/09/27.16:36:46 P.28xd
+EN work/Commutation_MUSER_MAIN 1481657615 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
       PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
       PH unisim/VCOMPONENTS 1341906184
-AR work/OR6_MXILINX_MAIN/BEHAVIORAL 1476895075 \
+AR work/Commutation_MUSER_MAIN/BEHAVIORAL 1481657616 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
-      EN work/OR6_MXILINX_MAIN 1476895074 CP OR4 CP OR3 CP FMAP
-EN work/Commutation_MUSER_MAIN 1476895076 \
-      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
-      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
-      PH unisim/VCOMPONENTS 1341906184
-AR work/Commutation_MUSER_MAIN/BEHAVIORAL 1476895077 \
-      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
-      EN work/Commutation_MUSER_MAIN 1476895076 CP OR2 CP AND2 CP INV
-EN work/M2_1_MXILINX_MAIN 1476895078 \
+      EN work/Commutation_MUSER_MAIN 1481657615 CP INV CP OR2 CP AND2
+EN work/FTRSE_MXILINX_MAIN 1481657617 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
       PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
       PH unisim/VCOMPONENTS 1341906184
-AR work/M2_1_MXILINX_MAIN/BEHAVIORAL 1476895079 \
+AR work/FTRSE_MXILINX_MAIN/BEHAVIORAL 1481657618 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
-      EN work/M2_1_MXILINX_MAIN 1476895078 CP AND2B1 CP OR2 CP AND2
-EN work/MAIN 1476895080 \
+      EN work/FTRSE_MXILINX_MAIN 1481657617 CP XOR2 CP FDRE CP OR2
+EN work/CB4RE_MXILINX_MAIN 1481657619 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
       PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
       PH unisim/VCOMPONENTS 1341906184
-AR work/MAIN/BEHAVIORAL 1476895081 \
+AR work/CB4RE_MXILINX_MAIN/BEHAVIORAL 1481657620 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
-      EN work/MAIN 1476895080 CP Commutation_MUSER_MAIN CP M2_1_MXILINX_MAIN \
-      CP PWM_Verilog CP GND CP OR6_MXILINX_MAIN
-FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" 2016/08/18.00:28:13 P.28xd
-EN work/FTCE_MXILINX_PWM 1471460317 \
+      EN work/CB4RE_MXILINX_MAIN 1481657619 CP FTRSE_MXILINX_MAIN CP AND4 CP AND3 \
+      CP AND2 CP VCC CP GND
+EN work/PWM_V2_MUSER_MAIN 1481657621 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/PWM_V2_MUSER_MAIN/BEHAVIORAL 1481657622 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
+      EN work/PWM_V2_MUSER_MAIN 1481657621 CP AND2 CP OR3
+EN work/Comparator_MUSER_MAIN 1481657623 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/Comparator_MUSER_MAIN/BEHAVIORAL 1481657624 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
+      EN work/Comparator_MUSER_MAIN 1481657623 CP PWM_V2_MUSER_MAIN CP GND
+EN work/PWM_VNB_MUSER_MAIN 1481657625 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/PWM_VNB_MUSER_MAIN/BEHAVIORAL 1481657626 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
+      EN work/PWM_VNB_MUSER_MAIN 1481657625 CP Comparator_MUSER_MAIN \
+      CP CB4RE_MXILINX_MAIN CP XOR2 CP VCC
+EN work/OR6_MXILINX_MAIN 1481657627 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/OR6_MXILINX_MAIN/BEHAVIORAL 1481657628 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
+      EN work/OR6_MXILINX_MAIN 1481657627 CP OR4 CP OR3 CP FMAP
+EN work/M2_1_MXILINX_MAIN 1481657629 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/M2_1_MXILINX_MAIN/BEHAVIORAL 1481657630 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
+      EN work/M2_1_MXILINX_MAIN 1481657629 CP AND2B1 CP OR2 CP AND2
+EN work/MAIN 1481657631 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/MAIN/BEHAVIORAL 1481657632 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN.vhf" \
+      EN work/MAIN 1481657631 CP M2_1_MXILINX_MAIN CP OR6_MXILINX_MAIN \
+      CP PWM_VNB_MUSER_MAIN CP Commutation_MUSER_MAIN CP INV
+FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_1.vhf" 2016/12/04.15:56:54 P.28xd
+EN work/Commutation_MUSER_MAIN_1 1480847286 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_1.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/Commutation_MUSER_MAIN_1/BEHAVIORAL 1480847287 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_1.vhf" \
+      EN work/Commutation_MUSER_MAIN_1 1480847286 CP INV CP OR2 CP AND2
+EN work/MAIN_1 1480847288 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_1.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/MAIN_1/BEHAVIORAL 1480847289 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_1.vhf" \
+      EN work/MAIN_1 1480847288 CP Commutation_MUSER_MAIN_1 CP pwm_4 CP MUXF8 CP GND \
+      CP VCC CP INV CP pwm_42 CP OR3 CP OR2 CP Fuzzy_logic_based_tuner \
+      CP PID_Controller CP encoder
+FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_2.vhf" 2016/12/08.19:21:28 P.28xd
+EN work/Commutation_MUSER_MAIN_2 1481205148 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_2.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/Commutation_MUSER_MAIN_2/BEHAVIORAL 1481205149 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_2.vhf" \
+      EN work/Commutation_MUSER_MAIN_2 1481205148 CP INV CP OR2 CP AND2
+EN work/MAIN_2 1481205150 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_2.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/MAIN_2/BEHAVIORAL 1481205151 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/MAIN_2.vhf" \
+      EN work/MAIN_2 1481205150 CP Commutation_MUSER_MAIN_2 CP pwm_4 CP MUXF8 CP GND \
+      CP VCC CP pwm_42 CP OR3 CP OR2
+FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" 2016/08/27.22:00:22 P.28xd
+EN work/FTCE_MXILINX_PWM 1481657609 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" \
       PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
       PH unisim/VCOMPONENTS 1341906184
-AR work/FTCE_MXILINX_PWM/BEHAVIORAL 1471460318 \
+AR work/FTCE_MXILINX_PWM/BEHAVIORAL 1481657610 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" \
-      EN work/FTCE_MXILINX_PWM 1471460317 CP XOR2 CP FDCE
-EN work/CB4CE_MXILINX_PWM 1471460319 \
+      EN work/FTCE_MXILINX_PWM 1481657609 CP XOR2 CP FDCE
+EN work/CB4CE_MXILINX_PWM 1481657611 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" \
       PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
       PH unisim/VCOMPONENTS 1341906184
-AR work/CB4CE_MXILINX_PWM/BEHAVIORAL 1471460320 \
+AR work/CB4CE_MXILINX_PWM/BEHAVIORAL 1481657612 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" \
-      EN work/CB4CE_MXILINX_PWM 1471460319 CP FTCE_MXILINX_PWM CP AND4 CP AND3 \
+      EN work/CB4CE_MXILINX_PWM 1481657611 CP FTCE_MXILINX_PWM CP AND4 CP AND3 \
       CP AND2 CP VCC
-EN work/PWM 1471460321 \
+EN work/PWM 1481657613 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" \
       PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
       PH unisim/VCOMPONENTS 1341906184
-AR work/PWM/BEHAVIORAL 1471460322 \
+AR work/PWM/BEHAVIORAL 1481657614 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM.vhf" \
-      EN work/PWM 1471460321 CP CB4CE_MXILINX_PWM CP XNOR2 CP AND4 CP LDC CP NOR4 \
+      EN work/PWM 1481657613 CP CB4CE_MXILINX_PWM CP XNOR2 CP AND4 CP LDC CP NOR4 \
       CP GND
-FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_V2.vhf" 2016/08/25.21:38:02 P.28xd
-EN work/PWM_V2 1475146398 \
-      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_V2.vhf" \
+FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" 2016/10/01.22:38:52 P.28xd
+EN work/FTRSE_MXILINX_PWM_NB_2 1481657599 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" \
       PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
       PH unisim/VCOMPONENTS 1341906184
-AR work/PWM_V2/BEHAVIORAL 1475146399 \
-      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_V2.vhf" \
-      EN work/PWM_V2 1475146398 CP AND2 CP OR3
-FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" 2016/08/25.21:38:03 P.28xd
-EN work/FTRSE_MXILINX_PWM_VNB 1475146384 \
-      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" \
+AR work/FTRSE_MXILINX_PWM_NB_2/BEHAVIORAL 1481657600 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" \
+      EN work/FTRSE_MXILINX_PWM_NB_2 1481657599 CP XOR2 CP FDRE CP OR2
+EN work/CB4RE_MXILINX_PWM_NB_2 1481657601 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" \
       PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
       PH unisim/VCOMPONENTS 1341906184
-AR work/FTRSE_MXILINX_PWM_VNB/BEHAVIORAL 1475146385 \
-      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" \
-      EN work/FTRSE_MXILINX_PWM_VNB 1475146384 CP XOR2 CP FDRE CP OR2
-EN work/CB4RE_MXILINX_PWM_VNB 1475146386 \
-      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" \
-      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
-      PH unisim/VCOMPONENTS 1341906184
-AR work/CB4RE_MXILINX_PWM_VNB/BEHAVIORAL 1475146387 \
-      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" \
-      EN work/CB4RE_MXILINX_PWM_VNB 1475146386 CP FTRSE_MXILINX_PWM_VNB CP AND4 \
+AR work/CB4RE_MXILINX_PWM_NB_2/BEHAVIORAL 1481657602 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" \
+      EN work/CB4RE_MXILINX_PWM_NB_2 1481657601 CP FTRSE_MXILINX_PWM_NB_2 CP AND4 \
       CP AND3 CP AND2 CP VCC CP GND
-EN work/PWM_V2_MUSER_PWM_VNB 1475146388 \
+EN work/PWM_V2_MUSER_PWM_NB_2 1481657603 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/PWM_V2_MUSER_PWM_NB_2/BEHAVIORAL 1481657604 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" \
+      EN work/PWM_V2_MUSER_PWM_NB_2 1481657603 CP AND2 CP OR3
+EN work/Comparator_MUSER_PWM_NB_2 1481657605 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/Comparator_MUSER_PWM_NB_2/BEHAVIORAL 1481657606 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" \
+      EN work/Comparator_MUSER_PWM_NB_2 1481657605 CP PWM_V2_MUSER_PWM_NB_2 CP GND
+EN work/PWM_NB_2 1481657607 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/PWM_NB_2/BEHAVIORAL 1481657608 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_NB_2.vhf" \
+      EN work/PWM_NB_2 1481657607 CP Comparator_MUSER_PWM_NB_2 \
+      CP CB4RE_MXILINX_PWM_NB_2 CP XOR2 CP VCC CP GND
+FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_V2.vhf" 2016/08/27.22:00:26 P.28xd
+EN work/PWM_V2 1481657597 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_V2.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/PWM_V2/BEHAVIORAL 1481657598 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_V2.vhf" \
+      EN work/PWM_V2 1481657597 CP AND2 CP OR3
+FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" 2016/10/01.15:58:54 P.28xd
+EN work/FTRSE_MXILINX_PWM_VNB 1481657587 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" \
       PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
       PH unisim/VCOMPONENTS 1341906184
-AR work/PWM_V2_MUSER_PWM_VNB/BEHAVIORAL 1475146389 \
+AR work/FTRSE_MXILINX_PWM_VNB/BEHAVIORAL 1481657588 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" \
-      EN work/PWM_V2_MUSER_PWM_VNB 1475146388 CP AND2 CP OR3
-EN work/Comparator_MUSER_PWM_VNB 1475146390 \
-      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" \
-      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
-      PH unisim/VCOMPONENTS 1341906184
-AR work/Comparator_MUSER_PWM_VNB/BEHAVIORAL 1475146391 \
-      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" \
-      EN work/Comparator_MUSER_PWM_VNB 1475146390 CP PWM_V2_MUSER_PWM_VNB CP GND
-EN work/PWM_VNB 1475146392 \
+      EN work/FTRSE_MXILINX_PWM_VNB 1481657587 CP XOR2 CP FDRE CP OR2
+EN work/CB4RE_MXILINX_PWM_VNB 1481657589 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" \
       PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
       PH unisim/VCOMPONENTS 1341906184
-AR work/PWM_VNB/BEHAVIORAL 1475146393 \
+AR work/CB4RE_MXILINX_PWM_VNB/BEHAVIORAL 1481657590 \
       FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" \
-      EN work/PWM_VNB 1475146392 CP Comparator_MUSER_PWM_VNB \
-      CP CB4RE_MXILINX_PWM_VNB CP XOR2 CP VCC
+      EN work/CB4RE_MXILINX_PWM_VNB 1481657589 CP FTRSE_MXILINX_PWM_VNB CP AND4 \
+      CP AND3 CP AND2 CP VCC CP GND
+EN work/PWM_V2_MUSER_PWM_VNB 1481657591 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/PWM_V2_MUSER_PWM_VNB/BEHAVIORAL 1481657592 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" \
+      EN work/PWM_V2_MUSER_PWM_VNB 1481657591 CP AND2 CP OR3
+EN work/Comparator_MUSER_PWM_VNB 1481657593 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/Comparator_MUSER_PWM_VNB/BEHAVIORAL 1481657594 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" \
+      EN work/Comparator_MUSER_PWM_VNB 1481657593 CP PWM_V2_MUSER_PWM_VNB CP GND
+EN work/PWM_VNB 1481657595 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/PWM_VNB/BEHAVIORAL 1481657596 \
+      FL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" \
+      EN work/PWM_VNB 1481657595 CP Comparator_MUSER_PWM_VNB \
+      CP CB4RE_MXILINX_PWM_VNB CP AND3
+FL C:/Xilinx/BLDC_Controller/clk_change.vhf 2016/10/01.22:38:50 P.28xd
+FL C:/Xilinx/BLDC_Controller/Commutation.vhf 2016/10/11.20:02:42 P.28xd
+FL C:/Xilinx/BLDC_Controller/Comparator.vhf 2016/08/27.21:59:54 P.28xd
+FL C:/Xilinx/BLDC_Controller/DEADTIME.vhf 2016/08/27.21:59:57 P.28xd
+FL C:/Xilinx/BLDC_Controller/MAIN.vhf 2016/09/27.16:36:44 P.28xd
+FL C:/Xilinx/BLDC_Controller/MAIN_1.vhf 2016/10/11.20:02:42 P.28xd
+EN work/Comparator_MUSER_MAIN_1 1475348766 \
+      FL C:/Xilinx/BLDC_Controller/MAIN_1.vhf PB ieee/std_logic_1164 1341906176 \
+      PB ieee/NUMERIC_STD 1341906182 LB UNISIM PH unisim/VCOMPONENTS 1341906184
+EN work/OR6_MXILINX_MAIN_1 1475743769 \
+      FL C:/Xilinx/BLDC_Controller/MAIN_1.vhf PB ieee/std_logic_1164 1341906176 \
+      PB ieee/NUMERIC_STD 1341906182 LB UNISIM PH unisim/VCOMPONENTS 1341906184
+FL C:/Xilinx/BLDC_Controller/PWM_NB_2.vhf 2016/10/01.22:38:51 P.28xd
+FL C:/Xilinx/BLDC_Controller/PWM_V2.vhf 2016/08/27.22:00:24 P.28xd
+FL C:/Xilinx/BLDC_Controller/PWM_VNB.vhf 2016/10/01.15:58:52 P.28xd

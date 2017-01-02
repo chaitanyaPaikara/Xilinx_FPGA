@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.2
 --  \   \         Application : sch2hdl
 --  /   /         Filename : PWM_VNB.vhf
--- /___/   /\     Timestamp : 09/29/2016 22:37:35
+-- /___/   /\     Timestamp : 10/01/2016 15:58:52
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.vhf" -w "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/BLDC_Controller/PWM_VNB.sch"
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Xilinx/BLDC_Controller/PWM_VNB.vhf -w C:/Xilinx/BLDC_Controller/PWM_VNB.sch
 --Design Name: PWM_VNB
 --Device: spartan3e
 --Purpose:
@@ -385,22 +385,22 @@ entity PWM_VNB is
           D1  : in    std_logic; 
           D2  : in    std_logic; 
           D3  : in    std_logic; 
-          PWM : out   std_logic);
+          Chk : out   std_logic; 
+          PWM : out   std_logic; 
+          q0  : out   std_logic; 
+          q1  : out   std_logic; 
+          q2  : out   std_logic; 
+          q3  : out   std_logic);
 end PWM_VNB;
 
 architecture BEHAVIORAL of PWM_VNB is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal XLXN_1  : std_logic;
-   signal XLXN_2  : std_logic;
-   signal XLXN_3  : std_logic;
-   signal XLXN_4  : std_logic;
-   signal XLXN_5  : std_logic;
-   signal XLXN_6  : std_logic;
-   signal XLXN_7  : std_logic;
-   signal XLXN_8  : std_logic;
-   signal XLXN_9  : std_logic;
-   signal XLXN_20 : std_logic;
+   signal Chk_DUMMY : std_logic;
+   signal q0_DUMMY  : std_logic;
+   signal q1_DUMMY  : std_logic;
+   signal q2_DUMMY  : std_logic;
+   signal q3_DUMMY  : std_logic;
    component Comparator_MUSER_PWM_VNB
       port ( a0    : in    std_logic; 
              b0    : in    std_logic; 
@@ -425,18 +425,6 @@ architecture BEHAVIORAL of PWM_VNB is
              TC  : out   std_logic);
    end component;
    
-   component XOR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of XOR2 : component is "BLACK_BOX";
-   
-   component VCC
-      port ( P : out   std_logic);
-   end component;
-   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
-   
    component AND3
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -447,56 +435,38 @@ architecture BEHAVIORAL of PWM_VNB is
    
    attribute HU_SET of XLXI_3 : label is "XLXI_3_4";
 begin
+   Chk <= Chk_DUMMY;
+   q0 <= q0_DUMMY;
+   q1 <= q1_DUMMY;
+   q2 <= q2_DUMMY;
+   q3 <= q3_DUMMY;
    XLXI_2 : Comparator_MUSER_PWM_VNB
-      port map (a0=>XLXN_1,
-                a1=>XLXN_2,
-                a2=>XLXN_3,
-                a3=>XLXN_4,
-                b0=>XLXN_5,
-                b1=>XLXN_6,
-                b2=>XLXN_7,
-                b3=>XLXN_8,
+      port map (a0=>q0_DUMMY,
+                a1=>q1_DUMMY,
+                a2=>q2_DUMMY,
+                a3=>q3_DUMMY,
+                b0=>D0,
+                b1=>D1,
+                b2=>D2,
+                b3=>D3,
                 f_pwm=>PWM);
    
    XLXI_3 : CB4RE_MXILINX_PWM_VNB
       port map (C=>CLK,
                 CE=>CE,
-                R=>XLXN_20,
+                R=>Chk_DUMMY,
                 CEO=>open,
-                Q0=>XLXN_1,
-                Q1=>XLXN_2,
-                Q2=>XLXN_3,
-                Q3=>XLXN_4,
+                Q0=>q0_DUMMY,
+                Q1=>q1_DUMMY,
+                Q2=>q2_DUMMY,
+                Q3=>q3_DUMMY,
                 TC=>open);
    
-   XLXI_4 : XOR2
-      port map (I0=>XLXN_9,
-                I1=>D0,
-                O=>XLXN_5);
-   
-   XLXI_5 : XOR2
-      port map (I0=>XLXN_9,
-                I1=>D1,
-                O=>XLXN_6);
-   
-   XLXI_6 : XOR2
-      port map (I0=>XLXN_9,
-                I1=>D2,
-                O=>XLXN_7);
-   
-   XLXI_7 : XOR2
-      port map (I0=>XLXN_9,
-                I1=>D3,
-                O=>XLXN_8);
-   
-   XLXI_8 : VCC
-      port map (P=>XLXN_9);
-   
-   XLXI_9 : AND3
-      port map (I0=>XLXN_4,
-                I1=>XLXN_3,
-                I2=>XLXN_2,
-                O=>XLXN_20);
+   XLXI_10 : AND3
+      port map (I0=>q2_DUMMY,
+                I1=>q0_DUMMY,
+                I2=>q3_DUMMY,
+                O=>Chk_DUMMY);
    
 end BEHAVIORAL;
 
