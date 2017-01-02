@@ -29,7 +29,7 @@ module Encoder_fun4fpga_TB;
 	reg ticks;
 	reg flag;
 	// Outputs
-	wire [10:0] rpm;
+	wire [7:0] rpm;
 
 	// Instantiate the Unit Under Test (UUT)
 	Encoder_fun4fpga uut (
@@ -45,8 +45,7 @@ module Encoder_fun4fpga_TB;
 		ticks = 0;
 
 		// Wait 100 ns for global reset to finish
-		#1000000;
-      flag = 1;  
+		#1000000	flag = 1	;
 		// Add stimulus here
 
 	end
@@ -54,10 +53,10 @@ module Encoder_fun4fpga_TB;
 		#10 CLK=~CLK;
 	end
 	always begin
-		if(!flag)
-			#2000 ticks=~ticks;
-		else
-			#500 ticks=~ticks;
+	if(!flag)
+		#2000 ticks=~ticks;
+	else
+		#1000000 ticks=~ticks;
 	end
 endmodule
 

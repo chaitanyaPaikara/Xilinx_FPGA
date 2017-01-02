@@ -1,1 +1,2 @@
 verilog work "Encoder_fun4fpga.v"
+vhdl work "encoder.vhf"

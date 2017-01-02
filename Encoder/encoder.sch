@@ -23,12 +23,12 @@
         <port polarity="Input" name="ticks" />
         <port polarity="Output" name="rpm(10:0)" />
         <blockdef name="Enc">
-            <timestamp>2016-12-14T5:55:7</timestamp>
+            <timestamp>2016-12-14T14:42:36</timestamp>
             <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
-            <rect width="256" x="64" y="-128" height="192" />
+            <rect width="256" x="64" y="-128" height="448" />
         </blockdef>
         <blockdef name="CLOCK_div_2">
             <timestamp>2016-12-14T6:4:0</timestamp>

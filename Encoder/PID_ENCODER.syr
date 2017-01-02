@@ -1,0 +1,500 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: PID_ENCODER.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PID_ENCODER.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PID_ENCODER"
+Output Format                      : NGC
+Target Device                      : xc3s250e-5-cp132
+
+---- Source Options
+Top Module Name                    : PID_ENCODER
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "PID.v" in library work
+Compiling verilog file "Encoder_fun4fpga.v" in library work
+Module <pid_controller> compiled
+Module <Encoder_fun4fpga> compiled
+No errors in compilation
+Analysis of file <"PID_ENCODER.prj"> succeeded.
+ 
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/encoder.vhf" in Library work.
+Architecture behavioral of Entity ftce_mxilinx_encoder is up to date.
+Architecture behavioral of Entity cb16ce_mxilinx_encoder is up to date.
+Architecture behavioral of Entity encoder is up to date.
+Compiling vhdl file "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/PID_ENCODER.vhf" in Library work.
+Entity <PID_ENCODER> compiled.
+Entity <PID_ENCODER> (Architecture <BEHAVIORAL>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <PID_ENCODER> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for module <pid_controller> in library <work>.
+
+Analyzing hierarchy for module <Encoder_fun4fpga> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <PID_ENCODER> in library <work> (Architecture <BEHAVIORAL>).
+Entity <PID_ENCODER> analyzed. Unit <PID_ENCODER> generated.
+
+Analyzing module <pid_controller> in library <work>.
+Module <pid_controller> is correct for synthesis.
+ 
+Analyzing module <Encoder_fun4fpga> in library <work>.
+Module <Encoder_fun4fpga> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <pid_controller>.
+    Related source file is "PID.v".
+WARNING:Xst:646 - Signal <target_vel_r> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <current_vel_r> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Kp_r> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ki_r> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Kd_r> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:643 - "PID.v" line 35: The result of a 9x5-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "PID.v" line 35: The result of a 9x5-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "PID.v" line 35: The result of a 9x5-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 8-bit register for signal <vel_output>.
+    Found 9-bit register for signal <error>.
+    Found 9-bit up accumulator for signal <error_accum>.
+    Found 9-bit register for signal <error_diff>.
+    Found 9-bit subtractor for signal <error_diff$sub0000> created at line 53.
+    Found 9-bit register for signal <prev_error>.
+    Found 8-bit adder for signal <vel_output_w>.
+    Found 8-bit adder for signal <vel_output_w$addsub0000> created at line 35.
+    Found 9x5-bit multiplier for signal <vel_output_w$mult0003> created at line 35.
+    Found 9x5-bit multiplier for signal <vel_output_w$mult0004> created at line 35.
+    Found 9x5-bit multiplier for signal <vel_output_w$mult0005> created at line 35.
+    Summary:
+	inferred   1 Accumulator(s).
+	inferred  35 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   3 Multiplier(s).
+Unit <pid_controller> synthesized.
+
+
+Synthesizing Unit <Encoder_fun4fpga>.
+    Related source file is "Encoder_fun4fpga.v".
+    Found 8-bit register for signal <rpm>.
+    Found 16-bit up counter for signal <count>.
+    Found 16-bit register for signal <rpm_var>.
+    Found 18-bit adder for signal <rpm_var$addsub0000> created at line 34.
+    Found 18x9-bit multiplier for signal <rpm_var$mult0000> created at line 34.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+Unit <Encoder_fun4fpga> synthesized.
+
+
+Synthesizing Unit <PID_ENCODER>.
+    Related source file is "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/PID_ENCODER.vhf".
+Unit <PID_ENCODER> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 18x9-bit multiplier                                   : 1
+ 9x5-bit multiplier                                    : 3
+# Adders/Subtractors                                   : 5
+ 18-bit adder                                          : 1
+ 8-bit adder                                           : 2
+ 9-bit subtractor                                      : 2
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+# Accumulators                                         : 1
+ 9-bit up accumulator                                  : 1
+# Registers                                            : 6
+ 16-bit register                                       : 1
+ 8-bit register                                        : 2
+ 9-bit register                                        : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <rpm_var_11> has a constant value of 0 in block <XLXI_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rpm_var_12> has a constant value of 0 in block <XLXI_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rpm_var_13> has a constant value of 0 in block <XLXI_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rpm_var_14> has a constant value of 0 in block <XLXI_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rpm_var_15> has a constant value of 0 in block <XLXI_2>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <pid_controller>.
+	Found pipelined multiplier on signal <vel_output_w_mult0005>:
+		- 1 pipeline level(s) found in a register on signal <error_diff>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <vel_output_w_mult0003>:
+		- 1 pipeline level(s) found in a register on signal <error>.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_vel_output_w_mult0005 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_vel_output_w_mult0003 by adding 1 register level(s).
+Unit <pid_controller> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 18x9-bit multiplier                                   : 1
+ 9x5-bit multiplier                                    : 1
+ 9x5-bit registered multiplier                         : 2
+# Adders/Subtractors                                   : 5
+ 18-bit adder                                          : 1
+ 8-bit adder                                           : 2
+ 9-bit subtractor                                      : 2
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+# Accumulators                                         : 1
+ 9-bit up accumulator                                  : 1
+# Registers                                            : 41
+ Flip-Flops                                            : 41
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <rpm_var_11> has a constant value of 0 in block <Encoder_fun4fpga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_var_12> has a constant value of 0 in block <Encoder_fun4fpga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_var_13> has a constant value of 0 in block <Encoder_fun4fpga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_var_14> has a constant value of 0 in block <Encoder_fun4fpga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_var_15> has a constant value of 0 in block <Encoder_fun4fpga>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <PID_ENCODER> ...
+
+Optimizing unit <pid_controller> ...
+
+Optimizing unit <Encoder_fun4fpga> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PID_ENCODER, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 61
+ Flip-Flops                                            : 61
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : PID_ENCODER.ngr
+Top Level Output File Name         : PID_ENCODER
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 31
+
+Cell Usage :
+# BELS                             : 227
+#      GND                         : 1
+#      INV                         : 18
+#      LUT1                        : 16
+#      LUT2                        : 27
+#      LUT3                        : 19
+#      LUT4                        : 14
+#      LUT4_L                      : 1
+#      MUXCY                       : 62
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 67
+# FlipFlops/Latches                : 61
+#      FD                          : 11
+#      FDE                         : 16
+#      FDR                         : 34
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 30
+#      IBUF                        : 22
+#      OBUF                        : 8
+# MULTs                            : 4
+#      MULT18X18SIO                : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250ecp132-5 
+
+ Number of Slices:                       63  out of   2448     2%  
+ Number of Slice Flip Flops:             61  out of   4896     1%  
+ Number of 4 input LUTs:                 95  out of   4896     1%  
+ Number of IOs:                          31
+ Number of bonded IOBs:                  31  out of     92    33%  
+ Number of MULT18X18SIOs:                 4  out of     12    33%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 63    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 11.557ns (Maximum Frequency: 86.525MHz)
+   Minimum input arrival time before clock: 8.556ns
+   Maximum output required time after clock: 4.040ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 11.557ns (frequency: 86.525MHz)
+  Total number of paths / destination ports: 18616 / 105
+-------------------------------------------------------------------------
+Delay:               11.557ns (Levels of Logic = 21)
+  Source:            XLXI_2/count_0 (FF)
+  Destination:       XLXI_2/rpm_7 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: XLXI_2/count_0 to XLXI_2/rpm_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.514   0.532  XLXI_2/count_0 (XLXI_2/count_0)
+     LUT1:I0->O            1   0.612   0.000  XLXI_2/Madd_rpm_var_addsub0000_cy<0>_rt (XLXI_2/Madd_rpm_var_addsub0000_cy<0>_rt)
+     MUXCY:S->O            1   0.404   0.000  XLXI_2/Madd_rpm_var_addsub0000_cy<0> (XLXI_2/Madd_rpm_var_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_2/Madd_rpm_var_addsub0000_cy<1> (XLXI_2/Madd_rpm_var_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_2/Madd_rpm_var_addsub0000_cy<2> (XLXI_2/Madd_rpm_var_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_2/Madd_rpm_var_addsub0000_cy<3> (XLXI_2/Madd_rpm_var_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_2/Madd_rpm_var_addsub0000_cy<4> (XLXI_2/Madd_rpm_var_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_2/Madd_rpm_var_addsub0000_cy<5> (XLXI_2/Madd_rpm_var_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_2/Madd_rpm_var_addsub0000_cy<6> (XLXI_2/Madd_rpm_var_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_2/Madd_rpm_var_addsub0000_cy<7> (XLXI_2/Madd_rpm_var_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_2/Madd_rpm_var_addsub0000_cy<8> (XLXI_2/Madd_rpm_var_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_2/Madd_rpm_var_addsub0000_cy<9> (XLXI_2/Madd_rpm_var_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_2/Madd_rpm_var_addsub0000_cy<10> (XLXI_2/Madd_rpm_var_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_2/Madd_rpm_var_addsub0000_cy<11> (XLXI_2/Madd_rpm_var_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_2/Madd_rpm_var_addsub0000_cy<12> (XLXI_2/Madd_rpm_var_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_2/Madd_rpm_var_addsub0000_cy<13> (XLXI_2/Madd_rpm_var_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_2/Madd_rpm_var_addsub0000_cy<14> (XLXI_2/Madd_rpm_var_addsub0000_cy<14>)
+     XORCY:CI->O           1   0.699   0.357  XLXI_2/Madd_rpm_var_addsub0000_xor<15> (XLXI_2/rpm_var_addsub0000<15>)
+     MULT18X18SIO:A15->P16    2   4.320   0.410  XLXI_2/Mmult_rpm_var_mult0000 (XLXI_2/rpm_var_mult0000<16>)
+     LUT4:I2->O            1   0.612   0.000  XLXI_2/rpm_not0000132_SW0_SW0_F (N7)
+     MUXF5:I0->O           1   0.278   0.360  XLXI_2/rpm_not0000132_SW0_SW0 (N4)
+     LUT4:I3->O            8   0.612   0.643  XLXI_2/rpm_not0000147 (XLXI_2/rpm_not0000)
+     FDE:CE                    0.483          XLXI_2/rpm_0
+    ----------------------------------------
+    Total                     11.557ns (9.255ns logic, 2.302ns route)
+                                       (80.1% logic, 19.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 3113 / 133
+-------------------------------------------------------------------------
+Offset:              8.556ns (Levels of Logic = 10)
+  Source:            Ki<1> (PAD)
+  Destination:       XLXI_1/vel_output_7 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: Ki<1> to XLXI_1/vel_output_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.357  Ki_1_IBUF (Ki_1_IBUF)
+     MULT18X18SIO:B1->P1    2   3.251   0.532  XLXI_1/Mmult_vel_output_w_mult0004 (XLXI_1/vel_output_w_mult0004<1>)
+     LUT3:I0->O            1   0.612   0.509  XLXI_1/Madd_vel_output_wC1 (XLXI_1/Madd_vel_output_wC)
+     LUT4:I0->O            1   0.612   0.000  XLXI_1/Madd_vel_output_w_Madd_lut<2> (XLXI_1/Madd_vel_output_w_Madd_lut<2>)
+     MUXCY:S->O            1   0.404   0.000  XLXI_1/Madd_vel_output_w_Madd_cy<2> (XLXI_1/Madd_vel_output_w_Madd_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_1/Madd_vel_output_w_Madd_cy<3> (XLXI_1/Madd_vel_output_w_Madd_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_1/Madd_vel_output_w_Madd_cy<4> (XLXI_1/Madd_vel_output_w_Madd_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_1/Madd_vel_output_w_Madd_cy<5> (XLXI_1/Madd_vel_output_w_Madd_cy<5>)
+     MUXCY:CI->O           0   0.051   0.000  XLXI_1/Madd_vel_output_w_Madd_cy<6> (XLXI_1/Madd_vel_output_w_Madd_cy<6>)
+     XORCY:CI->O           1   0.699   0.000  XLXI_1/Madd_vel_output_w_Madd_xor<7> (XLXI_1/vel_output_w<7>)
+     FDE:D                     0.268          XLXI_1/vel_output_7
+    ----------------------------------------
+    Total                      8.556ns (7.158ns logic, 1.398ns route)
+                                       (83.7% logic, 16.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            XLXI_1/vel_output_7 (FF)
+  Destination:       vel_output<7> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: XLXI_1/vel_output_7 to vel_output<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.514   0.357  XLXI_1/vel_output_7 (XLXI_1/vel_output_7)
+     OBUF:I->O                 3.169          vel_output_7_OBUF (vel_output<7>)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.85 secs
+ 
+--> 
+
+Total memory usage is 319692 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

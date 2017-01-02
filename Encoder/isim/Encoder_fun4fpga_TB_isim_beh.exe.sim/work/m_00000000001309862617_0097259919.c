@@ -24,7 +24,8 @@
 static const char *ng0 = "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Encoder_fun4fpga.v";
 static int ng1[] = {0, 0};
 static int ng2[] = {1, 0};
-static int ng3[] = {8, 0};
+static int ng3[] = {65536, 0};
+static int ng4[] = {255, 0};
 
 
 
@@ -38,11 +39,11 @@ LAB0:    xsi_set_current_line(24, ng0);
 LAB2:    xsi_set_current_line(25, ng0);
     t1 = ((char*)((ng1)));
     t2 = (t0 + 1928);
-    xsi_vlogvar_wait_assign_value(t2, t1, 0, 0, 11, 0LL);
+    xsi_vlogvar_wait_assign_value(t2, t1, 0, 0, 16, 0LL);
     xsi_set_current_line(26, ng0);
     t1 = ((char*)((ng1)));
     t2 = (t0 + 1608);
-    xsi_vlogvar_wait_assign_value(t2, t1, 0, 0, 11, 0LL);
+    xsi_vlogvar_wait_assign_value(t2, t1, 0, 0, 8, 0LL);
     xsi_set_current_line(27, ng0);
     t1 = ((char*)((ng1)));
     t2 = (t0 + 1768);
@@ -54,6 +55,8 @@ LAB1:    return;
 static void Always_30_1(char *t0)
 {
     char t15[8];
+    char t17[8];
+    char t18[8];
     char *t1;
     char *t2;
     char *t3;
@@ -69,8 +72,6 @@ static void Always_30_1(char *t0)
     char *t13;
     char *t14;
     char *t16;
-    unsigned int t17;
-    unsigned int t18;
     unsigned int t19;
     unsigned int t20;
     unsigned int t21;
@@ -81,9 +82,11 @@ static void Always_30_1(char *t0)
     unsigned int t26;
     unsigned int t27;
     unsigned int t28;
-    char *t29;
-    char *t30;
+    unsigned int t29;
+    unsigned int t30;
     char *t31;
+    char *t32;
+    char *t33;
 
 LAB0:    t1 = (t0 + 3096U);
     t2 = *((char **)t1);
@@ -117,14 +120,20 @@ LAB5:    xsi_set_current_line(31, ng0);
 LAB7:    xsi_set_current_line(33, ng0);
 
 LAB9:    xsi_set_current_line(34, ng0);
-    t2 = (t0 + 1768);
-    t3 = (t2 + 56U);
-    t4 = *((char **)t3);
-    t5 = ((char*)((ng3)));
+    t2 = ((char*)((ng3)));
+    t3 = (t0 + 1768);
+    t4 = (t3 + 56U);
+    t5 = *((char **)t4);
     memset(t15, 0, 8);
-    xsi_vlog_unsigned_divide(t15, 32, t4, 16, t5, 32);
-    t11 = (t0 + 1928);
-    xsi_vlogvar_assign_value(t11, t15, 0, 0, 11);
+    xsi_vlog_unsigned_minus(t15, 32, t2, 32, t5, 16);
+    t11 = ((char*)((ng4)));
+    memset(t17, 0, 8);
+    xsi_vlog_unsigned_multiply(t17, 32, t15, 32, t11, 32);
+    t12 = ((char*)((ng3)));
+    memset(t18, 0, 8);
+    xsi_vlog_unsigned_divide(t18, 32, t17, 32, t12, 32);
+    t13 = (t0 + 1928);
+    xsi_vlogvar_assign_value(t13, t18, 0, 0, 16);
     xsi_set_current_line(35, ng0);
     t2 = ((char*)((ng1)));
     t3 = (t0 + 1768);
@@ -134,7 +143,7 @@ LAB8:    xsi_set_current_line(37, ng0);
     t2 = (t0 + 1928);
     t3 = (t2 + 56U);
     t4 = *((char **)t3);
-    t5 = ((char*)((ng1)));
+    t5 = ((char*)((ng4)));
     memset(t15, 0, 8);
     t11 = (t4 + 4);
     t12 = (t5 + 4);
@@ -143,26 +152,26 @@ LAB8:    xsi_set_current_line(37, ng0);
     t8 = (t6 ^ t7);
     t9 = *((unsigned int *)t11);
     t10 = *((unsigned int *)t12);
-    t17 = (t9 ^ t10);
-    t18 = (t8 | t17);
-    t19 = *((unsigned int *)t11);
-    t20 = *((unsigned int *)t12);
-    t21 = (t19 | t20);
-    t22 = (~(t21));
-    t23 = (t18 & t22);
-    if (t23 != 0)
+    t19 = (t9 ^ t10);
+    t20 = (t8 | t19);
+    t21 = *((unsigned int *)t11);
+    t22 = *((unsigned int *)t12);
+    t23 = (t21 | t22);
+    t24 = (~(t23));
+    t25 = (t20 & t24);
+    if (t25 != 0)
         goto LAB11;
 
-LAB10:    if (t21 != 0)
+LAB10:    if (t23 != 0)
         goto LAB12;
 
 LAB13:    t14 = (t15 + 4);
-    t24 = *((unsigned int *)t14);
-    t25 = (~(t24));
-    t26 = *((unsigned int *)t15);
-    t27 = (t26 & t25);
-    t28 = (t27 != 0);
-    if (t28 > 0)
+    t26 = *((unsigned int *)t14);
+    t27 = (~(t26));
+    t28 = *((unsigned int *)t15);
+    t29 = (t28 & t27);
+    t30 = (t29 != 0);
+    if (t30 > 0)
         goto LAB14;
 
 LAB15:
@@ -189,10 +198,10 @@ LAB12:    t13 = (t15 + 4);
 
 LAB14:    xsi_set_current_line(38, ng0);
     t16 = (t0 + 1928);
-    t29 = (t16 + 56U);
-    t30 = *((char **)t29);
-    t31 = (t0 + 1608);
-    xsi_vlogvar_assign_value(t31, t30, 0, 0, 11);
+    t31 = (t16 + 56U);
+    t32 = *((char **)t31);
+    t33 = (t0 + 1608);
+    xsi_vlogvar_assign_value(t33, t32, 0, 0, 8);
     goto LAB16;
 
 }

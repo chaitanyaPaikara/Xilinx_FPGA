@@ -1,0 +1,14 @@
+[Inputs]
+clk
+ce
+=target_vel[7:0]=
+=current_vel[7:0]=
+=kp[3:0]=
+=kd[3:0]=
+=ki[3:0]=
+[Outputs]
+=vel_output[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel pid_controller
+

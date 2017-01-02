@@ -224,11 +224,9 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Encoder_fun4fpga.ngc"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Encoder_fun4fpga.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Encoder_fun4fpga.ngr"/>
-    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Encoder_fun4fpga.pad"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Encoder_fun4fpga.par" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Encoder_fun4fpga.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Encoder_fun4fpga.prj"/>
-    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Encoder_fun4fpga.ptwx"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="Encoder_fun4fpga.spl"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Encoder_fun4fpga.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Encoder_fun4fpga.sym" xil_pn:origination="imported"/>
@@ -237,7 +235,6 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Encoder_fun4fpga.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Encoder_fun4fpga.unroutes" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Encoder_fun4fpga.ut" xil_pn:subbranch="FPGAConfiguration"/>
-    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Encoder_fun4fpga.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Encoder_fun4fpga.xst"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Encoder_fun4fpga_TB_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Encoder_fun4fpga_TB_isim_beh.exe"/>
@@ -245,19 +242,15 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Encoder_fun4fpga_TB_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Encoder_fun4fpga_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="Encoder_fun4fpga_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Encoder_fun4fpga_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Encoder_fun4fpga_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Encoder_fun4fpga_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Encoder_fun4fpga_map.ncd" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Encoder_fun4fpga_map.ngm" xil_pn:subbranch="Map"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Encoder_fun4fpga_map.xrpt"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Encoder_fun4fpga_ngdbuild.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Encoder_fun4fpga_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Encoder_fun4fpga_pad.txt" xil_pn:subbranch="Par"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Encoder_fun4fpga_par.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Encoder_fun4fpga_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Encoder_fun4fpga_summary.html"/>
-    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Encoder_fun4fpga_summary.xml"/>
-    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Encoder_fun4fpga_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Encoder_fun4fpga_xst.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="MAIN_SCHEMATIC.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MAIN_SCHEMATIC.cmd_log"/>
@@ -291,6 +284,44 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="MAIN_SCHEMATIC_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MAIN_SCHEMATIC_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MAIN_SCHEMATIC_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="PID_ENCODER.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="PID_ENCODER.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="PID_ENCODER.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="PID_ENCODER.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="PID_ENCODER.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="PID_ENCODER.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="PID_ENCODER.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="PID_ENCODER.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="PID_ENCODER.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="PID_ENCODER.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="PID_ENCODER.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PID_ENCODER.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="PID_ENCODER.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="PID_ENCODER.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PID_ENCODER.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="PID_ENCODER.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="PID_ENCODER.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="PID_ENCODER.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="PID_ENCODER.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="PID_ENCODER.vhf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="PID_ENCODER.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="PID_ENCODER.xst"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="PID_ENCODER_drc.vhf"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="PID_ENCODER_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="PID_ENCODER_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="PID_ENCODER_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="PID_ENCODER_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="PID_ENCODER_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PID_ENCODER_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PID_ENCODER_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="PID_ENCODER_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="PID_ENCODER_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PID_ENCODER_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="PID_ENCODER_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="PID_ENCODER_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="PID_ENCODER_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PID_ENCODER_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PID_ENCODER_xst.xrpt"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -423,6 +454,12 @@
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/Encoder_fun4fpga_synthesis.vhd"/>
     <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/main_v2_synthesis.nlf"/>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/main_v2_synthesis.vhd"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pid_controller.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="pid_controller.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="pid_controller.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="pid_controller.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="pid_controller.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pid_controller_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -436,7 +473,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1481777929" xil_pn:in_ck="-2771894693230447792" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1481777929">
+    <transform xil_pn:end_ts="1481797812" xil_pn:in_ck="3481901803109230008" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1481797812">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../BLDC_Controller_V1/Commutation.v"/>
@@ -445,179 +482,160 @@
       <outfile xil_pn:name="Enc_Circuit_TB.v"/>
       <outfile xil_pn:name="Encoder_fun4fpga.v"/>
       <outfile xil_pn:name="Encoder_fun4fpga_TB.v"/>
-      <outfile xil_pn:name="encoder_TB.v"/>
+      <outfile xil_pn:name="PID.v"/>
       <outfile xil_pn:name="main.v"/>
     </transform>
-    <transform xil_pn:end_ts="1481752001" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8912766216218962219" xil_pn:start_ts="1481752001">
+    <transform xil_pn:end_ts="1481793490" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8912766216218962219" xil_pn:start_ts="1481793490">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1481752003" xil_pn:in_ck="5884794261450815829" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="9149059408925629783" xil_pn:start_ts="1481752001">
+    <transform xil_pn:end_ts="1481793492" xil_pn:in_ck="5884794261450815829" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="9149059408925629783" xil_pn:start_ts="1481793490">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Enc_Circiut.vhf"/>
-      <outfile xil_pn:name="encoder.vhf"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1481751080" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3293768013859031431" xil_pn:start_ts="1481751080">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1481777929" xil_pn:in_ck="3209683732352649022" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1481777929">
+    <transform xil_pn:end_ts="1481795505" xil_pn:in_ck="3209683732352649022" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1481795505">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="../BLDC_Controller_V1/Commutation.v"/>
-      <outfile xil_pn:name="CLK_RST.v"/>
-      <outfile xil_pn:name="Commutation.vhf"/>
-      <outfile xil_pn:name="Enc.v"/>
-      <outfile xil_pn:name="Enc_Circiut.vhf"/>
-      <outfile xil_pn:name="Enc_Circuit_TB.v"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.v"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_TB.v"/>
-      <outfile xil_pn:name="encoder.vhf"/>
-      <outfile xil_pn:name="encoder_TB.v"/>
-      <outfile xil_pn:name="main.v"/>
-    </transform>
-    <transform xil_pn:end_ts="1481777931" xil_pn:in_ck="3209683732352649022" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2140095138286121668" xil_pn:start_ts="1481777929">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_TB_beh.prj"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_TB_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1481782517" xil_pn:in_ck="795224859294588492" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6629200769458006455" xil_pn:start_ts="1481782517">
+    <transform xil_pn:end_ts="1481795507" xil_pn:in_ck="3209683732352649022" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2140095138286121668" xil_pn:start_ts="1481795505">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_TB_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1481795508" xil_pn:in_ck="8970964528107068053" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6629200769458006455" xil_pn:start_ts="1481795507">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1480672750" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1480672750">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1481742811" xil_pn:in_ck="5884794261450815829" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-4671450234331124286" xil_pn:start_ts="1481742809">
+    <transform xil_pn:end_ts="1481798117" xil_pn:in_ck="78709405408471409" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="2589210872362489700" xil_pn:start_ts="1481798115">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PID_ENCODER.vhf"/>
+    </transform>
+    <transform xil_pn:end_ts="1481798117" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="841167255288984891" xil_pn:start_ts="1481798117">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1481742811" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-3293768013859031431" xil_pn:start_ts="1481742811">
+    <transform xil_pn:end_ts="1481798117" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1481798117">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1481742811" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1481742811">
+    <transform xil_pn:end_ts="1481798117" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="8726455819326789282" xil_pn:start_ts="1481798117">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1481742811" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-209976068922891328" xil_pn:start_ts="1481742811">
+    <transform xil_pn:end_ts="1481798117" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="5199527252397519575" xil_pn:start_ts="1481798117">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1481742811" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="5199527252397519575" xil_pn:start_ts="1481742811">
+    <transform xil_pn:end_ts="1481798117" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2784385370365809221" xil_pn:start_ts="1481798117">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1481742811" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1134024487133296189" xil_pn:start_ts="1481742811">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1481782257" xil_pn:in_ck="4745290940402738328" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="1664327798229109423" xil_pn:start_ts="1481782244">
+    <transform xil_pn:end_ts="1481798125" xil_pn:in_ck="-8897509188282476697" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6354222361591275407" xil_pn:start_ts="1481798117">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.lso"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.ngc"/>
       <outfile xil_pn:name="Encoder_fun4fpga.ngr"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.prj"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.stx"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.syr"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.xst"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_TB_beh.prj"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_TB_stx_beh.prj"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_stx_beh.prj"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_xst.xrpt"/>
+      <outfile xil_pn:name="PID_ENCODER.jhd"/>
+      <outfile xil_pn:name="PID_ENCODER.lso"/>
+      <outfile xil_pn:name="PID_ENCODER.ngc"/>
+      <outfile xil_pn:name="PID_ENCODER.ngr"/>
+      <outfile xil_pn:name="PID_ENCODER.prj"/>
+      <outfile xil_pn:name="PID_ENCODER.stx"/>
+      <outfile xil_pn:name="PID_ENCODER.syr"/>
+      <outfile xil_pn:name="PID_ENCODER.xst"/>
+      <outfile xil_pn:name="PID_ENCODER_vhdl.prj"/>
+      <outfile xil_pn:name="PID_ENCODER_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="encoder.ngr"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1481782260" xil_pn:in_ck="-2634059078544194358" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8526093452732296412" xil_pn:start_ts="1481782260">
+    <transform xil_pn:end_ts="1481798129" xil_pn:in_ck="-2634059078544194358" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-5861189124265397250" xil_pn:start_ts="1481798129">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1481782269" xil_pn:in_ck="259100137680984254" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1076559174203592230" xil_pn:start_ts="1481782260">
+    <transform xil_pn:end_ts="1481798135" xil_pn:in_ck="885434051635377216" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4005479178806065992" xil_pn:start_ts="1481798129">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.bld"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.ngd"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="PID_ENCODER.bld"/>
+      <outfile xil_pn:name="PID_ENCODER.ngd"/>
+      <outfile xil_pn:name="PID_ENCODER_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1481782281" xil_pn:in_ck="-5299558820942953974" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="113730145005983477" xil_pn:start_ts="1481782269">
+    <transform xil_pn:end_ts="1481798139" xil_pn:in_ck="-8755077188512171251" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="113730145005983477" xil_pn:start_ts="1481798135">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.pcf"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_map.map"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_map.mrp"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_map.ncd"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_map.ngm"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_map.xrpt"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_summary.xml"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_usage.xml"/>
+      <outfile xil_pn:name="PID_ENCODER.pcf"/>
+      <outfile xil_pn:name="PID_ENCODER_map.map"/>
+      <outfile xil_pn:name="PID_ENCODER_map.mrp"/>
+      <outfile xil_pn:name="PID_ENCODER_map.ncd"/>
+      <outfile xil_pn:name="PID_ENCODER_map.ngm"/>
+      <outfile xil_pn:name="PID_ENCODER_map.xrpt"/>
+      <outfile xil_pn:name="PID_ENCODER_summary.xml"/>
+      <outfile xil_pn:name="PID_ENCODER_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1481782301" xil_pn:in_ck="-4081055677271027470" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="5483778956729043009" xil_pn:start_ts="1481782281">
+    <transform xil_pn:end_ts="1481798151" xil_pn:in_ck="-7745096346990564466" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="5483778956729043009" xil_pn:start_ts="1481798139">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.ncd"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.pad"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.par"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.ptwx"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.unroutes"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.xpi"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_pad.csv"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_pad.txt"/>
-      <outfile xil_pn:name="Encoder_fun4fpga_par.xrpt"/>
+      <outfile xil_pn:name="PID_ENCODER.ncd"/>
+      <outfile xil_pn:name="PID_ENCODER.pad"/>
+      <outfile xil_pn:name="PID_ENCODER.par"/>
+      <outfile xil_pn:name="PID_ENCODER.ptwx"/>
+      <outfile xil_pn:name="PID_ENCODER.unroutes"/>
+      <outfile xil_pn:name="PID_ENCODER.xpi"/>
+      <outfile xil_pn:name="PID_ENCODER_pad.csv"/>
+      <outfile xil_pn:name="PID_ENCODER_pad.txt"/>
+      <outfile xil_pn:name="PID_ENCODER_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1481782315" xil_pn:in_ck="-6338976844105055424" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1481782303">
+    <transform xil_pn:end_ts="1481798151" xil_pn:in_ck="3330333343820013801" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1481798148">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.ut"/>
-      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="encoder_fun4fpga.bgn"/>
-      <outfile xil_pn:name="encoder_fun4fpga.bit"/>
-      <outfile xil_pn:name="encoder_fun4fpga.drc"/>
-      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-    </transform>
-    <transform xil_pn:end_ts="1481782301" xil_pn:in_ck="5933493178281947242" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1481782296">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.twr"/>
-      <outfile xil_pn:name="Encoder_fun4fpga.twx"/>
+      <outfile xil_pn:name="PID_ENCODER.twr"/>
+      <outfile xil_pn:name="PID_ENCODER.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
-    </transform>
-    <transform xil_pn:end_ts="1481752386" xil_pn:in_ck="3223250844745511024" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="1075195116117446153" xil_pn:start_ts="1481752382">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="netgen"/>
-      <outfile xil_pn:name="netgen/synthesis/Encoder_fun4fpga_synthesis.nlf"/>
-      <outfile xil_pn:name="netgen/synthesis/Encoder_fun4fpga_synthesis.vhd"/>
     </transform>
   </transforms>
 

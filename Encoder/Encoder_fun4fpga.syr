@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: Encoder_fun4fpga.prj
 
@@ -131,12 +131,16 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <Encoder_fun4fpga>.
     Related source file is "Encoder_fun4fpga.v".
-    Found 11-bit register for signal <rpm>.
+    Found 8-bit register for signal <rpm>.
     Found 16-bit up counter for signal <count>.
-    Found 11-bit register for signal <rpm_var>.
+    Found 16-bit register for signal <rpm_var>.
+    Found 18-bit adder for signal <rpm_var$addsub0000> created at line 34.
+    Found 18x9-bit multiplier for signal <rpm_var$mult0000> created at line 34.
     Summary:
 	inferred   1 Counter(s).
-	inferred  22 D-type flip-flop(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
 Unit <Encoder_fun4fpga> synthesized.
 
 
@@ -144,10 +148,15 @@ Unit <Encoder_fun4fpga> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
+# Multipliers                                          : 1
+ 18x9-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 1
+ 18-bit adder                                          : 1
 # Counters                                             : 1
  16-bit up counter                                     : 1
 # Registers                                            : 2
- 11-bit register                                       : 2
+ 16-bit register                                       : 1
+ 8-bit register                                        : 1
 
 =========================================================================
 
@@ -155,29 +164,41 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1293 - FF/Latch <rpm_var_11> has a constant value of 0 in block <Encoder_fun4fpga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_var_12> has a constant value of 0 in block <Encoder_fun4fpga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_var_13> has a constant value of 0 in block <Encoder_fun4fpga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_var_14> has a constant value of 0 in block <Encoder_fun4fpga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_var_15> has a constant value of 0 in block <Encoder_fun4fpga>. This FF/Latch will be trimmed during the optimization process.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
+# Multipliers                                          : 1
+ 18x9-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 1
+ 18-bit adder                                          : 1
 # Counters                                             : 1
  16-bit up counter                                     : 1
-# Registers                                            : 22
- Flip-Flops                                            : 22
+# Registers                                            : 24
+ Flip-Flops                                            : 24
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2677 - Node <count_14> of sequential type is unconnected in block <Encoder_fun4fpga>.
-WARNING:Xst:2677 - Node <count_15> of sequential type is unconnected in block <Encoder_fun4fpga>.
+WARNING:Xst:1293 - FF/Latch <rpm_var_11> has a constant value of 0 in block <Encoder_fun4fpga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_var_12> has a constant value of 0 in block <Encoder_fun4fpga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_var_13> has a constant value of 0 in block <Encoder_fun4fpga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_var_14> has a constant value of 0 in block <Encoder_fun4fpga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_var_15> has a constant value of 0 in block <Encoder_fun4fpga>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <Encoder_fun4fpga> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Encoder_fun4fpga, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block Encoder_fun4fpga, actual ratio is 1.
 
 Final Macro Processing ...
 
@@ -185,8 +206,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 36
- Flip-Flops                                            : 36
+# Registers                                            : 35
+ Flip-Flops                                            : 35
 
 =========================================================================
 
@@ -212,28 +233,31 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 13
+# IOs                              : 10
 
 Cell Usage :
-# BELS                             : 65
+# BELS                             : 120
 #      GND                         : 1
-#      INV                         : 2
-#      LUT1                        : 13
+#      INV                         : 17
+#      LUT1                        : 16
 #      LUT3                        : 14
-#      LUT4                        : 4
-#      MUXCY                       : 13
-#      MUXF5                       : 3
+#      LUT4                        : 5
+#      LUT4_L                      : 1
+#      MUXCY                       : 31
+#      MUXF5                       : 2
 #      VCC                         : 1
-#      XORCY                       : 14
-# FlipFlops/Latches                : 36
+#      XORCY                       : 32
+# FlipFlops/Latches                : 35
 #      FD                          : 11
-#      FDE                         : 11
-#      FDR                         : 14
+#      FDE                         : 8
+#      FDR                         : 16
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 12
+# IO Buffers                       : 9
 #      IBUF                        : 1
-#      OBUF                        : 11
+#      OBUF                        : 8
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
 =========================================================================
 
 Device utilization summary:
@@ -241,11 +265,12 @@ Device utilization summary:
 
 Selected Device : 3s250ecp132-5 
 
- Number of Slices:                       23  out of   2448     0%  
- Number of Slice Flip Flops:             36  out of   4896     0%  
- Number of 4 input LUTs:                 33  out of   4896     0%  
- Number of IOs:                          13
- Number of bonded IOBs:                  13  out of     92    14%  
+ Number of Slices:                       40  out of   2448     1%  
+ Number of Slice Flip Flops:             35  out of   4896     0%  
+ Number of 4 input LUTs:                 53  out of   4896     1%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of     92    10%  
+ Number of MULT18X18SIOs:                 1  out of     12     8%  
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -269,7 +294,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 36    |
+CLK                                | BUFGP                  | 35    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -280,8 +305,8 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 4.404ns (Maximum Frequency: 227.046MHz)
-   Minimum input arrival time before clock: 5.009ns
+   Minimum period: 12.021ns (Maximum Frequency: 83.185MHz)
+   Minimum input arrival time before clock: 5.738ns
    Maximum output required time after clock: 4.040ns
    Maximum combinational path delay: No path found
 
@@ -291,33 +316,51 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 4.404ns (frequency: 227.046MHz)
-  Total number of paths / destination ports: 391 / 47
+  Clock period: 12.021ns (frequency: 83.185MHz)
+  Total number of paths / destination ports: 16531 / 43
 -------------------------------------------------------------------------
-Delay:               4.404ns (Levels of Logic = 3)
-  Source:            count_7 (FF)
+Delay:               12.021ns (Levels of Logic = 21)
+  Source:            count_0 (FF)
   Destination:       rpm_0 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: count_7 to rpm_0
+  Data Path: count_0 to rpm_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              3   0.514   0.603  count_7 (count_7)
-     LUT3:I0->O            1   0.612   0.000  rpm_not00007_F (N3)
-     MUXF5:I0->O           1   0.278   0.509  rpm_not00007 (rpm_not00007)
-     LUT3:I0->O           11   0.612   0.793  rpm_not000020 (rpm_not0000)
+     FDR:C->Q              2   0.514   0.532  count_0 (count_0)
+     LUT1:I0->O            1   0.612   0.000  Madd_rpm_var_addsub0000_cy<0>_rt (Madd_rpm_var_addsub0000_cy<0>_rt)
+     MUXCY:S->O            1   0.404   0.000  Madd_rpm_var_addsub0000_cy<0> (Madd_rpm_var_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_rpm_var_addsub0000_cy<1> (Madd_rpm_var_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_rpm_var_addsub0000_cy<2> (Madd_rpm_var_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_rpm_var_addsub0000_cy<3> (Madd_rpm_var_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_rpm_var_addsub0000_cy<4> (Madd_rpm_var_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_rpm_var_addsub0000_cy<5> (Madd_rpm_var_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_rpm_var_addsub0000_cy<6> (Madd_rpm_var_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_rpm_var_addsub0000_cy<7> (Madd_rpm_var_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_rpm_var_addsub0000_cy<8> (Madd_rpm_var_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_rpm_var_addsub0000_cy<9> (Madd_rpm_var_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_rpm_var_addsub0000_cy<10> (Madd_rpm_var_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_rpm_var_addsub0000_cy<11> (Madd_rpm_var_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_rpm_var_addsub0000_cy<12> (Madd_rpm_var_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_rpm_var_addsub0000_cy<13> (Madd_rpm_var_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_rpm_var_addsub0000_cy<14> (Madd_rpm_var_addsub0000_cy<14>)
+     XORCY:CI->O           1   0.699   0.357  Madd_rpm_var_addsub0000_xor<15> (rpm_var_addsub0000<15>)
+     MULT18X18SIO:A15->P16    2   4.320   0.410  Mmult_rpm_var_mult0000 (rpm_var_mult0000<16>)
+     LUT3:I2->O            1   0.612   0.360  rpm_not000016_SW0_SW1 (N4)
+     LUT4_L:I3->LO         1   0.612   0.130  rpm_not000016 (rpm_not000016)
+     LUT3:I2->O            8   0.612   0.643  rpm_not000040 (rpm_not0000)
      FDE:CE                    0.483          rpm_0
     ----------------------------------------
-    Total                      4.404ns (2.499ns logic, 1.905ns route)
-                                       (56.7% logic, 43.3% route)
+    Total                     12.021ns (9.589ns logic, 2.432ns route)
+                                       (79.8% logic, 20.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 69 / 47
+  Total number of paths / destination ports: 67 / 43
 -------------------------------------------------------------------------
-Offset:              5.009ns (Levels of Logic = 3)
+Offset:              5.738ns (Levels of Logic = 4)
   Source:            ticks (PAD)
   Destination:       rpm_0 (FF)
   Destination Clock: CLK rising
@@ -326,29 +369,30 @@ Offset:              5.009ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            15   1.106   0.864  ticks_IBUF (ticks_IBUF)
-     MUXF5:S->O            1   0.641   0.509  rpm_not00007 (rpm_not00007)
-     LUT3:I0->O           11   0.612   0.793  rpm_not000020 (rpm_not0000)
+     IBUF:I->O            16   1.106   1.031  ticks_IBUF (ticks_IBUF)
+     LUT4:I0->O            1   0.612   0.509  rpm_not000016_SW0_SW0 (N3)
+     LUT4_L:I0->LO         1   0.612   0.130  rpm_not000016 (rpm_not000016)
+     LUT3:I2->O            8   0.612   0.643  rpm_not000040 (rpm_not0000)
      FDE:CE                    0.483          rpm_0
     ----------------------------------------
-    Total                      5.009ns (2.842ns logic, 2.167ns route)
-                                       (56.7% logic, 43.3% route)
+    Total                      5.738ns (3.425ns logic, 2.313ns route)
+                                       (59.7% logic, 40.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 11 / 11
+  Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
 Offset:              4.040ns (Levels of Logic = 1)
-  Source:            rpm_10 (FF)
-  Destination:       rpm<10> (PAD)
+  Source:            rpm_7 (FF)
+  Destination:       rpm<7> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: rpm_10 to rpm<10>
+  Data Path: rpm_7 to rpm<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              1   0.514   0.357  rpm_10 (rpm_10)
-     OBUF:I->O                 3.169          rpm_10_OBUF (rpm<10>)
+     FDE:C->Q              1   0.514   0.357  rpm_7 (rpm_7)
+     OBUF:I->O                 3.169          rpm_7_OBUF (rpm<7>)
     ----------------------------------------
     Total                      4.040ns (3.683ns logic, 0.357ns route)
                                        (91.2% logic, 8.8% route)
@@ -356,14 +400,14 @@ Offset:              4.040ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.98 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.80 secs
  
 --> 
 
-Total memory usage is 286280 kilobytes
+Total memory usage is 302460 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

@@ -18,9 +18,9 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Encoder_fun4fpga(input CLK,input ticks, output reg [10:0] rpm);
+module Encoder_fun4fpga(input CLK,input ticks, output reg [7:0] rpm);
 reg [15:0] count;
-reg [10:0] rpm_var;
+reg [15:0] rpm_var;
 initial begin
 	rpm_var <= 0;
 	rpm <= 0;
@@ -31,11 +31,11 @@ always@(posedge CLK)begin
 	if(ticks)
 		count = count + 1;
 	else begin
-		rpm_var = count/8;
+		rpm_var = ((65536 - count)*255)/65536 ;
 		count = 0;
 	end
-	if(rpm_var != 0)
-		rpm = rpm_var;
+	if(rpm_var != 255)
+		rpm = rpm_var; 
 end
 
 endmodule

@@ -1,23 +1,26 @@
-AR encoder behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/encoder.vhf" sub00/vhpl07 1481702594
+AR encoder behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/encoder.vhf" sub00/vhpl07 1481798124
 AR enc_circiut_muser_main_schematic behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/MAIN_SCHEMATIC.vhf" sub00/vhpl12 1481712727
-MO Encoder_fun4fpga NULL Encoder_fun4fpga.v vlg4E/_encoder__fun4fpga.bin 1481782248
+MO Encoder_fun4fpga NULL Encoder_fun4fpga.v vlg4E/_encoder__fun4fpga.bin 1481798119
 EN commutation NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Commutation.vhf" sub00/vhpl00 1481712724
 AR enc_circiut behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Enc_Circiut.vhf" sub00/vhpl10 1481726604
 MO Enc NULL Enc.v vlg46/_enc.bin 1481726603
 EN main_schematic NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/MAIN_SCHEMATIC.vhf" sub00/vhpl13 1481712728
 EN enc_circiut_muser_main_schematic NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/MAIN_SCHEMATIC.vhf" sub00/vhpl11 1481712726
-AR cb16ce_mxilinx_encoder behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/encoder.vhf" sub00/vhpl05 1481702592
+AR cb16ce_mxilinx_encoder behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/encoder.vhf" sub00/vhpl05 1481798122
 MO CLK_RST NULL CLK_RST.v vlg0A/_c_l_k___r_s_t.bin 1481726603
 MO main NULL main.v vlg2D/main.bin 1480689018
 AR commutation behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Commutation.vhf" sub00/vhpl01 1481712725
 MO encoder_verilog NULL main_v2.v vlg5F/encoder__verilog.bin 1481703671
-EN encoder NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/encoder.vhf" sub00/vhpl08 1481702593
+EN encoder NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/encoder.vhf" sub00/vhpl08 1481798123
 MO CLOCK NULL main.v vlg00/_c_l_o_c_k.bin 1481666564
 AR main_schematic behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/MAIN_SCHEMATIC.vhf" sub00/vhpl14 1481712729
-EN cb16ce_mxilinx_encoder NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/encoder.vhf" sub00/vhpl04 1481702591
-EN ftce_mxilinx_encoder NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/encoder.vhf" sub00/vhpl02 1481702589
+EN cb16ce_mxilinx_encoder NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/encoder.vhf" sub00/vhpl04 1481798121
+EN ftce_mxilinx_encoder NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/encoder.vhf" sub00/vhpl02 1481798119
 MO Commutation_Commutation_sch_tb NULL ../BLDC_Controller_V1/Commutation.v vlg2D/_commutation___commutation__sch__tb.bin 1481695172
+EN pid_encoder NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/PID_ENCODER.vhf" sub00/vhpl15 1481798125
 MO CLOCK_div_2 NULL main.v vlg27/_c_l_o_c_k__div__2.bin 1481702589
 EN enc_circiut NULL "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/Enc_Circiut.vhf" sub00/vhpl09 1481726603
-AR ftce_mxilinx_encoder behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/encoder.vhf" sub00/vhpl03 1481702590
+MO pid_controller NULL PID.v vlg78/pid__controller.bin 1481798119
+AR ftce_mxilinx_encoder behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/encoder.vhf" sub00/vhpl03 1481798120
+AR pid_encoder behavioral "C:/Users/Chaitanya Paikara/Documents/GitHub/Xilinx_FPGA/Encoder/PID_ENCODER.vhf" sub00/vhpl16 1481798126
 MO main_v2 NULL main_v2.v vlg40/main__v2.bin 1480846579

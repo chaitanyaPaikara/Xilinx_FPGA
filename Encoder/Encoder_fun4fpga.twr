@@ -45,7 +45,7 @@ Setup/Hold to clock CLK
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-ticks       |    3.901(R)|    0.016(R)|CLK_BUFGP         |   0.000|
+ticks       |    5.531(R)|    0.561(R)|CLK_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock CLK to Pad
@@ -53,17 +53,14 @@ Clock CLK to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-rpm<0>      |    8.167(R)|CLK_BUFGP         |   0.000|
-rpm<1>      |    8.499(R)|CLK_BUFGP         |   0.000|
-rpm<2>      |    7.565(R)|CLK_BUFGP         |   0.000|
-rpm<3>      |    7.753(R)|CLK_BUFGP         |   0.000|
-rpm<4>      |    7.697(R)|CLK_BUFGP         |   0.000|
-rpm<5>      |    7.508(R)|CLK_BUFGP         |   0.000|
-rpm<6>      |    7.964(R)|CLK_BUFGP         |   0.000|
-rpm<7>      |    7.554(R)|CLK_BUFGP         |   0.000|
-rpm<8>      |    7.216(R)|CLK_BUFGP         |   0.000|
-rpm<9>      |    7.169(R)|CLK_BUFGP         |   0.000|
-rpm<10>     |    7.304(R)|CLK_BUFGP         |   0.000|
+rpm<0>      |    7.169(R)|CLK_BUFGP         |   0.000|
+rpm<1>      |    8.266(R)|CLK_BUFGP         |   0.000|
+rpm<2>      |    7.368(R)|CLK_BUFGP         |   0.000|
+rpm<3>      |    7.181(R)|CLK_BUFGP         |   0.000|
+rpm<4>      |    7.177(R)|CLK_BUFGP         |   0.000|
+rpm<5>      |    7.114(R)|CLK_BUFGP         |   0.000|
+rpm<6>      |    8.045(R)|CLK_BUFGP         |   0.000|
+rpm<7>      |    7.300(R)|CLK_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -71,11 +68,11 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    4.003|         |         |         |
+CLK            |   13.358|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Dec 15 11:41:39 2016 
+Analysis completed Thu Dec 15 15:16:05 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
